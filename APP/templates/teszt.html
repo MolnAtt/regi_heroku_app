@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    {# META #}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {# CSS-fájlok #}
+    <link rel="stylesheet" href="{% static 'teszt.css' %}">
+
+    {# JS-fájlok #}
+    <script src="{% static 'teszt.js' %}"></script>
+
+    {# Egyéb #}
+    <title>Document</title>
+
+</head>
+<body>
+
+
+    {# HEADER #}
+
+    <header>
+        <h1>
+            <a href="index">
+                Site name
+            </a>
+        </h1>
+
+        {# LOG OUT link #}
+        <a href="log_out">
+            Kijelentkezés
+        </a>
+
+        {# NAV BAR #}
+        <nav>
+            <ul>
+                <li><a href="elso">elso</a></li>
+                <li><a href="masodik">masodik</a></li>
+                <li><a href="harmadik">harmadik</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    {# MAIN #}
+
+    <main>    
+        <article>
+            <section>
+                Első section.
+            </section>
+            <section>
+                Második section.
+            </section>
+        </article>
+    </main>
+
+
+    {# ASIDE #}
+
+    <aside>
+        Ez itt az aside.
+    </aside>
+
+
+    {# FOOTER #}
+
+    <footer>
+        Ez a footer
+    </footer>
+
+</body>
+</html>

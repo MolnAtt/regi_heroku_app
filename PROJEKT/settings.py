@@ -22,8 +22,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-^6x94=1e=3h97v80)7ow74@4cg)(r8@0id14l=t81mu_oi7c&^'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 ALLOWED_HOSTS = ['HEROKUREMOTE.herokuapp.com', '127.0.0.1']
@@ -38,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'APP',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +125,25 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Heroku: Update database configuration from $DATABASE_URL.
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
+
+# INNEN szedegeti össze azokat a statikus fájlokat, amelyek nem tartoznak egyetlen apphoz sem:
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
+]
+
+# IDE fogja collectelni a collectstatic
+STATIC_ROOT = BASE_DIR / 'staticfiles'  
+#régebbi django-hoz: 
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# ITT fogja észlelni a böngésző
+STATIC_URL = '/static/'
+
+# itt a whitenoise alkalmazása
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
