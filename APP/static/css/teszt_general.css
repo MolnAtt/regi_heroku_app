@@ -10,6 +10,8 @@
     --line-color: black;
     --footer-bg-color: khaki;
     --footer-fg-color: black;
+    --button-bg-color: white;
+    --button-fg-color: black;
 }
 
 *{

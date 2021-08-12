@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    {# META #}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {# google font import -- roboto slab #}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    {# favicon.ico #}
+    <link rel="shortcut icon" type="image/png" href="{% static 'pic/favicon.ico' %}"/>
+
+    {# CSS-fájlok #}
+    <link rel="stylesheet" href="{% static 'css/teszt_general.css' %}">
+    <link rel="stylesheet" href="{% static 'css/teszt_header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'css/teszt_footer.css' %}">
+
+    {# JS-fájlok #}
+    <script src="{% static 'js/login.js' %}"></script>
+
+    {# Egyéb #}
+    <title>Document</title>
+
+</head>
+<body>
+
+
+    {# HEADER #}
+
+    <header>
+        <h1>
+            <a href="index">
+                Site name
+            </a>
+        </h1>
+    </header>
+
+
+    {# MAIN #}
+
+    <main>    
+        <article>
+            {% if form.errors %}
+                <section>Nem egyezik a felhasználónév és a jelszó.</section>
+            {% endif %}
+
+            {% if next %}
+                {% if user.is_authenticated %}
+                    <section>Az azonosított felhasználói fióknak nincs hozzáférése ehhez az oldalhoz.</section>
+                {% else %}
+                    <section>A megtekintéshez bejelentkezés szükséges</section>
+                {% endif %}
+            {% endif %}
+
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                    {{ form.username.label_tag }}
+                    {{ form.username }}
+                    {{ form.password.label_tag }}
+                    {{ form.password }}
+                <div class="button bejelentkezes" type="submit">Bejelentkezés</div>
+                <a href="{% url 'password_reset' %}" class="button ujjelszo">Új jelszó igénylése</a>
+                <input type="hidden" name="next" value="{{ next }}" />
+            </form>
+            {# Assumes you setup the password_reset view in your URLconf #}
+            
+        </article>
+    </main>
+
+    {% include "footer.html" %}
+</body>
+</html>

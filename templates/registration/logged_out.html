@@ -18,12 +18,11 @@
     {# CSS-fájlok #}
     <link rel="stylesheet" href="{% static 'css/teszt_general.css' %}">
     <link rel="stylesheet" href="{% static 'css/teszt_header.css' %}">
-    <link rel="stylesheet" href="{% static 'css/teszt_main.css' %}">
-    <link rel="stylesheet" href="{% static 'css/teszt_aside.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
     <link rel="stylesheet" href="{% static 'css/teszt_footer.css' %}">
 
     {# JS-fájlok #}
-    <script src="{% static 'js/teszt.js' %}"></script>
+    <script src="{% static 'js/login.js' %}"></script>
 
     {# Egyéb #}
     <title>Document</title>
@@ -40,25 +39,6 @@
                 Site name
             </a>
         </h1>
-
-        {# LOG OUT link #}
-        <a class="logout" href="accounts/logout/">
-            Kijelentkezés
-        </a>
-
-        {# NAV BAR #}
-        <nav>
-            <ul>
-                <li><a href="elso">elso</a></li>
-                <li><a href="masodik">masodik</a></li>
-                <li><a href="harmadik">harmadik</a></li>
-                <li><a href="negyedik">negyedik</a></li>
-                <li><a href="otodik">otodik</a></li>
-                <li><a href="hatodik">hatodik</a></li>
-                <li><a href="hetedik">hetedik</a></li>
-                <li><a href="nyolcadik">nyolcadik</a></li>
-            </ul>
-        </nav>
     </header>
 
 
@@ -66,26 +46,13 @@
 
     <main>    
         <article>
-            <section>
-                Első section.
-            </section>
-            <section>
-                Második section.
-            </section>
+            <form>
+            <p>Sikeresen kijelentkezve!</p>
+            <a href="{% url 'login'%}" class="button bejelentkezes">Bejelentkezés</a>
+            </form>
         </article>
     </main>
 
-
-    {# ASIDE #}
-
-    <aside>
-        Ez itt az aside.
-    </aside>
-
-
-    {# FOOTER #}
-
     {% include "footer.html" %}
-
 </body>
 </html>
