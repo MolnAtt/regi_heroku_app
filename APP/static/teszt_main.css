@@ -1,0 +1,22 @@
+main{
+    display:flex;
+    justify-content: center;
+}
+
+main article{
+    display:grid;
+    grid-template-columns: 200px;
+    background-color: var(--main-bg-color);
+    color: var(--main-main-fg-color);
+    border: solid 2px var(--line-color);
+    gap: 5px;
+    padding:5px;
+}
+
+main article section{
+    background-color: var(--section-bg-color);
+    color: var(--section-fg-color);
+    padding:5px;
+    text-align: center;
+    border: solid 1px var(--line-color);
+}

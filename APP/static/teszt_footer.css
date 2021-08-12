@@ -1,0 +1,16 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--footer-bg-color);
+    color: var(--footer-fg-color);
+    border-top: solid 2px var(--line-color);
+
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:40px;   
+    font-size: small;
+}
+

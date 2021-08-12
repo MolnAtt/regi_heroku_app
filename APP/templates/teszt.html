@@ -7,8 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    {# google font import -- roboto slab #}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
     {# CSS-fájlok #}
-    <link rel="stylesheet" href="{% static 'teszt.css' %}">
+    <link rel="stylesheet" href="{% static 'teszt_general.css' %}">
+    <link rel="stylesheet" href="{% static 'teszt_header.css' %}">
+    <link rel="stylesheet" href="{% static 'teszt_main.css' %}">
+    <link rel="stylesheet" href="{% static 'teszt_aside.css' %}">
+    <link rel="stylesheet" href="{% static 'teszt_footer.css' %}">
 
     {# JS-fájlok #}
     <script src="{% static 'teszt.js' %}"></script>
@@ -30,7 +39,7 @@
         </h1>
 
         {# LOG OUT link #}
-        <a href="log_out">
+        <a class="logout" href="log_out">
             Kijelentkezés
         </a>
 
@@ -40,6 +49,11 @@
                 <li><a href="elso">elso</a></li>
                 <li><a href="masodik">masodik</a></li>
                 <li><a href="harmadik">harmadik</a></li>
+                <li><a href="negyedik">negyedik</a></li>
+                <li><a href="otodik">otodik</a></li>
+                <li><a href="hatodik">hatodik</a></li>
+                <li><a href="hetedik">hetedik</a></li>
+                <li><a href="nyolcadik">nyolcadik</a></li>
             </ul>
         </nav>
     </header>
