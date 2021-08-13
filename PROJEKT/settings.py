@@ -139,3 +139,11 @@ STATIC_URL = '/static/'
 
 # itt a whitenoise alkalmazása
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'molnar.attila@szlgbp.hu'
+EMAIL_HOST_PASSWORD = 'khxgyyqtrnubnzqp'
+EMAIL_PORT = '587'
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'molnar.attila@szlgbp.hu'

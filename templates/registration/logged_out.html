@@ -29,17 +29,8 @@
 
 </head>
 <body>
+    {% include "header_short.html" %}
 
-
-    {# HEADER #}
-
-    <header>
-        <h1>
-            <a href="index">
-                Site name
-            </a>
-        </h1>
-    </header>
 
 
     {# MAIN #}
@@ -48,7 +39,7 @@
         <article>
             <form>
             <p>Sikeresen kijelentkezve!</p>
-            <a href="{% url 'login'%}" class="button bejelentkezes">Bejelentkezés</a>
+            <a href="{% url 'login'%}" class="button">Bejelentkezés</a>
             </form>
         </article>
     </main>

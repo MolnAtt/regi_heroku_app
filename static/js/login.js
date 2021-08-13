@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", main);
 
 function main(){
-    document.getElementsByClassName('bejelentkezes')[0].addEventListener('click', kuld);
+    document.getElementsByClassName('submitter')[0].addEventListener('click', kuld);
 }
 
 
