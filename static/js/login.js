@@ -6,5 +6,8 @@ function main(){
 
 
 function kuld(e){
-    document.getElementsByTagName('form')[0].submit();
+    formok = document.getElementsByTagName('form');
+    if (formok.length > 0) {
+        formok[0].submit();
+    }
 }
