@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    {# META #}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {# google font import -- roboto slab #}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    {# favicon.ico #}
+    <link rel="shortcut icon" type="image/png" href="{% static 'pic/favicon.ico' %}"/>
+
+    {# CSS-fájlok #}
+    <link rel="stylesheet" href="{% static 'css/root.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/valasztas.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aside.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+
+    {# JS-fájlok #}
+    <script src="{% static 'js/valasztas.js' %}"></script>
+
+    {# Egyéb #}
+    <title>mindennapos testnevelés</title>
+
+</head>
+<body>
+    <header>
+        <h1><a href="/">mindennapos testnevelés</a> : <a href="/valasztas/{{ szurestipus }}">{{ szurestipus }}</a></h1>
+        <a href="/log_out/">kijelentkezés</a>
+    </header>
+    <main>
+            {% for foglalkozas in foglalkozasok %}
+                
+            <div class="kartya {{ foglalkozas.tipus.kod }}">
+                <div class="tipus">
+                    <span>
+                        {{ foglalkozas.tipus.nev }}
+                    </span>
+                </div>
+                <form method="POST">
+                    {% csrf_token %}
+                    <h2>{{ foglalkozas.nev }}</h2>
+                    <div class="nap"> {{ foglalkozas.nap.nev }} </div>
+                    <div class="intervallum">{{ foglalkozas.mettol }} - {{ foglalkozas.meddig }}</div>
+                    <div class="tanar">{{ foglalkozas.tanar.nev }}</div>
+                    <div class="gomb kattinthato">Jelentkezem</div>
+                    <input type="hidden" name="melyiket" value="{{ foglalkozas.id }}">
+                    <a class="letszam kattinthato" href="" >{{ foglalkozas.aktletszam }}/{{ foglalkozas.maxletszam }}</a>
+                </form>
+            </div>
+
+            {% endfor %}
+    </main>
+</body>
+</html>

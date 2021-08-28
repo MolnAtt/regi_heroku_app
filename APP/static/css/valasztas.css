@@ -1,0 +1,97 @@
+main{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-start;
+    gap:10px;
+}
+
+.kartya{
+    display:grid;
+    border: solid black 2px;
+    align-items: stretch;
+    background-color:var(--foreground);
+
+}
+
+
+
+.nemdse{
+    grid-template-columns: auto;
+}
+
+.dse{
+    grid-template-columns: 30px auto;
+}
+
+.nemdse .tipus{
+    display: none;
+}
+
+.dse .tipus{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gold;
+    border-right: solid black 2px;
+}
+
+.dse .tipus span{
+    transform: rotate(-90deg);
+}
+
+
+.kartya h2{
+    font-size: inherit;
+    /*text-decoration: underline;*/
+
+}
+
+.kartya  form{
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 5px;
+    justify-items: center;
+    padding: 5px;
+}
+
+.kartya form h2, .nap, .intervallum, .tanar{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+.letszam{
+    padding:5px;
+    display: flex;
+    grid-column-start: 2;
+    text-decoration: none;
+    color:inherit;
+    text-align: center;
+    align-items: center;
+}
+
+.gomb{
+    padding:5px;
+    justify-self: stretch;
+    text-align: center;
+}
+
+.tanar:after{
+    content:")";
+}
+
+.tanar:before{
+    content:"(";
+}
+
+.kattinthato{
+    border: solid black 2px;
+}
+
+.kattinthato:hover{
+    color:white;
+    background-color: black;
+}

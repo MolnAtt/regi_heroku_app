@@ -14,14 +14,15 @@ class Felhasznalo(models.Model):
 
 
 class Tipus(models.Model):
-    tipus = models.CharField(max_length=50)
+    nev = models.CharField(max_length=50)
+    kod = models.CharField(max_length=8)
 
     class Meta:
         verbose_name = 'Típus'
         verbose_name_plural = 'Típusok'
 
     def __str__(self) -> str:
-        return self.tipus
+        return f"{self.nev} ({self.kod})"
 
 class Nap(models.Model):
     nev = models.CharField(max_length=50)
@@ -48,26 +49,31 @@ class Foglalkozas(models.Model):
         verbose_name_plural = 'Foglalkozások'
 
     def __str__(self) -> str:
-        return f"{self.nev}: ({self.tanar}, {self.tipus}), {self.nap}: {self.mettol} - { self.meddig }, {self.akt_letszam()}/{self.letszam}"
+        return f"{self.nev}: ({self.tanar}, {self.tipus}), {self.nap}: {self.mettol} - { self.meddig }, {self.aktletszam()}/{self.letszam}"
     
     def jelentkezettek_szama(self) -> int:
         return -1
 
-    def akt_letszam(self) -> int:
+    def aktletszam(self) -> int:
         return Jelentkezes.objects.filter(foglalkozas = self).count()
 
-    def lista() -> list:
+    def lista(szurestipus) -> list:
         lista = []
-        for foglalkozas in Foglalkozas.objects.all():
+        queryset = Foglalkozas.objects.all() if szurestipus=='' else Foglalkozas.objects.filter(tipus=Tipus.objects.get(kod=szurestipus))
+        print(f"szurestipus: {szurestipus}")
+        print(f"queryset: {queryset}")
+        
+        for foglalkozas in queryset:
             lista.append({
                 'nev': foglalkozas.nev,
-                'letszam': foglalkozas.letszam,
+                'maxletszam': foglalkozas.letszam,
                 'tipus': foglalkozas.tipus,
                 'nap': foglalkozas.nap,
-                'mettol': foglalkozas.mettol,
-                'meddig': foglalkozas.meddig,
+                'mettol': timedelta2str(foglalkozas.mettol),
+                'meddig': timedelta2str(foglalkozas.meddig),
                 'tanar': foglalkozas.tanar,
-                'akt_letszam': foglalkozas.akt_letszam(),
+                'aktletszam': foglalkozas.aktletszam(),
+                'id': foglalkozas.id,
             })
         return lista
 
@@ -85,3 +91,7 @@ class Jelentkezes(models.Model):
         """Unicode representation of Jelentkezes."""
         return f"{self.felhasznalo.nev} -> {self.foglalkozas.nev} "
 
+
+
+def timedelta2str(td):
+    return f'{str(td.seconds//3600).zfill(2)}:{str(td.seconds//60%60).zfill(2)}'

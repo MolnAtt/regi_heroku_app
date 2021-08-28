@@ -6,17 +6,14 @@ header a {
 }
 
 header{
-    display:grid;
-    grid-template-columns: auto auto;
-    grid-auto-rows: auto;
-    grid-template-areas: 
-        "cim kijelentkezes";
+    display:flex;
     background-color:var(--header-bg-color);
     color: var(--header-fg-color);
     border-bottom: solid var(--line-width) var(--header-fg-color);
     padding: 5px 5px;
     /*height:var(--header-height);*/
     align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -48,7 +45,7 @@ nav ul li{
 
 nav ul li a{
     padding:0px 5px;
-}
+    text-align: end;}
 
 nav ul li a:hover{
     background-color: var(--header-fg-color);
