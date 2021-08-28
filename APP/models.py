@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.db.models.query import QuerySet
+from django.http.request import QueryDict
 
 class Felhasznalo(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -11,6 +13,15 @@ class Felhasznalo(models.Model):
 
     def __str__(self):
         return str(self.user) + f' ({self.nev})'
+
+    def getuser(request):
+        return Felhasznalo.objects.get(user=request.user)
+
+    def jelentkezese(self):
+        return Jelentkezes.objects.get(felhasznalo = self)
+
+    def foglalkozasa(self):
+        return self.jelentkezese().foglalkozas
 
 
 class Tipus(models.Model):
@@ -37,6 +48,7 @@ class Nap(models.Model):
 
 class Foglalkozas(models.Model):
     nev = models.CharField(max_length=50)
+    kod = models.CharField(max_length=20)
     letszam = models.IntegerField()    
     tipus = models.ForeignKey(Tipus, on_delete=models.CASCADE, null=True)
     nap = models.ForeignKey(Nap, on_delete=models.CASCADE, null=True)
@@ -51,21 +63,25 @@ class Foglalkozas(models.Model):
     def __str__(self) -> str:
         return f"{self.nev}: ({self.tanar}, {self.tipus}), {self.nap}: {self.mettol} - { self.meddig }, {self.aktletszam()}/{self.letszam}"
     
-    def jelentkezettek_szama(self) -> int:
-        return -1
+    def jelentkezesei(self) -> QuerySet:
+        return Jelentkezes.objects.filter(foglalkozas = self)
+
+    def nevsora(self) -> list:
+        nevsor = list(map(lambda x: x.felhasznalo.nev , Jelentkezes.objects.filter(foglalkozas = self)))
+        nevsor.sort()
+        return nevsor
+    
 
     def aktletszam(self) -> int:
         return Jelentkezes.objects.filter(foglalkozas = self).count()
 
-    def lista(szurestipus) -> list:
+    def lista(szurestipus, request) -> list:
         lista = []
-        queryset = Foglalkozas.objects.all() if szurestipus=='' else Foglalkozas.objects.filter(tipus=Tipus.objects.get(kod=szurestipus))
-        print(f"szurestipus: {szurestipus}")
-        print(f"queryset: {queryset}")
-        
-        for foglalkozas in queryset:
+        foglalkozasok = Foglalkozas.objects.all() if szurestipus=='' else Foglalkozas.objects.filter(tipus=Tipus.objects.get(kod=szurestipus))
+        for foglalkozas in foglalkozasok:
             lista.append({
                 'nev': foglalkozas.nev,
+                'kod': foglalkozas.kod,
                 'maxletszam': foglalkozas.letszam,
                 'tipus': foglalkozas.tipus,
                 'nap': foglalkozas.nap,

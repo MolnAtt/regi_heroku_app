@@ -8,5 +8,7 @@ function main(){
 }
 
 function kuld(e){
+    e.target.parentNode.children[7].value = e.target.classList.value.split(' ').slice(-1)[0];
     e.target.parentNode.submit();
 }
+

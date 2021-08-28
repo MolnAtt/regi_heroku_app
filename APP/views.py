@@ -12,26 +12,45 @@ def urlap(request):
 def valasztas(request):
     alertlista = []
     utolso_az_urlben = request.path.split('/')[-2]
-    print(request.path)
-    print(request.path.split('/'))
-    print(utolso_az_urlben)
     szurestipus = utolso_az_urlben if utolso_az_urlben!='valasztas' else ''
 
+    a_felhasznalo = Felhasznalo.getuser(request)
+
     if request.method=="POST":
+
         poszt = request.POST
+        print(poszt)
         valasztott_foglalkozas = Foglalkozas.objects.get(id=poszt['melyiket'])
-        a_felhasznalo = Felhasznalo.objects.get(user=request.user)
         
-        if valasztott_foglalkozas.aktletszam() >= valasztott_foglalkozas.letszam:
-            alertlista.append("Sajnos ez a foglalkozás közben betelt.")
-        else:
-            print(request.user)
+        if poszt['mitcsinal']=='lejelentkezes':
+            a_felhasznalo.jelentkezese().delete()
+            korabban_valasztott_foglalkozas_id = "nincs"
+        elif poszt['mitcsinal'] in ['jelentkezes', 'atjelentkezes']:
+            if valasztott_foglalkozas.aktletszam() >= valasztott_foglalkozas.letszam:
+                alertlista.append("Sajnos ez a foglalkozás közben betelt. (Valaki(k) már rákattintott(ak) erre azóta, hogy betöltötted az oldalt.)")
+            else:
+                try:
+                    j = a_felhasznalo.jelentkezese()
+                    j.foglalkozas = valasztott_foglalkozas
+                    j.save()
+                except Jelentkezes.DoesNotExist:
+                    Jelentkezes.objects.create(felhasznalo = a_felhasznalo, foglalkozas = valasztott_foglalkozas)
 
-            try:
-                j = Jelentkezes.objects.get(felhasznalo = a_felhasznalo)
-                j.foglalkozas = valasztott_foglalkozas
-                j.save()
-            except Jelentkezes.DoesNotExist:
-                Jelentkezes.objects.create(felhasznalo = a_felhasznalo, foglalkozas = valasztott_foglalkozas)
-    return render(request, "valasztas.html", {'foglalkozasok': Foglalkozas.lista(szurestipus), 'alertlista': alertlista, 'szurestipus': szurestipus})
+                korabban_valasztott_foglalkozas_id = valasztott_foglalkozas.id
+    else: # request.method=="GET":
+        try:
+            korabban_valasztott_foglalkozas_id = a_felhasznalo.foglalkozasa().id
+        except Jelentkezes.DoesNotExist:
+            korabban_valasztott_foglalkozas_id = "nincs"
+    return render(request, "valasztas.html", {
+        'foglalkozasok': Foglalkozas.lista(szurestipus, request), 
+        'alertlista': alertlista, 
+        'szurestipus': szurestipus, 
+        'korabban_valasztott_foglalkozas_id':korabban_valasztott_foglalkozas_id
+        })
 
+@login_required
+def nevsor(request):
+    utolso_az_urlben = request.path.split('/')[-2]
+    a_foglalkozas = Foglalkozas.objects.get(kod = utolso_az_urlben)
+    return render(request, "nevsor.html", {'nevsor': a_foglalkozas.nevsora(), 'a_foglalkozas': a_foglalkozas})

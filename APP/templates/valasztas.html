@@ -49,9 +49,20 @@
                     <div class="nap"> {{ foglalkozas.nap.nev }} </div>
                     <div class="intervallum">{{ foglalkozas.mettol }} - {{ foglalkozas.meddig }}</div>
                     <div class="tanar">{{ foglalkozas.tanar.nev }}</div>
-                    <div class="gomb kattinthato">Jelentkezem</div>
+
+                    {% if foglalkozas.id == korabban_valasztott_foglalkozas_id %}
+                        <div class="gomb kattinthato lejelentkezes">Lejelentkezem</div>
+                    {% elif foglalkozas.aktletszam >= foglalkozas.maxletszam %}
+                        <div class="nemgomb">(Megtelt)</div>
+                    {% elif korabban_valasztott_foglalkozas_id != 'nincs'%}
+                        <div class="gomb kattinthato atjelentkezes">Átjelentkezem</div>
+                    {% else %}
+                        <div class="gomb kattinthato jelentkezes">Jelentkezem</div>
+                    {% endif %}
+
                     <input type="hidden" name="melyiket" value="{{ foglalkozas.id }}">
-                    <a class="letszam kattinthato" href="" >{{ foglalkozas.aktletszam }}/{{ foglalkozas.maxletszam }}</a>
+                    <input type="hidden" name="mitcsinal" value="meg_semmit">
+                    <a class="letszam kattinthato" href="http://{{ request.get_host }}/nevsor/{{ foglalkozas.kod }}/" >{{ foglalkozas.aktletszam }}/{{ foglalkozas.maxletszam }}</a>
                 </form>
             </div>
 
