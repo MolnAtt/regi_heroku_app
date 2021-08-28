@@ -16,11 +16,11 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'pic/favicon.ico' %}"/>
 
     {# CSS-fájlok #}
-    <link rel="stylesheet" href="{% static 'css/teszt_general.css' %}">
-    <link rel="stylesheet" href="{% static 'css/teszt_header.css' %}">
-    <link rel="stylesheet" href="{% static 'css/teszt_main.css' %}">
-    <link rel="stylesheet" href="{% static 'css/teszt_aside.css' %}">
-    <link rel="stylesheet" href="{% static 'css/teszt_footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/root.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aside.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
 
     {# JS-fájlok #}
     <script src="{% static 'js/teszt.js' %}"></script>
@@ -36,23 +36,15 @@
     {# MAIN #}
 
     <main>    
-        <article>
-            <section>
-                Első section.
-            </section>
-            <section>
-                Második section.
-            </section>
-        </article>
+        <nav>
+            <a href="valasztas/" class="navgomb">Mind</a>
+            <a href="valasztas/nemdse/" class="navgomb">Nem DSE</a>
+            <a href="valasztas/dse/" class="navgomb">DSE</a>
+            <a href="urlap/kulso/" class="navgomb">Külső egyesület</a>
+            <a href="urlap/gyogytestneveles/" class="navgomb">Gyógytestnevelés</a>
+            <a href="urlap/felmentes/" class="navgomb">Felmentés</a>
+        </nav>
     </main>
-
-
-    {# ASIDE #}
-
-    <aside>
-        Ez itt az aside.
-    </aside>
-
 
     {# FOOTER #}
 

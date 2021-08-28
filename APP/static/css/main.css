@@ -5,7 +5,7 @@ main{
     align-items: center;
 }
 
-main article{
+main nav{
     display:grid;
     grid-template-columns: 200px;
     background-color: var(--main-bg-color);
@@ -15,10 +15,16 @@ main article{
     padding:5px;
 }
 
-main article section{
-    background-color: var(--section-bg-color);
-    color: var(--section-fg-color);
+main nav a{
+    background-color: var(--button-bg-color);
+    color: var(--button-fg-color);
     padding:5px;
     text-align: center;
     border: solid 1px var(--line-color);
+    text-decoration: none;
+}
+
+main nav a:hover{
+    background-color: var(--button-hovered-bg-color);
+    color: var(--button-hovered-fg-color);
 }

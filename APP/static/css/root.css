@@ -21,6 +21,10 @@
 
     --button-bg-color: white;
     --button-fg-color: black;
+
+    --button-hovered-bg-color: rgb(200, 200, 200);
+    --button-hovered-fg-color: black;
+
 }
 
 *{
