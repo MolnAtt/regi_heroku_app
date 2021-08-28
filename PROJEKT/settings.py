@@ -12,7 +12,7 @@ SECRET_KEY = 'itt_tenyerelj_ra_a_billentyuzetre!!!'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['HEROKUREMOTE.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['szlgtesi.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
