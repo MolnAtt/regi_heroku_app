@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
 from django.db.models.query import QuerySet
 from django.http.request import QueryDict
 
@@ -22,6 +22,17 @@ class Felhasznalo(models.Model):
 
     def foglalkozasa(self):
         return self.jelentkezese().foglalkozas
+
+    def akik_nem_jelentkeztek()->list:
+        nevsor = []
+        testnevelotanarok = Group.objects.get(name='testnevelotanarok')
+        for a_felhasznalo in Felhasznalo.objects.all():
+            if Jelentkezes.objects.filter(felhasznalo=a_felhasznalo).count()==0 and testnevelotanarok not in a_felhasznalo.user.groups.all():
+                nevsor.append(a_felhasznalo.nev)
+        nevsor.sort()
+        return nevsor
+
+
 
 
 class Tipus(models.Model):

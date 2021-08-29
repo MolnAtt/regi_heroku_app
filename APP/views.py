@@ -2,6 +2,9 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from .models import Foglalkozas, Jelentkezes, Felhasznalo
 
+
+
+
 def index(request):
     return render(request, "index.html", {})
 
@@ -53,4 +56,9 @@ def valasztas(request):
 def nevsor(request):
     utolso_az_urlben = request.path.split('/')[-2]
     a_foglalkozas = Foglalkozas.objects.get(kod = utolso_az_urlben)
-    return render(request, "nevsor.html", {'nevsor': a_foglalkozas.nevsora(), 'a_foglalkozas': a_foglalkozas})
+    return render(request, "nevsor.html", {'nevsor': a_foglalkozas.nevsora(), 'cim': a_foglalkozas.nev})
+
+@login_required
+def nemjelentkeztek(request):
+    return render(request, "nevsor.html", {'nevsor': Felhasznalo.akik_nem_jelentkeztek(), 'cim': 'nem jelentkeztek'})
+

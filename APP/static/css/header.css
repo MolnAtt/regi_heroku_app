@@ -9,11 +9,12 @@ header{
     display:flex;
     background-color:var(--header-bg-color);
     color: var(--header-fg-color);
-    border-bottom: solid var(--line-width) var(--header-fg-color);
+    border-bottom: solid var(--line-width) black;
     padding: 5px 5px;
     /*height:var(--header-height);*/
     align-items: center;
     justify-content: space-between;
+    font-size:small;
 
 }
 
@@ -21,6 +22,15 @@ header h1{
     grid-area: cim;
     justify-self: start;
 
+}
+
+header a {
+    color: var(--header-fg-color);
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: var(--header-hovered-fg-color);
 }
 
 header .logout{

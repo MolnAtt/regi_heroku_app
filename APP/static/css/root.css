@@ -1,29 +1,54 @@
+
+
+
 :root{
-    --body-bg-color: white;
+
+    --zold:#8d8741;
+    --sarga:#f7e84d;
+    --eg:#659dbd;
+    --bor:#daad86;
+    --fold:#bc986a;
+    --vaj:#fbeec1;
+
+    --body-bg-color: var(--vaj);
     --body-fg-color: black;
 
-    --header-bg-color:khaki;
+    --header-bg-color:var(--fold);
     --header-fg-color: black;
+    --header-hovered-bg-color:var(--fold);
+    --header-hovered-fg-color:var(--vaj) ;
     --header-height:60px;
 
-    --main-bg-color: khaki;
+    --main-bg-color: var(--fold);
     --main-fg-color: black;
 
-    --section-bg-color: white;
+    --section-bg-color: var(--vaj);
     --section-fg-color: black;
 
     --line-color: black;
     --line-width: 2px;
 
-    --footer-bg-color: khaki;
+    --footer-bg-color: var(--fold);
     --footer-fg-color: black;
     --footer-height:40px;
 
     --button-bg-color: white;
     --button-fg-color: black;
 
-    --button-hovered-bg-color: rgb(200, 200, 200);
+    --button-hovered-bg-color: var(--vaj);
     --button-hovered-fg-color: black;
+
+    --kartya-bg-color: var(--fold);
+    --kartya-fg-color: black;
+
+    --kartyaform-bg-color: white;
+    --kartyaform-fg-color: black;
+
+    --dse-bg-color: var(--sarga);
+    --dse-fg-color: black;
+
+    --nevsor-bg-color: white;
+    --nevsor-fg-color: black;
 
 }
 

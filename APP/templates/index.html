@@ -1,4 +1,6 @@
 {% load static %}
+{% load auth_extras %}
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -40,6 +42,9 @@
             <a href="urlap/kulso/" class="navgomb">Külső egyesület</a>
             <a href="urlap/gyogytestneveles/" class="navgomb">Gyógytestnevelés</a>
             <a href="urlap/felmentes/" class="navgomb">Felmentés</a>
+            {% if request.user|has_group:"testnevelotanarok" %} 
+            <a href="nemjelentkeztek/" class="navgomb">Nem jelentkeztek</a>
+            {% endif %}
         </nav>
     </main>
 

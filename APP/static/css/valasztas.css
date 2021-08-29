@@ -10,11 +10,11 @@ main{
 }
 
 .kartya{
+    background-color: var(--kartya-bg-color);
+    color: var(--kartya-fg-color);
     display:grid;
     border: solid black 2px;
     align-items: stretch;
-    background-color:var(--foreground);
-
 }
 
 
@@ -35,7 +35,9 @@ main{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    background-color: gold;
+    background-color: var(--dse-bg-color);
+    font-weight: bold;
+    color: var(--dse-fg-color);
     border-right: solid black 2px;
 }
 
@@ -45,12 +47,15 @@ main{
 
 
 .kartya h2{
+    
     font-size: inherit;
     /*text-decoration: underline;*/
 
 }
 
 .kartya  form{
+    background-color: var(--kartyaform-bg-color);
+    color: var(--kartyaform-fg-color);
     display: grid;
     grid-template-columns: auto auto ;
     gap: 5px;
@@ -73,7 +78,7 @@ main{
     align-items: center;
 }
 
-.gomb{
+.gomb, .nemgomb{
     padding:5px;
     justify-self: stretch;
     text-align: center;
@@ -88,10 +93,14 @@ main{
 }
 
 .kattinthato{
+    background-color: var(--button-bg-color);
+    color: var(--button-fg-color);
     border: solid black 2px;
+    transition: 0.3s;
 }
 
 .kattinthato:hover{
-    color:white;
-    background-color: black;
+    background-color: var(--button-hovered-bg-color);
+    color:var(--button-hovered-fg-color);
 }
+

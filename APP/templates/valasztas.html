@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="{% static 'css/root.css' %}">
     <link rel="stylesheet" href="{% static 'css/header.css' %}">
     <link rel="stylesheet" href="{% static 'css/valasztas.css' %}">
-    <link rel="stylesheet" href="{% static 'css/aside.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
 
     {# JS-fájlok #}
@@ -31,7 +30,7 @@
 </head>
 <body>
     <header>
-        <h1><a href="/">mindennapos testnevelés</a> : <a href="/valasztas/{{ szurestipus }}">{{ szurestipus }}</a></h1>
+        <h1><a href="/">mindennapos testnevelés</a> : <a href="/valasztas/{{ szurestipus }}/">{{ szurestipus }}</a></h1>
         <a href="/log_out/">kijelentkezés</a>
     </header>
     <main>
@@ -68,5 +67,10 @@
 
             {% endfor %}
     </main>
+
+    {# FOOTER #}
+
+    {% include "footer.html" %}
+
 </body>
 </html>

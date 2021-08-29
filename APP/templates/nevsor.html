@@ -18,8 +18,7 @@
     {# CSS-fájlok #}
     <link rel="stylesheet" href="{% static 'css/root.css' %}">
     <link rel="stylesheet" href="{% static 'css/header.css' %}">
-    <link rel="stylesheet" href="{% static 'css/valasztas.css' %}">
-    <link rel="stylesheet" href="{% static 'css/aside.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nevsor.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
 
     {# Egyéb #}
@@ -28,15 +27,19 @@
 </head>
 <body>
     <header>
-        <h1><a href="/">mindennapos testnevelés</a> : {{ a_foglalkozas.nev }} névsora </h1>
+        <h1><a href="/">mindennapos testnevelés</a> : {{ cim }} névsora </h1>
         <a href="/log_out/">kijelentkezés</a>
     </header>
     <main>
         <div class="nevsor">
             {% for nev in nevsor %}
-            <div>{{ nev }}</div>
+            <div>{{ forloop.counter }}.</div><div>{{ nev }}</div>
             {% endfor %}
         </div>
     </main>
+
+    {# FOOTER #}
+
+    {% include "footer.html" %}
 </body>
 </html>
