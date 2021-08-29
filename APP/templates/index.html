@@ -45,6 +45,9 @@
             {% if request.user|has_group:"testnevelotanarok" %} 
             <a href="nemjelentkeztek/" class="navgomb">Nem jelentkeztek</a>
             {% endif %}
+            {% if request.user|has_group:"adminisztrator" %} 
+            <a href="admin/" class="navgomb">Adminisztráció</a>
+            {% endif %}
         </nav>
     </main>
 
