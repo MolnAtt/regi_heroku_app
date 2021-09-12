@@ -32,8 +32,8 @@
     </header>
     <main>
         <div class="nevsor">
-            {% for nev in nevsor %}
-            <div>{{ forloop.counter }}.</div><div>{{ nev }}</div>
+            {% for felhasznalo in felhasznalok %}
+            <div>{{ forloop.counter }}.</div><div>{{ felhasznalo.nev }}</div><div>{{ felhasznalo.osztaly.nev }}</div><div>{{ felhasznalo.user.email }}</div>
             {% endfor %}
         </div>
     </main>

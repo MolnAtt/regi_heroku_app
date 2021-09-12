@@ -61,7 +61,9 @@ def valasztas(request):
 def nevsor(request):
     utolso_az_urlben = request.path.split('/')[-2]
     a_foglalkozas = Foglalkozas.objects.get(kod = utolso_az_urlben)
-    return render(request, "nevsor.html", {'nevsor': a_foglalkozas.nevsora(), 'cim': a_foglalkozas.nev})
+    print('views.py-ban a felhasználók listája:')
+    print(a_foglalkozas.felhasznaloi())
+    return render(request, "nevsor.html", {'felhasznalok': a_foglalkozas.felhasznaloi(), 'cim': a_foglalkozas.nev})
 
 @login_required
 def nemjelentkeztek(request):

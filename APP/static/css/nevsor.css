@@ -8,7 +8,7 @@ main > div.nevsor{
     color: var(--nevsor-fg-color);
     margin-top: 10px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto auto;
     grid-auto-columns: auto;
     gap: 5px;
     border:solid 2px black;

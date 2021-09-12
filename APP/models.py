@@ -6,8 +6,20 @@ from django.db.models.query import QuerySet
 from django.http.request import QueryDict
 
 
+class Vezerlo(models.Model):
+    nev = models.CharField(max_length=100)
+    kod = models.CharField(max_length=100)
+
+    class Meta:
+        verbose_name = 'Vezerlő'
+        verbose_name_plural = 'Vezerlők'
+
+    def __str__(self):
+        return f'{self.nev} ({self.kod})'
+
+
 class Osztaly(models.Model):
-    nev = models.CharField(max_length=10)
+    nev = models.CharField(max_length=10, default="-")
     kod = models.CharField(max_length=10)
     
     class Meta:
@@ -15,7 +27,7 @@ class Osztaly(models.Model):
         verbose_name_plural = 'Osztályok'
 
     def __str__(self):
-        return self.nev
+        return f'{self.nev} ({self.kod})'
 
 
 class Felhasznalo(models.Model):
@@ -96,10 +108,9 @@ class Foglalkozas(models.Model):
     def jelentkezesei(self) -> QuerySet:
         return Jelentkezes.objects.filter(foglalkozas = self)
 
-    def nevsora(self) -> list:
-        nevsor = list(map(lambda x: x.felhasznalo.nev , Jelentkezes.objects.filter(foglalkozas = self)))
-        nevsor.sort()
-        return nevsor
+    def felhasznaloi(self) -> list[Felhasznalo]:
+        nevsor = map(lambda x: x.felhasznalo, Jelentkezes.objects.filter(foglalkozas = self))
+        return sorted(nevsor, key = lambda fh : fh.nev)
     
 
     def aktletszam(self) -> int:
