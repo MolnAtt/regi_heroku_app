@@ -108,7 +108,7 @@ class Foglalkozas(models.Model):
     def jelentkezesei(self) -> QuerySet:
         return Jelentkezes.objects.filter(foglalkozas = self)
 
-    def felhasznaloi(self) -> list[Felhasznalo]:
+    def felhasznaloi(self) -> list: # -> list[Felhasznalo]:
         nevsor = map(lambda x: x.felhasznalo, Jelentkezes.objects.filter(foglalkozas = self))
         return sorted(nevsor, key = lambda fh : fh.nev)
     
