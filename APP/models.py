@@ -1,11 +1,31 @@
 from django.db import models
 from django.contrib.auth.models import User, Group
+from django.db.models.base import Model
+from django.db.models.deletion import SET_NULL
 from django.db.models.query import QuerySet
 from django.http.request import QueryDict
+
+
+class Osztaly(models.Model):
+    nev = models.CharField(max_length=10)
+    kod = models.CharField(max_length=10)
+    
+    class Meta:
+        verbose_name = 'Osztály'
+        verbose_name_plural = 'Osztályok'
+
+    def __str__(self):
+        return self.nev
+
 
 class Felhasznalo(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     nev = models.CharField(max_length=100)
+    osztaly = models.ForeignKey(Osztaly, on_delete=models.SET_NULL, null=True)
+    kulsos = models.BooleanField(default=False)
+    gyogy = models.BooleanField(default=False)
+    felmentett = models.BooleanField(default=False)
+
 
     class Meta:
         verbose_name = 'Felhasználó'
@@ -33,8 +53,6 @@ class Felhasznalo(models.Model):
         return nevsor
 
 
-
-
 class Tipus(models.Model):
     nev = models.CharField(max_length=50)
     kod = models.CharField(max_length=8)
@@ -45,6 +63,7 @@ class Tipus(models.Model):
 
     def __str__(self) -> str:
         return f"{self.nev} ({self.kod})"
+
 
 class Nap(models.Model):
     nev = models.CharField(max_length=50)

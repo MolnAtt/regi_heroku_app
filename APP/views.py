@@ -27,17 +27,22 @@ def valasztas(request):
         
         if poszt['mitcsinal']=='lejelentkezes':
             a_felhasznalo.jelentkezese().delete()
+            alertlista.append("A foglalkozásról sikeresen lejelentkeztél.")
             korabban_valasztott_foglalkozas_id = "nincs"
         elif poszt['mitcsinal'] in ['jelentkezes', 'atjelentkezes']:
             if valasztott_foglalkozas.aktletszam() >= valasztott_foglalkozas.letszam:
-                alertlista.append("Sajnos ez a foglalkozás közben betelt. (Valaki(k) már rákattintott(ak) erre azóta, hogy betöltötted az oldalt.)")
+                korabban_valasztott_foglalkozas_id = "mindegysajnos"
+                alertlista.append("Sajnos ez a foglalkozás közben betelt. Valaki(k) már rákattintott(ak) erre azóta, hogy betöltötted az oldalt.")
             else:
                 try:
                     j = a_felhasznalo.jelentkezese()
                     j.foglalkozas = valasztott_foglalkozas
                     j.save()
+                    alertlista.append("A foglalkozásra való átjelentkezés sikeres volt.")
+
                 except Jelentkezes.DoesNotExist:
                     Jelentkezes.objects.create(felhasznalo = a_felhasznalo, foglalkozas = valasztott_foglalkozas)
+                    alertlista.append("A foglalkozásra való jelentkezés sikeres volt.")
 
                 korabban_valasztott_foglalkozas_id = valasztott_foglalkozas.id
     else: # request.method=="GET":
@@ -47,7 +52,7 @@ def valasztas(request):
             korabban_valasztott_foglalkozas_id = "nincs"
     return render(request, "valasztas.html", {
         'foglalkozasok': Foglalkozas.lista(szurestipus, request), 
-        'alertlista': alertlista, 
+        'backend_uzenetek': alertlista, 
         'szurestipus': szurestipus, 
         'korabban_valasztott_foglalkozas_id':korabban_valasztott_foglalkozas_id
         })

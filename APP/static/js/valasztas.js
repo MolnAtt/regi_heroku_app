@@ -1,10 +1,14 @@
 document.addEventListener("DOMContentLoaded", main);
 
 function main(){
-//    console.log("betöltött a DOM");
+    //    console.log("betöltött a DOM");
     for (const gomb of document.getElementsByClassName('gomb')) {
         gomb.addEventListener('click', kuld);
     }
+
+    //    console.log("hibaüzenetek kiírása");
+    for (const uzenet of uzenetek) { alert(uzenet); }
+
 }
 
 function kuld(e){
