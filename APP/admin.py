@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.contrib.auth.models import User, Group
 from .models import Jelentkezes, Felhasznalo, Osztaly, Foglalkozas, Vezerlo
 from datetime import datetime, timedelta
+from django.contrib.auth.hashers import make_password
 
 
 admin.site.register(Jelentkezes)
@@ -45,14 +46,14 @@ def userek_beolvasasa(modeladmin, request, queryset) -> None:
                 # [5]: ugrai.kata.21f@szlgbp.hu
                 # [6]: bnmhjkuio
                 
+                print(f'ez lesz {sortomb[5]} jelszava: {sortomb[6]}')
                 
                 a_csoport = Group.objects.get_or_create(name=sortomb[4])[0]  # mert (Group, bool) alakban ad vissza a get_or_create!
                 az_osztaly = Osztaly.objects.get_or_create(kod=sortomb[2], nev=sortomb[3])[0]
                 
-                a_user = User.objects.create(
+                a_user = User.objects.create_user(
                     username=sortomb[5], # a felhasználónév és az email egyezzen meg!
                     email=sortomb[5],
-                    password=sortomb[6],
                     )
 
                 Felhasznalo.objects.create(
