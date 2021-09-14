@@ -64,47 +64,53 @@ class Felhasznalo(models.Model):
         nevsor.sort()
         return nevsor
 
+tipusnevek = (
+    ('DSE','DSE'),
+    ('nem DSE', 'nem DSE'),
+)
 
-class Tipus(models.Model):
-    nev = models.CharField(max_length=50)
-    kod = models.CharField(max_length=8)
+tipuskodok = (
+    ('dse','dse'),
+    ('nemdse', 'nemdse'),
+)
 
-    class Meta:
-        verbose_name = 'Típus'
-        verbose_name_plural = 'Típusok'
-
-    def __str__(self) -> str:
-        return f"{self.nev} ({self.kod})"
-
-
-class Nap(models.Model):
-    nev = models.CharField(max_length=50)
-
-    class Meta:
-        verbose_name = 'Nap'
-        verbose_name_plural = 'Napok'
-
-    def __str__(self) -> str:
-        return self.nev
-
+napok = (
+    ('Hétfő','Hétfő'),
+    ('Kedd','Kedd'),
+    ('Szerda','Szerda'),
+    ('Csütörtök','Csütörtök'),
+    ('Péntek','Péntek'),
+    ('Szombat','Szombat'),
+    ('Vasárnap','Vasárnap'),
+)
 
 class Foglalkozas(models.Model):
-    nev = models.CharField(max_length=50)
     kod = models.CharField(max_length=20)
-    letszam = models.IntegerField()    
-    tipus = models.ForeignKey(Tipus, on_delete=models.CASCADE, null=True)
-    nap = models.ForeignKey(Nap, on_delete=models.CASCADE, null=True)
-    mettol = models.DurationField()
-    meddig = models.DurationField()
-    tanar = models.ForeignKey(Felhasznalo, on_delete=models.CASCADE)
+    letszam = models.IntegerField()
+    tipus_nev = models.CharField(max_length=10, choices=tipusnevek, default='-')
+    tipus_kod = models.CharField(max_length=10, choices=tipuskodok, default='-')
+    nev = models.CharField(max_length=50)
+    egyik_nap = models.CharField(max_length=10, choices=napok)
+    egyik_mettol = models.DurationField()
+    egyik_meddig = models.DurationField()
+    egyik_tanar = models.CharField(max_length=100)
+    bomlik = models.BooleanField(default=False)
+    masik_nap = models.CharField(max_length=10, choices=napok, blank=True, null = True)
+    masik_mettol = models.DurationField(blank=True, null=True)
+    masik_meddig = models.DurationField(blank=True, null=True)
+    masik_tanar = models.CharField(max_length=100)
 
     class Meta:
         verbose_name = 'Foglalkozás'
         verbose_name_plural = 'Foglalkozások'
 
     def __str__(self) -> str:
-        return f"{self.nev}: ({self.tanar}, {self.tipus}), {self.nap}: {self.mettol} - { self.meddig }, {self.aktletszam()}/{self.letszam}"
-    
+        if self.bomlik:
+            return f"{self.nev}: ({self.egyik_tanar} és {self.masik_tanar}, {self.tipus_nev}), {self.egyik_nap}: {self.egyik_mettol} - { self.egyik_meddig } és {self.masik_nap}: {self.masik_mettol} - { self.masik_meddig }, {self.aktletszam()}/{self.letszam}"
+        else:
+            return f"{self.nev}: ({self.egyik_tanar}, {self.tipus_nev}), {self.egyik_nap}: {self.egyik_mettol} - { self.egyik_meddig }, {self.aktletszam()}/{self.letszam}"
+
+
     def jelentkezesei(self) -> QuerySet:
         return Jelentkezes.objects.filter(foglalkozas = self)
 
@@ -118,17 +124,23 @@ class Foglalkozas(models.Model):
 
     def lista(szurestipus, request) -> list:
         lista = []
-        foglalkozasok = Foglalkozas.objects.all() if szurestipus=='' else Foglalkozas.objects.filter(tipus=Tipus.objects.get(kod=szurestipus))
+        foglalkozasok = Foglalkozas.objects.all() if szurestipus=='' else Foglalkozas.objects.filter(tipus_kod=szurestipus)
         for foglalkozas in foglalkozasok:
             lista.append({
                 'nev': foglalkozas.nev,
                 'kod': foglalkozas.kod,
                 'maxletszam': foglalkozas.letszam,
-                'tipus': foglalkozas.tipus,
-                'nap': foglalkozas.nap,
-                'mettol': timedelta2str(foglalkozas.mettol),
-                'meddig': timedelta2str(foglalkozas.meddig),
-                'tanar': foglalkozas.tanar,
+                'tipus_nev': foglalkozas.tipus_nev,
+                'tipus_kod': foglalkozas.tipus_kod,
+                'bomlik': foglalkozas.bomlik,
+                'egyik_tanar': foglalkozas.egyik_tanar,
+                'egyik_nap': foglalkozas.egyik_nap,
+                'egyik_mettol': timedelta2str(foglalkozas.egyik_mettol),
+                'egyik_meddig': timedelta2str(foglalkozas.egyik_meddig),
+                'masik_tanar': foglalkozas.masik_tanar,
+                'masik_nap': foglalkozas.masik_nap,
+                'masik_mettol': timedelta2str(foglalkozas.masik_mettol),
+                'masik_meddig': timedelta2str(foglalkozas.masik_meddig),
                 'aktletszam': foglalkozas.aktletszam(),
                 'id': foglalkozas.id,
             })
@@ -151,4 +163,4 @@ class Jelentkezes(models.Model):
 
 
 def timedelta2str(td):
-    return f'{str(td.seconds//3600).zfill(2)}:{str(td.seconds//60%60).zfill(2)}'
+    return f'{str(td.seconds//3600).zfill(2)}:{str(td.seconds//60%60).zfill(2)}' if td != None else None

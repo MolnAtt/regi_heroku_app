@@ -43,18 +43,18 @@
     <main>
             {% for foglalkozas in foglalkozasok %}
                 
-            <div class="kartya {{ foglalkozas.tipus.kod }}">
+            <div class="kartya {{ foglalkozas.tipus_kod }}">
                 <div class="tipus">
                     <span>
-                        {{ foglalkozas.tipus.nev }}
+                        {{ foglalkozas.tipus_nev }}
                     </span>
                 </div>
                 <form method="POST">
                     {% csrf_token %}
                     <h2>{{ foglalkozas.nev }}</h2>
-                    <div class="nap"> {{ foglalkozas.nap.nev }} </div>
-                    <div class="intervallum">{{ foglalkozas.mettol }} - {{ foglalkozas.meddig }}</div>
-                    <div class="tanar">{{ foglalkozas.tanar.nev }}</div>
+                    <div class="nap"> {{ foglalkozas.egyik_nap }}{% if foglalkozas.bomlik %} és {{ foglalkozas.masik_nap }}{% endif %}</div>
+                    <div class="intervallum">{{ foglalkozas.egyik_mettol }} - {{ foglalkozas.egyik_meddig }}{% if foglalkozas.bomlik %} és {{ foglalkozas.masik_mettol }} - {{ foglalkozas.masik_meddig }}{% endif %}</div>
+                    <div class="tanar">{{ foglalkozas.egyik_tanar }}{% if foglalkozas.bomlik and foglalkozas.egyik_tanar != foglalkozas.masik_tanar %} és {{ foglalkozas.masik_tanar }}{% endif %}</div>
 
                     {% if foglalkozas.id == korabban_valasztott_foglalkozas_id %}
                         <div class="gomb kattinthato lejelentkezes">Lejelentkezem</div>

@@ -68,6 +68,11 @@ main{
     grid-column-end: span 2;
 }
 
+.nap{
+    text-transform: lowercase;
+}
+
+
 .letszam{
     padding:5px;
     display: flex;
@@ -76,6 +81,7 @@ main{
     color:inherit;
     text-align: center;
     align-items: center;
+    justify-self: right;
 }
 
 .gomb, .nemgomb{

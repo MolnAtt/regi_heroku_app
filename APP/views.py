@@ -3,8 +3,6 @@ from django.contrib.auth.decorators import login_required
 from .models import Foglalkozas, Jelentkezes, Felhasznalo
 
 
-
-
 def index(request):
     return render(request, "index.html", {})
 
