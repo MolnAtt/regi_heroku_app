@@ -31,5 +31,6 @@ Vezerlo.objects.get_or_create(kod="2021_osz_12b", nev="12B: 2021 őszi jelentkez
 Vezerlo.objects.get_or_create(kod="2021_osz_12d", nev="12D: 2021 őszi jelentkezés")
 Vezerlo.objects.get_or_create(kod="2021_osz_12e", nev="12E: 2021 őszi jelentkezés")
 Vezerlo.objects.get_or_create(kod="2021_osz_12f", nev="12F: 2021 őszi jelentkezés")
+Vezerlo.objects.get_or_create(kod="2021_osz_tesitanar", nev="tesitanárok: 2021 őszi jelentkezés")
 
 print("inic.py lefutott, mindenhol get_or_create volt, szóval nem termelődtek duplikátumok")

@@ -19,8 +19,8 @@ class Vezerlo(models.Model):
 
 
 class Osztaly(models.Model):
-    nev = models.CharField(max_length=10, default="-")
-    kod = models.CharField(max_length=10)
+    nev = models.CharField(max_length=50, default="-")
+    kod = models.CharField(max_length=50)
     
     class Meta:
         verbose_name = 'Osztály'
