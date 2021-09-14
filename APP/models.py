@@ -57,7 +57,7 @@ class Felhasznalo(models.Model):
 
     def akik_nem_jelentkeztek()->list:
         nevsor = []
-        testnevelotanarok = Group.objects.get(name='testnevelotanarok')
+        testnevelotanarok = Group.objects.get(name='testnevelotanar')
         for a_felhasznalo in Felhasznalo.objects.all():
             if Jelentkezes.objects.filter(felhasznalo=a_felhasznalo).count()==0 and testnevelotanarok not in a_felhasznalo.user.groups.all():
                 nevsor.append(a_felhasznalo.nev)

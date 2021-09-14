@@ -1,12 +1,10 @@
-from APP.models import Vezerlo
+from APP.models import Vezerlo, Osztaly
+from django.contrib.auth.models import User, Group
 
-print("fut az inic.py, ennyi vezérlő van:")
-print(Vezerlo.objects.all().count())
+Group.objects.get_or_create(name='testnevelotanar')[0] 
+Group.objects.get_or_create(name='adminisztrator')[0]  
+Group.objects.get_or_create(name='diak')[0] 
 
-""" innen lehet copyzni
+Vezerlo.objects.get_or_create(kod="2021_osz", nev="2021 őszi jelentkezés")
 
-    Vezerlo.objects.create(kod="", nev="")
-
-"""
-
-Vezerlo.objects.create(kod="2021_osz", nev="2021 őszi jelentkezés")
+print("inic.py lefutott, mindenhol get_or_create volt, szóval nem termelődtek duplikátumok")
