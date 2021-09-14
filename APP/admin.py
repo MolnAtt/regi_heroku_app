@@ -48,7 +48,12 @@ def userek_beolvasasa(modeladmin, request, queryset) -> None:
                 
                 print(f'ez lesz {sortomb[5]} jelszava: {sortomb[6]}')
                 
-                a_csoport = Group.objects.get_or_create(name=sortomb[4])[0]  # mert (Group, bool) alakban ad vissza a get_or_create!
+
+                a_csoportok = []
+                csoportnevek = sortomb[4].split(',')
+                for csoportnev in csoportnevek:
+                    a_csoportok.append(Group.objects.get_or_create(name=csoportnev)[0])  # mert (Group, bool) alakban ad vissza a get_or_create!
+                
                 az_osztaly = Osztaly.objects.get_or_create(kod=sortomb[2], nev=sortomb[3])[0]
                 
                 a_user = User.objects.create_user(
@@ -62,7 +67,9 @@ def userek_beolvasasa(modeladmin, request, queryset) -> None:
                     osztaly=az_osztaly,
                     )
 
-                a_user.groups.add(a_csoport)
+                for a_csoport in a_csoportok:
+                    a_user.groups.add(a_csoport)
+                
         print(f'{vezerlo.nev} vezérlő usereinek a beolvasása sikeres')
         #except:
         #    print(f'{vezerlo.nev} vezérlő usereinek a beolvasása sikertelen: beolvasáskor vagy a csoport lekérdezésekor valami félrement')

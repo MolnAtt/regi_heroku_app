@@ -144,7 +144,7 @@ class Foglalkozas(models.Model):
                 'aktletszam': foglalkozas.aktletszam(),
                 'id': foglalkozas.id,
             })
-        return lista
+        return sorted(lista, key=lambda x: x['tipus_kod'])
 
 
 class Jelentkezes(models.Model):
