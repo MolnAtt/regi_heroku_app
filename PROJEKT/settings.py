@@ -12,7 +12,7 @@ SECRET_KEY = 'o8a7sfo85foa857dsfbpa8d7fb8sdfpbadsf8795bapsdf9875bapdf7baf'
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['szlgtesi.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['szlg.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
