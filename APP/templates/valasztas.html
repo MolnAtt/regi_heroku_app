@@ -39,7 +39,7 @@
 </head>
 <body>
     <header>
-        <h1><a href="/">mindennapos testnevelés</a> : <a href="/valasztas/{{ szurestipus }}/">{{ szurestipus }}</a></h1>
+        <h1><a href="/tesi">tesi</a> : <a href="{{ domain }}/tesi/valasztas/{{ szurestipus }}/">{{ szurestipus }}</a></h1>
         <a class="logout" href="{{ domain }}/accounts/logout/">kijelentkezés</a>
     </header>
     <main>
@@ -72,7 +72,7 @@
 
                     <input type="hidden" name="melyiket" value="{{ foglalkozas.id }}">
                     <input type="hidden" name="mitcsinal" value="meg_semmit">
-                    <a class="letszam kattinthato" href="http://{{ request.get_host }}/nevsor/{{ foglalkozas.kod }}/" >{{ foglalkozas.aktletszam }}/{{ foglalkozas.maxletszam }}</a>
+                    <a class="letszam kattinthato" href="http://{{ request.get_host }}/tesi/nevsor/{{ foglalkozas.kod }}/" >{{ foglalkozas.aktletszam }}/{{ foglalkozas.maxletszam }}</a>
                 </form>
             </div>
 
