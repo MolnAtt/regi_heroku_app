@@ -25,22 +25,34 @@ def userek_beolvasasa(modeladmin, request, queryset) -> None:
             for sor in f:
                 sortomb = sor.split(';')
                 
-                # Tóth Dóra;tothdora;21f;toth.dora.21f@szlgbp.hu;ertdfgcvb
+                # Ugrai Kata;ugraikata;21f;NYF;diak;ugrai.kata.21f@szlgbp.hu;bnmhjkuio
+                # Szendrei Péter;szendreipeter;igh;Igazgatóhelyettes;adminisztrator,testnevelotanar;szendrei.peter@szlgbp.hu;bnmhjkuio
                 # Tehát
-                # [0]: Tóth Dóra;
-                # [1]: tothdora;
-                # [2]: 21f;
-                # [3]: toth.dora.21f@szlgbp.hu;
-                # [4]: qwerasdf
+                # [0]: Szendrei Péter
+                # [1]: szendreipeter
+                # [2]: igh
+                # [3]: Igazgatóhelyettes
+                # [4]: adminisztrator,testnevelotanar
+                # [5]: szendrei.peter@szlgbp.hu
+                # [6]: bnmhjkuio
+
+                # Tehát
+                # [0]: Ugrai Kata
+                # [1]: ugraikata
+                # [2]: 21f
+                # [3]: NYF
+                # [4]: diak
+                # [5]: ugrai.kata.21f@szlgbp.hu
+                # [6]: bnmhjkuio
                 
                 
-                a_csoport = Group.objects.get_or_create(name=sortomb[2])[0]  # mert (Group, bool) alakban ad vissza a get_or_create!
-                az_osztaly = Osztaly.objects.get_or_create(kod=sortomb[2])[0]
+                a_csoport = Group.objects.get_or_create(name=sortomb[4])[0]  # mert (Group, bool) alakban ad vissza a get_or_create!
+                az_osztaly = Osztaly.objects.get_or_create(kod=sortomb[2], nev=sortomb[3])[0]
                 
                 a_user = User.objects.create(
-                    username=sortomb[1], 
-                    email=sortomb[3],
-                    password=sortomb[4],
+                    username=sortomb[5], # a felhasználónév és az email egyezzen meg!
+                    email=sortomb[5],
+                    password=sortomb[6],
                     )
 
                 Felhasznalo.objects.create(
@@ -61,7 +73,7 @@ def foglalkozasok_beolvasasa(modeladmin, request, queryset) -> None:
         fajlnev = f"txt/foglalkozasok/{vezerlo.kod}_foglalkozasinput.csv"
 
         with open(fajlnev, 'r', encoding="utf-8") as f:
-            i=0
+            #i=0
             for sor in f:
                 t = sor.split(';')
                 
@@ -82,8 +94,8 @@ def foglalkozasok_beolvasasa(modeladmin, request, queryset) -> None:
                 # [12]: 15:15
                 # [13]: 10
                 # [14]: 22
-                i+=1
-                print(f"{i}: foglalkozások beolvasásakor split kész")
+                #i+=1
+                #print(f"{i}: foglalkozások beolvasásakor split kész")
                 
                 vanemasik = t[8]=='1'
                 # beolvasott xx:xx alakú STRINGEK datetime-má alakítása, hogy aztán timedeltak legyenek, ami a durationfieldbe kell.
@@ -91,7 +103,7 @@ def foglalkozasok_beolvasasa(modeladmin, request, queryset) -> None:
                 et2 = datetime.strptime(t[7], "%H:%M")
                 mt1 = datetime.strptime(t[11], "%H:%M") if vanemasik else None
                 mt2 = datetime.strptime(t[12], "%H:%M") if vanemasik else None
-                print(f"{i}: datetime konverziók készen")
+                #print(f"{i}: datetime konverziók készen")
 
                 Foglalkozas.objects.create(
                     kod=t[0],
@@ -109,10 +121,10 @@ def foglalkozasok_beolvasasa(modeladmin, request, queryset) -> None:
                     masik_meddig=timedelta(hours=mt2.hour, minutes=mt2.minute) if vanemasik else None,
                     masik_tanar=t[9],
                 )
-                print(f"{i}: foglalkozás készen")
+                #print(f"{i}: foglalkozás készen")
              # end of for
         # end of with   
-        print(f'{vezerlo.nev} vezérlő usereinek a beolvasása sikeres')
+        print(f'{vezerlo.nev} vezérlő foglalkozásainak a beolvasása sikeres')
         #except:
         #    print(f'{vezerlo.nev} vezérlő usereinek a beolvasása sikertelen: beolvasáskor vagy a csoport lekérdezésekor valami félrement')
 foglalkozasok_beolvasasa.short_description = "foglalkozások feltöltése [vezerlo.kod]_foglalkozasinput.csv-ből"
