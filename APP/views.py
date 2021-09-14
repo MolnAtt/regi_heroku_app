@@ -10,7 +10,8 @@ def urlap(request):
     return redirect('https://forms.gle/m83fFTCivQLD4KZR6')
 
 def foindex(request):
-    return redirect('https://szlg.herokuapp.com/tesi/')
+    print(request.get_host())
+    return redirect(f'http://{request.get_host()}/tesi/')
 
 @login_required
 def valasztas(request):
