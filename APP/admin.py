@@ -46,7 +46,6 @@ def userek_beolvasasa(modeladmin, request, queryset) -> None:
                 # [5]: ugrai.kata.21f@szlgbp.hu
                 # [6]: bnmhjkuio
                 
-                print(f'ez lesz {sortomb[5]} jelszava: {sortomb[6]}')
                 
 
                 a_csoportok = []

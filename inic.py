@@ -13,7 +13,7 @@ Vezerlo.objects.get_or_create(kod="2021_osz_9a", nev="9A: 2021 őszi jelentkezé
 Vezerlo.objects.get_or_create(kod="2021_osz_9b", nev="9B: 2021 őszi jelentkezés")
 Vezerlo.objects.get_or_create(kod="2021_osz_9c", nev="9C: 2021 őszi jelentkezés")
 Vezerlo.objects.get_or_create(kod="2021_osz_9d", nev="9D: 2021 őszi jelentkezés")
-Vezerlo.objects.get_or_create(kod="2021_osz_9e", nev="9D: 2021 őszi jelentkezés")
+Vezerlo.objects.get_or_create(kod="2021_osz_9e", nev="9E: 2021 őszi jelentkezés")
 Vezerlo.objects.get_or_create(kod="2021_osz_9f", nev="9F: 2021 őszi jelentkezés")
 Vezerlo.objects.get_or_create(kod="2021_osz_10a", nev="10A: 2021 őszi jelentkezés")
 Vezerlo.objects.get_or_create(kod="2021_osz_10b", nev="10B: 2021 őszi jelentkezés")

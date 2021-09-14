@@ -56,10 +56,13 @@ class Felhasznalo(models.Model):
         return self.jelentkezese().foglalkozas
 
     def akik_nem_jelentkeztek()->list:
+
+        potencialis_jelentkezok = list(filter(lambda x: 'diak' in x.user.groups.all(), Felhasznalo.objects.filter(kulsos=False, felmentett=False)))
+        print(f'ennyi felhasználó van, aki nem külsős, nem felmentett és nem tanár: {len(potencialis_jelentkezok)}')
         nevsor = []
-        testnevelotanarok = Group.objects.get(name='testnevelotanar')
-        for a_felhasznalo in Felhasznalo.objects.all():
-            if Jelentkezes.objects.filter(felhasznalo=a_felhasznalo).count()==0 and testnevelotanarok not in a_felhasznalo.user.groups.all():
+
+        for a_felhasznalo in potencialis_jelentkezok:
+            if Jelentkezes.objects.filter(felhasznalo=a_felhasznalo).count()==0:# and :
                 nevsor.append(a_felhasznalo.nev)
         nevsor.sort()
         return nevsor
