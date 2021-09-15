@@ -58,7 +58,7 @@
                     <div class="intervallum">{{ foglalkozas.egyik_mettol }} - {{ foglalkozas.egyik_meddig }}{% if foglalkozas.bomlik %} és {{ foglalkozas.masik_mettol }} - {{ foglalkozas.masik_meddig }}{% endif %}</div>
                     <div class="tanar">{{ foglalkozas.egyik_tanar }}{% if foglalkozas.bomlik and foglalkozas.egyik_tanar != foglalkozas.masik_tanar %} és {{ foglalkozas.masik_tanar }}{% endif %}</div>
 
-                    {% if not request.user|has_group:"diak" %} 
+                    {% if not request.user|has_group:"diak" or not lehet_jelentkezni %} 
                         <div></div>
                     {% elif foglalkozas.id == korabban_valasztott_foglalkozas_id %}
                         <div class="gomb kattinthato lejelentkezes">Lejelentkezem</div>

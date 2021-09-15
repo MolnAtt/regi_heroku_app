@@ -30,7 +30,7 @@ def userek_beolvasasa(modeladmin, request, queryset) -> None:
                 try:
                     a_user = User.objects.get(username=sorszotar['email'])
                 except User.DoesNotExist:
-                    a_user = User.objects.create_user(username=sorszotar['email'], email=sorszotar['email'], password=sorszotar['password'])
+                    a_user = User.objects.create_user(username=sorszotar['email'], email=sorszotar['email'], password=sorszotar['password'], is_active=False)
 
                 Felhasznalo.objects.get_or_create(nev=sorszotar['nev'], user=a_user, osztaly=az_osztaly)[0]
 
@@ -156,11 +156,33 @@ def user_update(modeladmin, request, queryset) -> None:
 user_update.short_description = f"UPDATE a külsős/gyógy-/felmentett tesisek [...].txt-ből"
 
 
+
+def stop_jelentkezes(modeladmin, request, queryset) -> None:
+    for vezerlo in queryset:
+        diakok_csoportja = Group.objects.get(name='diak')
+        for user in filter(lambda u : diakok_csoportja in u.groups.all() and u.email!='molnar.attila@szlgbp.hu', User.objects.all()):
+            user.is_active = False
+            user.save()
+    # end for queryset
+stop_jelentkezes.short_description = f"STOP LOGIN"
+
+def start_jelentkezes(modeladmin, request, queryset) -> None:
+    for vezerlo in queryset:
+        diakok_csoportja = Group.objects.get(name='diak')
+        for user in filter(lambda u : diakok_csoportja in u.groups.all() and u.email!='molnar.attila@szlgbp.hu', User.objects.all()):
+            user.is_active = True
+            user.save()
+        pass
+    # end for queryset
+start_jelentkezes.short_description = f"START LOGIN"
+
 class VezerloAdmin(admin.ModelAdmin):
     actions = [
             userek_beolvasasa,
             foglalkozasok_beolvasasa,
             user_update,
+            stop_jelentkezes,
+            start_jelentkezes,
         ]
 
 admin.site.register(Vezerlo, VezerloAdmin)

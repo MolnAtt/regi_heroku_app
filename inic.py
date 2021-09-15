@@ -45,6 +45,11 @@ print("--- inic.py: gyogy_update.txt-t beolvasó Vezérlő elkészült")
 Vezerlo.objects.get_or_create(kod="felmentett", nev="Felmentett diákok listája")
 print("--- inic.py: felmentett_update.txt-t beolvasó Vezérlő elkészült")
 
+Vezerlo.objects.get_or_create(kod="jelentkezesvezerlo", nev="0")
+print("--- inic.py: jelentkezésvezértlő elkészült")
+
+
+
 for a_kod in osztalykodok:
     Vezerlo.objects.get_or_create(kod=a_kod, nev=f"{a_kod}: 2021 őszi jelentkezés")
 

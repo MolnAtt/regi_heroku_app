@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from .models import Foglalkozas, Jelentkezes, Felhasznalo
+from .models import Foglalkozas, Jelentkezes, Felhasznalo, Vezerlo
 
 
 def index(request):
@@ -20,7 +20,7 @@ def valasztas(request):
 
     a_felhasznalo = Felhasznalo.getuser(request)
 
-    if request.method=="POST":
+    if request.method=="POST" and Vezerlo.objects.get(kod='jelentkezesvezerlo').nev=='1':
 
         poszt = request.POST
         valasztott_foglalkozas = Foglalkozas.objects.get(id=poszt['melyiket'])
@@ -54,7 +54,8 @@ def valasztas(request):
         'foglalkozasok': Foglalkozas.lista(szurestipus, request), 
         'backend_uzenetek': alertlista, 
         'szurestipus': szurestipus, 
-        'korabban_valasztott_foglalkozas_id':korabban_valasztott_foglalkozas_id
+        'korabban_valasztott_foglalkozas_id':korabban_valasztott_foglalkozas_id,
+        'lehet_jelentkezni': Vezerlo.objects.get(kod='jelentkezesvezerlo').nev=='1',
         })
 
 @login_required
