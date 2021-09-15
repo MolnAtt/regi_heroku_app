@@ -1,0 +1,920 @@
+nev;username;osztalykod;osztalynev;groups;email;password
+Babka Zsolt;babkazsolt;19a;10.A;diak;babka.zsolt.19a@szlgbp.hu;pulidoluguba
+Balázs Zsombor Áron;balazszsomboraron;19a;10.A;diak;balazs.zsombor.19a@szlgbp.hu;nagodufedami
+Barla-Szabó Anna;barla-szaboanna;19a;10.A;diak;barla-szabo.anna.19a@szlgbp.hu;digisavujave
+Bas Türkan Ayyüce;basturkanayyuce;19a;10.A;diak;bas.turkan.19a@szlgbp.hu;bukirojasuga
+Beregnyei Luca Anna;beregnyeilucaanna;19a;10.A;diak;beregnyei.luca.19a@szlgbp.hu;socavirihene
+Boross Hanna Léna;borosshannalena;19a;10.A;diak;boross.hanna.19a@szlgbp.hu;fikakirokuga
+Csikhelyi Lelle Dorottya;csikhelyilelledorottya;19a;10.A;diak;csikhelyi.lelle.19a@szlgbp.hu;hixirefakigi
+Csuka Dorina Luca;csukadorinaluca;19a;10.A;diak;csuka.dorina.19a@szlgbp.hu;hufevonaheba
+Erskine Angelika;erskineangelika;19a;10.A;diak;erskine.angelika.19a@szlgbp.hu;jaboxuvavijo
+Farkas Zsófi;farkaszsofi;19a;10.A;diak;farkas.zsofi.19a@szlgbp.hu;sodacesifiso
+Frizzi Borbála;frizziborbala;19a;10.A;diak;frizzi.borbala.19a@szlgbp.hu;xamatusijopa
+Gátfalvi Georgina;gatfalvigeorgina;19a;10.A;diak;gatfalvi.georgina.19a@szlgbp.hu;tiridacovoji
+Gömöri András;gomoriandras;19a;10.A;diak;gomori.andras.19a@szlgbp.hu;guparehepide
+Grasso Marco;grassomarco;19a;10.A;diak;grasso.marco.19a@szlgbp.hu;rocifipuluxu
+Hegedüs Julianna Alma;hegedusjuliannaalma;19a;10.A;diak;hegedus.julianna.19a@szlgbp.hu;dokihijeleja
+Horváth Katalin;horvathkatalin;19a;10.A;diak;horvath.katalin.19a@szlgbp.hu;hifalaholari
+Kánnár Flóra Katalin;kannarflorakatalin;19a;10.A;diak;kannar.flora.19a@szlgbp.hu;vimexepetoha
+Kiss Brigitta;kissbrigitta;19a;10.A;diak;kiss.brigitta.19a@szlgbp.hu;motohoxavalu
+Korcsmáros Léna Ildikó;korcsmaroslenaildiko;19a;10.A;diak;korcsmaros.lena.19a@szlgbp.hu;pomisovucigo
+Kottner Amina;kottneramina;19a;10.A;diak;kottner.amina.19a@szlgbp.hu;relapefutoce
+Manno Mona Palóma;mannomonapaloma;19a;10.A;diak;manno.mona.19a@szlgbp.hu;nokicubonixo
+Medgyesi-Nagy Sára;medgyesi-nagysara;19a;10.A;diak;medgyesi-nagy.sara.19a@szlgbp.hu;fetilafaleva
+Mészáros Nóra Ágnes;meszarosnoraagnes;19a;10.A;diak;meszaros.nora.19a@szlgbp.hu;milehitacehe
+Mohácsi Abigél;mohacsiabigel;19a;10.A;diak;mohacsi.abigel.19a@szlgbp.hu;gevudumicaka
+Molnár Zsuzsanna Dóra;molnarzsuzsannadora;19a;10.A;diak;molnar.zsuzsanna.19a@szlgbp.hu;xecijuvuxejo
+Molnár-Czétényi Noémi;molnar-czetenyinoemi;19a;10.A;diak;molnar-czetenyi.noemi.19a@szlgbp.hu;xerutovevifa
+Pedone Leonardo;pedoneleonardo;19a;10.A;diak;pedone.leonardo.19a@szlgbp.hu;dukehocudimo
+Podjanek Luca Csillag;podjaneklucacsillag;19a;10.A;diak;podjanek.luca.19a@szlgbp.hu;vumodefoteva
+Porkoláb Sára;porkolabsara;19a;10.A;diak;porkolab.sara.19a@szlgbp.hu;hocacapofotu
+Rigó Dorottya;rigodorottya;19a;10.A;diak;rigo.dorottya.19a@szlgbp.hu;xocukebabomo
+Sándor Kiara Dorka;sandorkiaradorka;19a;10.A;diak;sandor.kiara.19a@szlgbp.hu;xinecovirebe
+Scaggiante Filippo;scaggiantefilippo;19a;10.A;diak;scaggiante.filippo.19a@szlgbp.hu;cifenifedeti
+Solti Máté István;soltimateistvan;19a;10.A;diak;solti.mate.19a@szlgbp.hu;fabosasomusa
+Szabados Ágnes Zsuzsanna;szabadosagneszsuzsanna;19a;10.A;diak;szabados.agnes.19a@szlgbp.hu;baharicaxavo
+Szigeti Csenge;szigeticsenge;19a;10.A;diak;szigeti.csenge.19a@szlgbp.hu;jenefojosele
+Szücs Réka;szucsreka;19a;10.A;diak;szucs.reka.19a@szlgbp.hu;nidusacecipo
+Tóth Emese;tothemese;19a;10.A;diak;toth.emese.19a@szlgbp.hu;hexeseteluki
+Bakos Bálint;bakosbalint;20b;10.B;diak;bakos.balint.19e@szlgbp.hu;lexusonitugo
+Balázs Dóra;balazsdora;20b;10.B;diak;balazs.dora.20b@szlgbp.hu;vicajotipeha
+Baricz Barnabás;bariczbarnabas;20b;10.B;diak;baricz.barnabas.20b@szlgbp.hu;vepuponirexe
+Benke Dóra;benkedora;20b;10.B;diak;benke.dora.20b@szlgbp.hu;rilaxohopusi
+Berek Laura;bereklaura;20b;10.B;diak;berek.laura.20b@szlgbp.hu;pomobahakeru
+Berek Lídia;bereklidia;20b;10.B;diak;berek.lidia.20b@szlgbp.hu;rebunujinuce
+Bihari Dániel;biharidaniel;20b;10.B;diak;bihari.daniel.20b@szlgbp.hu;mihicoraxoti
+Bíró-Virág Zsófi;biro-viragzsofi;20b;10.B;diak;biro-virag.zsofi.20b@szlgbp.hu;peraropoteji
+Eisenkrammer Dalma;eisenkrammerdalma;20b;10.B;diak;eisenkrammer.dalma.20b@szlgbp.hu;gelipifepoli
+Erdei Gyula Zolta;erdeigyulazolta;20b;10.B;diak;erdei.gyula.20b@szlgbp.hu;fufepedobuji
+Günsberger Zsófia;gunsbergerzsofia;20b;10.B;diak;gunsberger.zsofia.20b@szlgbp.hu;bobalinegeho
+Hajnal Áron Arion;hajnalaronarion;20b;10.B;diak;hajnal.aron.20b@szlgbp.hu;jumixefinate
+Hazim Ismail Hadi;hazimismailhadi;20b;10.B;diak;hazim_ismail.hadi.20b@szlgbp.hu;posecidejohe
+Hermel Erik;hermelerik;20b;10.B;diak;hermel.erik.20b@szlgbp.hu;canaganusijo
+Kaczur Patrik;kaczurpatrik;20b;10.B;diak;kaczur.patrik.20b@szlgbp.hu;pifahiroridi
+Karminás Zsombor Mór;karminaszsombormor;20b;10.B;diak;karminas.zsombor.20b@szlgbp.hu;ficovuvobecu
+Kovács Ármin Szabolcs;kovacsarminszabolcs;20b;10.B;diak;kovacs.armin.20b@szlgbp.hu;jacexobajoru
+Kozma Blanka Petra;kozmablankapetra;20b;10.B;diak;kozma.blanka.20b@szlgbp.hu;penunafepilo
+Kővári Bálint Gábor;kovaribalintgabor;20b;10.B;diak;kovari.balint.20b@szlgbp.hu;kegavekuxava
+Kuti Kristóf Károly;kutikristofkaroly;20b;10.B;diak;kuti.kristof.20b@szlgbp.hu;tilosutujope
+Medvés Petra Zoé;medvespetrazoe;20b;10.B;diak;medves.petra.20b@szlgbp.hu;gilerugelofi
+Mocsári Júlia Sára;mocsarijuliasara;20b;10.B;diak;mocsari.julia.20b@szlgbp.hu;kevebamecofo
+Mórocz Adrienn;moroczadrienn;20b;10.B;diak;morocz.adrienn.20b@szlgbp.hu;tadititomuda
+Nagy Márton;nagymarton;20b;10.B;diak;nagy.marton.20b@szlgbp.hu;varupudesaki
+Pelle Fanni;pellefanni;20b;10.B;diak;pelle.fanni.20b@szlgbp.hu;kogebalomexu
+Rácz Noa;racznoa;20b;10.B;diak;racz.noa.20b@szlgbp.hu;lilolomorepu
+Seres Dóra;seresdora;20b;10.B;diak;seres.dora.20b@szlgbp.hu;xirivosucapo
+Süller Zita;sullerzita;20b;10.B;diak;suller.zita.20b@szlgbp.hu;rijidikibuke
+Szabó Panna;szabopanna;20b;10.B;diak;szabo.panna.20b@szlgbp.hu;nabolafacusa
+Szalai Kristóf;szalaikristof;20b;10.B;diak;szalai.kristof.20b@szlgbp.hu;durigevabehe
+Sztehlik Bende Imre;sztehlikbendeimre;20b;10.B;diak;sztehlik.bende.20b@szlgbp.hu;helakojuberu
+Toronyi Kinga Réka;toronyikingareka;20b;10.B;diak;toronyi.kinga.20b@szlgbp.hu;jibufohajulo
+Tótfalusi Eszter Réka;totfalusieszterreka;20b;10.B;diak;totfalusi.eszter.20b@szlgbp.hu;cusepabixate
+Tóth Péter Ádám;tothpeteradam;20b;10.B;diak;toth.peter.20b@szlgbp.hu;palukebobofe
+Varga Lilla;vargalilla;20b;10.B;diak;varga.lilla.20b@szlgbp.hu;garinaxecegi
+Vargha Benjámin;varghabenjamin;20b;10.B;diak;vargha.benjamin.20b@szlgbp.hu;vevinanidite
+Vaskó Kata Lujza;vaskokatalujza;20b;10.B;diak;vasko.kata.20b@szlgbp.hu;gokalanahere
+Viszkok Tünde;viszkoktunde;20b;10.B;diak;viszkok.tunde.20b@szlgbp.hu;cefedegitoba
+Antalffy Bálint;antalffybalint;20c;10.C;diak;antalffy.balint.20c@szlgbp.hu;dujapukexoli
+Boronyai Tamás;boronyaitamas;20c;10.C;diak;boronyai.tamas.20c@szlgbp.hu;legadixupobi
+Csuka Sára;csukasara;20c;10.C;diak;csuka.sara.20c@szlgbp.hu;vucinejojana
+Dévényi Barnabás;devenyibarnabas;20c;10.C;diak;devenyi.barnabas.20c@szlgbp.hu;poxonisijive
+Dorogi Lili;dorogilili;20c;10.C;diak;dorogi.lili.20c@szlgbp.hu;gitexocuvude
+Eszes János Márk;eszesjanosmark;20c;10.C;diak;eszes.janos.20c@szlgbp.hu;xaduhafajiko
+Giumars Oméd;giumarsomed;20c;10.C;diak;giumars.omed.20c@szlgbp.hu;xexucetadaci
+Gliga Léna Anna;gligalenaanna;20c;10.C;diak;gliga.lena.20c@szlgbp.hu;roperisuxahi
+Gyarmati Éva Kinga;gyarmatievakinga;20c;10.C;diak;gyarmati.eva.20c@szlgbp.hu;raponasohaku
+Győri Ferenc;gyoriferenc;20c;10.C;diak;gyori.ferenc.20c@szlgbp.hu;vajedegotemi
+Hohmann Natasa;hohmannnatasa;20c;10.C;diak;hohmann.natasa.20c@szlgbp.hu;petumohexaco
+Illés Máté;illesmate;20c;10.C;diak;illes.mate.20c@szlgbp.hu;bokajilopicu
+Jablonkai Lívia;jablonkailivia;20c;10.C;diak;jablonkai.livia.20c@szlgbp.hu;tihataragave
+Kalina Máté;kalinamate;20c;10.C;diak;kalina.mate.20c@szlgbp.hu;fixepogogica
+Karikó Brigitta;karikobrigitta;20c;10.C;diak;kariko.brigitta.20c@szlgbp.hu;jeluxadokoci
+Kókai Kornél;kokaikornel;20c;10.C;diak;kokai.kornel.20c@szlgbp.hu;lovataganesa
+Modla Nóra Miléna;modlanoramilena;20c;10.C;diak;modla.nora.20c@szlgbp.hu;tudiroxelemu
+Nándori László Péter;nandorilaszlopeter;20c;10.C;diak;nandori.laszlo.20c@szlgbp.hu;lucusimuloli
+Németh Gergely;nemethgergely;20c;10.C;diak;nemeth.gergely.20c@szlgbp.hu;hilatugihemo
+Németh Lilla;nemethlilla;20c;10.C;diak;nemeth.lilla.20c@szlgbp.hu;mohinupefigu
+Nguyen Thanh Phuong;nguyenthanhphuong;20c;10.C;diak;nguyen.thanh.20c@szlgbp.hu;tefefusevoma
+Pázmándi Levente;pazmandilevente;20c;10.C;diak;pazmandi.levente.20c@szlgbp.hu;debicejotasu
+Péger Laura;pegerlaura;20c;10.C;diak;peger.laura.20c@szlgbp.hu;kuxojeburuji
+Pintér Balázs László;pinterbalazslaszlo;20c;10.C;diak;pinter.balazs.20c@szlgbp.hu;mesimavegaki
+Radics Bálint Bence;radicsbalintbence;20c;10.C;diak;radics.balint.20c@szlgbp.hu;hubumamumupo
+Reinhardt Panna;reinhardtpanna;20c;10.C;diak;reinhardt.panna.20c@szlgbp.hu;senasutaxepi
+Révész Regő László;reveszregolaszlo;20c;10.C;diak;revesz.rego.20c@szlgbp.hu;hagegibijehi
+Simonics Levente Dávid;simonicsleventedavid;20c;10.C;diak;simonics.levente.20c@szlgbp.hu;rusurogotehi
+Simonics Olivér Márk;simonicsolivermark;20c;10.C;diak;simonics.oliver.20c@szlgbp.hu;mutefumajobu
+Somodi Ágoston;somodiagoston;20c;10.C;diak;somodi.agoston.20c@szlgbp.hu;pibolamotomo
+Somorai Kincső;somoraikincso;20c;10.C;diak;somorai.kincso.20c@szlgbp.hu;huvidajatota
+Szabó Berta Eszter;szabobertaeszter;20c;10.C;diak;szabo.berta.20c@szlgbp.hu;kecopukemaxu
+Szunyogh Bence Mihály;szunyoghbencemihaly;20c;10.C;diak;szunyogh.bence.20c@szlgbp.hu;gaxahucimuju
+Tarcsi Beatrix;tarcsibeatrix;20c;10.C;diak;tarcsi.beatrix.20c@szlgbp.hu;kukatihicire
+Tóth Benedek;tothbenedek;20c;10.C;diak;toth.benedek.20c@szlgbp.hu;kacalidefive
+Varga Péter;vargapeter;20c;10.C;diak;varga.peter.20c@szlgbp.hu;falidilutoxa
+Vass Dániel;vassdaniel;20c;10.C;diak;vass.daniel.20c@szlgbp.hu;dumaporemane
+Viczián Nóra;vicziannora;20c;10.C;diak;viczian.nora.20c@szlgbp.hu;rupemikupixu
+Zsolnai Barnabás Attila;zsolnaibarnabasattila;20c;10.C;diak;zsolnai.barnabas.20c@szlgbp.hu;darukumuvudi
+Beke Barnabás Zoltán;bekebarnabaszoltan;20d;10.D;diak;beke.barnabas.20d@szlgbp.hu;celigijupoxa
+Benedek Admira Enikő;benedekadmiraeniko;20d;10.D;diak;benedek.admira.20d@szlgbp.hu;tasexanupaga
+Csányi Barbara;csanyibarbara;20d;10.D;diak;csanyi.barbara.20d@szlgbp.hu;dulehasoxoju
+Császár Dávid;csaszardavid;20d;10.D;diak;csaszar.david.20d@szlgbp.hu;xerolavojutu
+Császár Inez;csaszarinez;20d;10.D;diak;csaszar.inez.20d@szlgbp.hu;sucubolaseti
+Demeter Kincső;demeterkincso;20d;10.D;diak;demeter.kincso.20d@szlgbp.hu;xakexuxofiri
+Fedor Panna;fedorpanna;20d;10.D;diak;fedor.panna.20d@szlgbp.hu;ditexisecemo
+Fekésházi Panna;fekeshazipanna;20d;10.D;diak;fekeshazi.panna.20d@szlgbp.hu;koloputokuju
+Fernandez-Kiss Anna;fernandez-kissanna;20d;10.D;diak;fernandez-kiss.anna.20d@szlgbp.hu;xijakefukede
+Fürész Szonja Zorka;fureszszonjazorka;20d;10.D;diak;furesz.szonja.20d@szlgbp.hu;xasujihixati
+Guti Csenge;guticsenge;20d;10.D;diak;guti.csenge.20d@szlgbp.hu;gukixebocavo
+Gyevnár Tamás;gyevnartamas;20d;10.D;diak;gyevnar.tamas.20d@szlgbp.hu;safirujisuka
+Horváth Emma Mária;horvathemmamaria;20d;10.D;diak;horvath.emma.20d@szlgbp.hu;habireluvage
+Kiss Flóra Kata;kissflorakata;20d;10.D;diak;kiss.flora.20d@szlgbp.hu;pafijelakulo
+Kolonics Tamás Mihály;kolonicstamasmihaly;20d;10.D;diak;kolonics.tamas.20d@szlgbp.hu;timijipahola
+Madarász Bettina;madaraszbettina;20d;10.D;diak;madarasz.bettina.20d@szlgbp.hu;jolotepibaju
+Nagy Orsolya;nagyorsolya;20d;10.D;diak;nagy.orsolya.20d@szlgbp.hu;jamikafuvopu
+Pásztor Lea;pasztorlea;20d;10.D;diak;pasztor.lea.20d@szlgbp.hu;dujasinutade
+Pohl Roderik Viktor;pohlroderikviktor;20d;10.D;diak;pohl.roderik.20d@szlgbp.hu;potiheralufu
+Rubint Franciska;rubintfranciska;20d;10.D;diak;rubint.franciska.20d@szlgbp.hu;pugitecetemo
+Sáfrány-Majoros Katalin;safrany-majoroskatalin;20d;10.D;diak;safrany-majoros.katalin.20d@szlgbp.hu;lukucohicola
+Sárai Véda;saraiveda;20d;10.D;diak;sarai.veda.20d@szlgbp.hu;radevecofuji
+Soós Eszter;sooseszter;20d;10.D;diak;soos.eszter.20d@szlgbp.hu;jigojegatoxa
+Szabó Piros Anna;szabopirosanna;20d;10.D;diak;szabo.piros.19f@szlgbp.hu;joxurolahuve
+Szabó Réka;szaboreka;20d;10.D;diak;szabo.reka.20d@szlgbp.hu;nanovohuvoxi
+Szalai Márk Szabolcs;szalaimarkszabolcs;20d;10.D;diak;szalai.mark.20d@szlgbp.hu;buxevehuforo
+Szántai Sarolta;szantaisarolta;20d;10.D;diak;szantai.sarolta.20d@szlgbp.hu;hobalipikibi
+Székely Kincső;szekelykincso;20d;10.D;diak;szekely.kincso.20d@szlgbp.hu;vucubomikoke
+Széver Szonja;szeverszonja;20d;10.D;diak;szever.szonja.20d@szlgbp.hu;sikemavugese
+Tóth Viola;tothviola;20d;10.D;diak;toth.viola.20d@szlgbp.hu;nebaxiguguga
+Tőkei Dorka Napsugár;tokeidorkanapsugar;20d;10.D;diak;tokei.dorka.20d@szlgbp.hu;gudavejehoco
+Tüttő Kata Sára;tuttokatasara;20d;10.D;diak;tutto.kata.20d@szlgbp.hu;coditotirolo
+Willmann Lola Anna;willmannlolaanna;20d;10.D;diak;willmann.lola.20d@szlgbp.hu;xasisugiduvi
+Bántó Dániel;bantodaniel;19e;10.E;diak;banto.daniel.19e@szlgbp.hu;macibobiruja
+Czinege Ákos;czinegeakos;19e;10.E;diak;czinege.akos.19e@szlgbp.hu;gahetujajaxi
+Czumpft Balázs;czumpftbalazs;19e;10.E;diak;czumpft.balazs.19e@szlgbp.hu;kovoduxutubi
+Csizmadia Renáta;csizmadiarenata;19e;10.E;diak;csizmadia.renata.19e@szlgbp.hu;jicubavavuju
+Fábián Réka;fabianreka;19e;10.E;diak;fabian.reka.19e@szlgbp.hu;dolititibito
+Farádi-Szabó Gertrúd;faradi-szabogertrud;19e;10.E;diak;faradi-szabo.gertrud.19e@szlgbp.hu;mimufusoropo
+Faragó Lili Fruzsina;faragolilifruzsina;19e;10.E;diak;farago.lili.19e@szlgbp.hu;tifufujasova
+Farkas Angéla;farkasangela;19e;10.E;diak;farkas.angela.19e@szlgbp.hu;nibetalubopi
+Fekete Marcell;feketemarcell;19e;10.E;diak;fekete.marcell.19e@szlgbp.hu;fabutulolapa
+Gáspár Sára Anna;gasparsaraanna;19e;10.E;diak;gaspar.sara.19e@szlgbp.hu;pecarefimini
+Jakabó-Szentpétery Fanni;jakabo-szentpeteryfanni;19e;10.E;diak;jakabo-szentpetery.fanni.19e@szlgbp.hu;luxojumecuva
+Janku Pál Borian;jankupalborian;19e;10.E;diak;janku.pal.19e@szlgbp.hu;tegohejujuco
+Kálmán Kamilla Lilla;kalmankamillalilla;19e;10.E;diak;kalman.kamilla.19e@szlgbp.hu;jihukusijufi
+Kapdebo Anna;kapdeboanna;19e;10.E;diak;kapdebo.anna.19e@szlgbp.hu;menibupoxudu
+Kovács Domonkos István;kovacsdomonkosistvan;19e;10.E;diak;kovacs.domonkos.19e@szlgbp.hu;dadefaletija
+Kurka Maja Antónia;kurkamajaantonia;19e;10.E;diak;kurka.maja.19e@szlgbp.hu;napemisuvega
+Lakatos Dorottya;lakatosdorottya;19e;10.E;diak;lakatos.dorottya.19e@szlgbp.hu;tekedonihexu
+Lakk Zsombor József;lakkzsomborjozsef;19e;10.E;diak;lakk.zsombor.19e@szlgbp.hu;fubogemujuto
+Magyar Vanda;magyarvanda;19e;10.E;diak;magyar.vanda.19e@szlgbp.hu;coricaxogina
+Ordas Berta;ordasberta;19e;10.E;diak;ordas.berta.19e@szlgbp.hu;vupugevigaxu
+Ősz-Farkas Mátyás;osz-farkasmatyas;19e;10.E;diak;osz-farkas.matyas.19e@szlgbp.hu;kahemodorese
+Pámer Vince;pamervince;19e;10.E;diak;pamer.vince.19e@szlgbp.hu;fabivogecege
+Papucsek Péter;papucsekpeter;19e;10.E;diak;papucsek.peter.19e@szlgbp.hu;videbosunoto
+Pethő Zsófia;pethozsofia;19e;10.E;diak;petho.zsofia.19e@szlgbp.hu;vobetovenuhu
+Petrina Zsófia;petrinazsofia;19e;10.E;diak;petrina.zsofia.19e@szlgbp.hu;gideledeloba
+Simon Eszter;simoneszter;19e;10.E;diak;simon.eszter.19e@szlgbp.hu;kixadivamehi
+Szedlacsek Dániel;szedlacsekdaniel;19e;10.E;diak;szedlacsek.daniel.19e@szlgbp.hu;gepileduhaho
+Szőke Zoltán Marcell;szokezoltanmarcell;19e;10.E;diak;szoke.zoltan.19e@szlgbp.hu;lamitetevupu
+Szűcs Vivien Napsugár;szucsviviennapsugar;19e;10.E;diak;szucs.vivien.19e@szlgbp.hu;givojevubomo
+Timár Annamária;timarannamaria;19e;10.E;diak;timar.annamaria.19e@szlgbp.hu;safihoxenipo
+Tóth Zoltán;tothzoltan;19e;10.E;diak;toth.zoltan.19e@szlgbp.hu;fufabirehiho
+Varga Eszter;vargaeszter;19e;10.E;diak;varga.eszter.19e@szlgbp.hu;malomunuvone
+Ágfay Máté;agfaymate;19f;10.F;diak;agfay.mate.19f@szlgbp.hu;laxofarosuvi
+Balogh Vince;baloghvince;19f;10.F;diak;balogh.vince.19f@szlgbp.hu;fagexaxadali
+Botrágyi Gergő;botragyigergo;19f;10.F;diak;botragyi.gergo.19f@szlgbp.hu;xelugisibusi
+Csató Csege Károly;csatocsegekaroly;19f;10.F;diak;csato.csege.19f@szlgbp.hu;hacudekibiji
+Csernyák Eszter;csernyakeszter;19f;10.F;diak;csernyak.eszter.19f@szlgbp.hu;kukakemepopa
+Dam Patrik;dampatrik;19f;10.F;diak;dam.patrik.19f@szlgbp.hu;retinutocuma
+Demeter Tamara;demetertamara;19f;10.F;diak;demeter.tamara.19f@szlgbp.hu;xuributadige
+Fábián Péter Barnabás;fabianpeterbarnabas;19f;10.F;diak;fabian.peter.19f@szlgbp.hu;mifidogudeco
+Faludy Gergő;faludygergo;19f;10.F;diak;faludy.gergo.19f@szlgbp.hu;sakesepumove
+Fodor Dániel;fodordaniel;19f;10.F;diak;fodor.daniel.19f@szlgbp.hu;sugadacixife
+Gaál Zsolt;gaalzsolt;19f;10.F;diak;gaal.zsolt.19f@szlgbp.hu;gelubedetemi
+Gutsik Lili;gutsiklili;19f;10.F;diak;gutsik.lili.19f@szlgbp.hu;pevigodovome
+Iacob Leila Adrienn;iacobleilaadrienn;19f;10.F;diak;iacob.leila.19f@szlgbp.hu;jusokerirugu
+Jávor Nikolett Alexandra;javornikolettalexandra;19f;10.F;diak;javor.nikolett.19f@szlgbp.hu;kutabuvabodi
+Juhász Mátyás;juhaszmatyas;19f;10.F;diak;juhasz.matyas.19f@szlgbp.hu;rotejilitoku
+Kaszanyitzky Blanka;kaszanyitzkyblanka;19f;10.F;diak;kaszanyitzky.blanka.19f@szlgbp.hu;tupagikimusa
+Kéri Nikolett Noémi;kerinikolettnoemi;19f;10.F;diak;keri.nikolett.19f@szlgbp.hu;xerasurijuga
+Kővári Melinda Gabriella;kovarimelindagabriella;19f;10.F;diak;kovari.melinda.19f@szlgbp.hu;nalupupirogo
+Kővári Nelli;kovarinelli;19f;10.F;diak;kovari.nelli.19f@szlgbp.hu;sunejolamigu
+Miskédi Szofi;miskediszofi;19f;10.F;diak;miskedi.szofi.19f@szlgbp.hu;midajepidada
+Nagy Ágnes;nagyagnes;19f;10.F;diak;nagy.agnes.19f@szlgbp.hu;gumivijuxose
+Németh Balázs István;nemethbalazsistvan;19f;10.F;diak;nemeth.balazs.19f@szlgbp.hu;vuxiridamisi
+Patkó Dániel;patkodaniel;19f;10.F;diak;patko.daniel.19f@szlgbp.hu;piluvufodici
+Peresztegi Hanna Dorina;peresztegihannadorina;19f;10.F;diak;peresztegi.hanna.19f@szlgbp.hu;tafihokujefe
+Polgár Levente;polgarlevente;19f;10.F;diak;polgar.levente.19f@szlgbp.hu;cucukunadepa
+Soós Csaba;sooscsaba;19f;10.F;diak;soos.csaba.19f@szlgbp.hu;rajisirumudi
+Szabó Bence Huba;szabobencehuba;19f;10.F;diak;szabo.bence.19f@szlgbp.hu;pagadasocigo
+Szabó Milán;szabomilan;19f;10.F;diak;szabo.milan.19f@szlgbp.hu;gepakekunire
+Szántai Gábor Ferenc;szantaigaborferenc;19f;10.F;diak;szantai.gabor.19f@szlgbp.hu;dakeferexume
+Szécsi Bálint;szecsibalint;19f;10.F;diak;szecsi.balint.19f@szlgbp.hu;hikupifumaha
+Szerdahelyi Péter;szerdahelyipeter;19f;10.F;diak;szerdahelyi.peter.19f@szlgbp.hu;munorapunela
+Szukics Gyula Péter;szukicsgyulapeter;19f;10.F;diak;szukics.gyula.19f@szlgbp.hu;vohojubagire
+Szűcs Lili Janka;szucslilijanka;19f;10.F;diak;szucs.lili.19f@szlgbp.hu;hunoxisokaka
+Tóth Balázs;tothbalazs;19f;10.F;diak;toth.balazs.19f@szlgbp.hu;dofabagutico
+Ükös Farkas;ukosfarkas;19f;10.F;diak;ukos.farkas.19f@szlgbp.hu;losaxovovege
+Almási Dorottya Panna;almasidorottyapanna;18a;11.A;diak;almasi.dorottya.18a@szlgbp.hu;modisohojoxe
+Balogh Rebeka;baloghrebeka;18a;11.A;diak;balogh.rebeka.18a@szlgbp.hu;cihujafexuje
+Bárándi Máté;barandimate;18a;11.A;diak;barandi.mate.18a@szlgbp.hu;sepamavicaro
+Baricz Balázs;bariczbalazs;18a;11.A;diak;baricz.balazs.18a@szlgbp.hu;nedixikexaja
+Béres Kristóf Ádám;bereskristofadam;18a;11.A;diak;beres.kristof.18a@szlgbp.hu;novelomulexa
+Bodrogi Fanni Bettina;bodrogifannibettina;18a;11.A;diak;bodrogi.fanni.18a@szlgbp.hu;herivajojehi
+Czéró Léna;czerolena;18a;11.A;diak;czero.lena.18a@szlgbp.hu;lufuxumiduhi
+Csató Ildikó;csatoildiko;18a;11.A;diak;csato.ildiko.18a@szlgbp.hu;tegicofotame
+Csomós Vera;csomosvera;18a;11.A;diak;csomos.vera.18a@szlgbp.hu;revigarefago
+Dicső Dóra;dicsodora;18a;11.A;diak;dicso.dora.18a@szlgbp.hu;nevibadesani
+Fekete Janka;feketejanka;18a;11.A;diak;fekete.janka.18a@szlgbp.hu;xadivaxaviku
+Forrai Jázmin;forraijazmin;18a;11.A;diak;forrai.jazmin.18a@szlgbp.hu;boroxabipose
+Gál Eszter;galeszter;18a;11.A;diak;gal.eszter.18a@szlgbp.hu;doxuvacaboba
+Gáll Boglárka;gallboglarka;18a;11.A;diak;gall.boglarka.18a@szlgbp.hu;sijamudavaru
+Gazdag Emma Liliána;gazdagemmaliliana;18a;11.A;diak;gazdag.emma.18a@szlgbp.hu;jitovukalore
+Győrfi Alexandra;gyorfialexandra;18a;11.A;diak;gyorfi.alexandra.18a@szlgbp.hu;kunamufasoku
+Hegedűs Anna;hegedusanna;18a;11.A;diak;hegedus.anna.18a@szlgbp.hu;cupurimuvije
+Heimpold Zsófia Zita;heimpoldzsofiazita;18a;11.A;diak;heimpold.zsofia.18a@szlgbp.hu;fidosenuneke
+Hetesi Zsófia;hetesizsofia;18a;11.A;diak;hetesi.zsofia.18a@szlgbp.hu;kihunonetofe
+Horváth Tamara;horvathtamara;18a;11.A;diak;horvath.tamara.18a@szlgbp.hu;revahimekeja
+Jankó Borbála Mária;jankoborbalamaria;18a;11.A;diak;janko.borbala.18a@szlgbp.hu;bemacecicuci
+Jarabek Balázs;jarabekbalazs;18a;11.A;diak;jarabek.balazs.18a@szlgbp.hu;pogacigegoja
+Klenovszki Dániel Tamás;klenovszkidanieltamas;18a;11.A;diak;klenovszki.daniel.18a@szlgbp.hu;doloniganase
+Mihály Mercédesz Liliána;mihalymercedeszliliana;18a;11.A;diak;mihaly.mercedesz.18a@szlgbp.hu;cutofipajecu
+Nagy Martin Péter;nagymartinpeter;18a;11.A;diak;nagy.martin.18a@szlgbp.hu;rahevigomoge
+Nemes Gréta;nemesgreta;18a;11.A;diak;nemes.greta.18a@szlgbp.hu;musahusikamu
+Oravecz Gergő Szabolcs;oraveczgergoszabolcs;18a;11.A;diak;oravecz.gergo.18a@szlgbp.hu;xupitebupuge
+Ozsvár Klára Róza;ozsvarklararoza;18a;11.A;diak;ozsvar.klara.18a@szlgbp.hu;jagixodufoho
+Romsics Nóra;romsicsnora;18a;11.A;diak;romsics.nora.18a@szlgbp.hu;vefubinisihu
+Szabó Benedek;szabobenedek;18a;11.A;diak;szabo.benedek.18a@szlgbp.hu;siletenaheri
+Szász Judit;szaszjudit;18a;11.A;diak;szasz.judit.18a@szlgbp.hu;fodidovucole
+Takács Dorina;takacsdorina;18a;11.A;diak;takacs.dorina.18a@szlgbp.hu;fovupivexumu
+Tarr Levente;tarrlevente;18a;11.A;diak;tarr.levente.18a@szlgbp.hu;nudedekofesi
+Tomics Viola Mónika;tomicsviolamonika;18a;11.A;diak;tomics.viola.18a@szlgbp.hu;gojasakolagi
+Tóth Brigitta Izabella;tothbrigittaizabella;18a;11.A;diak;toth.brigitta.18a@szlgbp.hu;rupivomucesu
+Tóth Marcell;tothmarcell;18a;11.A;diak;toth.marcell.18a@szlgbp.hu;jojusasuxixu
+Varga Gergő;vargagergo;18a;11.A;diak;varga.gergo.18a@szlgbp.hu;dikikadorata
+Wolf Boglárka;wolfboglarka;18a;11.A;diak;wolf.boglarka.18a@szlgbp.hu;sifaresilesa
+Bárdos Noémi;bardosnoemi;19b;11.B;diak;bardos.noemi.19b@szlgbp.hu;jedunivorine
+Becsák Balázs;becsakbalazs;19b;11.B;diak;becsak.balazs.19b@szlgbp.hu;sopodinipesu
+Csányi Viktória;csanyiviktoria;19b;11.B;diak;csanyi.viktoria.19b@szlgbp.hu;hikitejifaca
+Csonka Lilianna Ilona;csonkaliliannailona;19b;11.B;diak;csonka.lilianna.19b@szlgbp.hu;hoxigodajage
+Erdei Vince;erdeivince;19b;11.B;diak;erdei.vince.19b@szlgbp.hu;fivenoherede
+Fekete András;feketeandras;19b;11.B;diak;fekete.andras.19b@szlgbp.hu;tevamohokimu
+Gulyás Attila Dénes;gulyasattiladenes;19b;11.B;diak;gulyas.attila.19b@szlgbp.hu;rocutisilopi
+Huang Tong;huangtong;19b;11.B;diak;huang.tong.19b@szlgbp.hu;jigutarufisi
+Jeli Karolin Viktória;jelikarolinviktoria;19b;11.B;diak;jeli.karolin.19b@szlgbp.hu;sigubukopaci
+Jiang Yutong;jiangyutong;19b;11.B;diak;jiang.yutong.19b@szlgbp.hu;higilijajube
+Karátson Dóra;karatsondora;19b;11.B;diak;karatson.dora.19b@szlgbp.hu;ruxinolapuke
+Kirsch Ádám;kirschadam;19b;11.B;diak;kirsch.adam.19b@szlgbp.hu;vakogagoxuje
+Komjáthi Dávid;komjathidavid;19b;11.B;diak;komjathi.david.19b@szlgbp.hu;jokurihotavu
+Kór-Hanák Nóra Virág;kor-hanaknoravirag;19b;11.B;diak;kor-hanak.nora.19b@szlgbp.hu;vevabirajilo
+Küffner Csilla;kuffnercsilla;19b;11.B;diak;kuffner.csilla.19b@szlgbp.hu;megijivoneda
+Lantos Boglárka;lantosboglarka;19b;11.B;diak;lantos.boglarka.19b@szlgbp.hu;hodohikovela
+Molnár Levente Richárd;molnarleventerichard;19b;11.B;diak;molnar.levente.19b@szlgbp.hu;lajulotusubu
+Mórocz Eszter;moroczeszter;19b;11.B;diak;morocz.eszter.19b@szlgbp.hu;rojalaxirudo
+Nagy Máté;nagymate;19b;11.B;diak;nagy.mate.19b@szlgbp.hu;gacaxatasera
+Paál Péter Ferenc;paalpeterferenc;19b;11.B;diak;paal.peter.19b@szlgbp.hu;pujafogikobi
+Páldi Milán;paldimilan;19b;11.B;diak;paldi.milan.19b@szlgbp.hu;pujenemihocu
+Papp Dániel;pappdaniel;19b;11.B;diak;papp.daniel.19b@szlgbp.hu;podujofinivo
+Papp Dániel György;pappdanielgyorgy;19b;11.B;diak;papp.daniel.gyorgy.19b@szlgbp.hu;jakofefediku
+Petróczi János Patrik;petroczijanospatrik;19b;11.B;diak;petroczi.janos.19b@szlgbp.hu;livopocokino
+Plattner Balázs József;plattnerbalazsjozsef;19b;11.B;diak;plattner.balazs.19b@szlgbp.hu;hofukukapofe
+Rimaszécsi Laura;rimaszecsilaura;19b;11.B;diak;rimaszecsi.laura.19b@szlgbp.hu;todekegikina
+Rio Esperanza Abril;rioesperanzaabril;19b;11.B;diak;rio.esperanza.19b@szlgbp.hu;jofavahagedi
+Sepil Melissa;sepilmelissa;19b;11.B;diak;sepil.melissa.19b@szlgbp.hu;vipegedipuha
+Sirkó Dóra;sirkodora;19b;11.B;diak;sirko.dora.19b@szlgbp.hu;kutodecobeki
+Szabó Kristóf;szabokristof;19b;11.B;diak;szabo.kristof.19b@szlgbp.hu;lihemakuhupe
+Szilágyi Tamás Csaba;szilagyitamascsaba;19b;11.B;diak;szilagyi.tamas.19b@szlgbp.hu;puranicixoku
+Szomora Tünde Zsuzsanna;szomoratundezsuzsanna;19b;11.B;diak;szomora.tunde.19b@szlgbp.hu;xoketoruhibu
+Szutor Zénó;szutorzeno;19b;11.B;diak;szutor.zeno.19b@szlgbp.hu;suruhabucuga
+Varga Ádám;vargaadam;19b;11.B;diak;varga.adam.19b@szlgbp.hu;sumerapomeke
+Varga Máté;vargamate;19b;11.B;diak;varga.mate.19b@szlgbp.hu;manonutugoku
+Veress Roland Martin;veressrolandmartin;19b;11.B;diak;veress.roland.19b@szlgbp.hu;riremipesaxi
+Vörös-Dósa Luca Rebeka;voros-dosalucarebeka;19b;11.B;diak;voros-dosa.luca.19b@szlgbp.hu;gufujeviceda
+Badó Réka;badoreka;19d;11.D;diak;bado.reka.19d@szlgbp.hu;nupasidinaxu
+Bucz Boglárka;buczboglarka;19d;11.D;diak;bucz.boglarka.19d@szlgbp.hu;dexeroboculu
+Csizmadia Virág;csizmadiavirag;19d;11.D;diak;csizmadia.virag.19d@szlgbp.hu;xabixirifeko
+Farkas Blanka;farkasblanka;19d;11.D;diak;farkas.blanka.19d@szlgbp.hu;givivesisefa
+Farkas Csenge Margit;farkascsengemargit;19d;11.D;diak;farkas.csenge.19d@szlgbp.hu;gofafopasedo
+Forrai Boglárka;forraiboglarka;19d;11.D;diak;forrai.boglarka.19d@szlgbp.hu;rumacexadeca
+Geönczeöl Enikő;geonczeoleniko;19d;11.D;diak;geonczeol.eniko.19d@szlgbp.hu;vehasafugapi
+Ilyés Előd;ilyeselod;19d;11.D;diak;ilyes.elod.19d@szlgbp.hu;fuveliroxaga
+Józan Sára Rita;jozansararita;19d;11.D;diak;jozan.sara.19d@szlgbp.hu;tubosevoroce
+Kalocsai Luca Gabriella;kalocsailucagabriella;19d;11.D;diak;kalocsai.luca.19d@szlgbp.hu;gaxicofugaje
+Kemecsey Anna Viktória;kemecseyannaviktoria;19d;11.D;diak;kemecsey.anna.19d@szlgbp.hu;hahamokojuva
+Kirády Krisztina Hanna;kiradykrisztinahanna;19d;11.D;diak;kirady.krisztina.19d@szlgbp.hu;semohahigevu
+Kisantal Antónia;kisantalantonia;19d;11.D;diak;kisantal.antonia.19d@szlgbp.hu;pirovuconope
+Kocsis Lívia Tímea;kocsisliviatimea;19d;11.D;diak;kocsis.livia.19d@szlgbp.hu;ribehelalesi
+Kovács Júlia Rita;kovacsjuliarita;19d;11.D;diak;kovacs.julia.19d@szlgbp.hu;dagejaxixeva
+Ladányi Laura Anna;ladanyilauraanna;19d;11.D;diak;ladanyi.laura.19d@szlgbp.hu;cevitufumola
+Mágel Eszter;mageleszter;19d;11.D;diak;magel.eszter.19d@szlgbp.hu;pejuhexugaru
+Majer Katalin Judit;majerkatalinjudit;19d;11.D;diak;majer.katalin.18a@szlgbp.hu;damicobecaju
+Nagy Dániel;nagydaniel;19d;11.D;diak;nagy.daniel.19d@szlgbp.hu;jefetalaseke
+Nedeczey-Ruzsák Dorina;nedeczey-ruzsakdorina;19d;11.D;diak;nedeczey-ruzsak.dorina.19d@szlgbp.hu;gidicovudagi
+Neszlényi Dorottya Kata;neszlenyidorottyakata;19d;11.D;diak;neszlenyi.dorottya.19d@szlgbp.hu;lilutoselugi
+Pekár János;pekarjanos;19d;11.D;diak;pekar.janos.19d@szlgbp.hu;ketofisunadi
+Petri Zsófia;petrizsofia;19d;11.D;diak;petri.zsofia.19d@szlgbp.hu;jemehenemece
+Pribék Lilla;pribeklilla;19d;11.D;diak;pribek.lilla.19d@szlgbp.hu;bebumilenoso
+Radó Viktória;radoviktoria;19d;11.D;diak;rado.viktoria.19d@szlgbp.hu;tesebopigapo
+Ritzl Hanga Laura;ritzlhangalaura;19d;11.D;diak;ritzl.hanga.19d@szlgbp.hu;sovagokosago
+Rusznyák Emese;rusznyakemese;19d;11.D;diak;rusznyak.emese.19d@szlgbp.hu;lehenorogure
+Soós Anna Dorottya;soosannadorottya;19d;11.D;diak;soos.anna.19d@szlgbp.hu;cidobexapini
+Süveges Nikolett Kitti;suvegesnikolettkitti;19d;11.D;diak;suveges.nikolett.19d@szlgbp.hu;reganohilopu
+Szabó Gergő;szabogergo;19d;11.D;diak;szabo.gergo.19d@szlgbp.hu;najitasarehi
+Szalóki Orsolya;szalokiorsolya;19d;11.D;diak;szaloki.orsolya.19d@szlgbp.hu;nagoxasojedu
+Székhelyi Alexandra Lili;szekhelyialexandralili;19d;11.D;diak;szekhelyi.alexandra.19d@szlgbp.hu;monemecatuma
+Szuromi Botond;szuromibotond;19d;11.D;diak;szuromi.botond.19d@szlgbp.hu;sibotinovihi
+Szücs Gilda Izabella;szucsgildaizabella;19d;11.D;diak;szucs.gilda.19d@szlgbp.hu;xaconudamupi
+Varasdi Simon Szilárd;varasdisimonszilard;19d;11.D;diak;varasdi.simon.19d@szlgbp.hu;xoliliganici
+Veszely Gabriella Dóra;veszelygabrielladora;19d;11.D;diak;veszely.gabriella.19d@szlgbp.hu;kexanajajera
+Zsák Eszter;zsakeszter;19d;11.D;diak;zsak.eszter.19d@szlgbp.hu;lodajepipope
+Balog Boldizsár;balogboldizsar;18e;11.E;diak;balog.boldizsar.18e@szlgbp.hu;girorakiniha
+Bánki Bálint;bankibalint;18e;11.E;diak;banki.balint.18e@szlgbp.hu;ralobogeriva
+Bányai Lívia;banyailivia;18e;11.E;diak;banyai.livia.18e@szlgbp.hu;valucuxoduxe
+Bauer Léna Adél;bauerlenaadel;18e;11.E;diak;bauer.lena.18e@szlgbp.hu;hakekadudapu
+Bezzeg Enikő;bezzegeniko;18e;11.E;diak;bezzeg.eniko.18e@szlgbp.hu;rufisihonove
+Biró Boldizsár András;biroboldizsarandras;18e;11.E;diak;biro.boldizsar.18e@szlgbp.hu;guroxibiteno
+Bross Tamás Vencel;brosstamasvencel;18e;11.E;diak;bross.tamas.18e@szlgbp.hu;sudelegefetu
+Csaba Péter;csabapeter;18e;11.E;diak;csaba.peter.18e@szlgbp.hu;supinitusuta
+Egervári Gréta;egervarigreta;18e;11.E;diak;egervari.greta.18e@szlgbp.hu;dolekecomafu
+Fábián Tamás;fabiantamas;18e;11.E;diak;fabian.tamas.18e@szlgbp.hu;xolorulamuxa
+Foltin Szófia Hajnalka;foltinszofiahajnalka;18e;11.E;diak;foltin.szofia.18e@szlgbp.hu;daxenalosula
+Gagyi Benedek;gagyibenedek;18e;11.E;diak;gagyi.benedek.18e@szlgbp.hu;sekamufabini
+Gál Krisztián;galkrisztian;18e;11.E;diak;gal.krisztian.18e@szlgbp.hu;mivitubuxalu
+Hopoczky Csenge Boglárka;hopoczkycsengeboglarka;18e;11.E;diak;hopoczky.csenge.18e@szlgbp.hu;teninujucapu
+Kalmár Emese;kalmaremese;18e;11.E;diak;kalmar.emese.18e@szlgbp.hu;kokilupagacu
+Karminás Bence Regő;karminasbencerego;18e;11.E;diak;karminas.bence.18e@szlgbp.hu;laxukutudefu
+Kiss Dorottya Zsófia;kissdorottyazsofia;18e;11.E;diak;kiss.dorottya.18e@szlgbp.hu;fuvusohosaco
+Lánczy Zoltán Gergő;lanczyzoltangergo;18e;11.E;diak;lanczy.zoltan.18e@szlgbp.hu;bixakopepace
+Le Dinh Trung;ledinhtrung;18e;11.E;diak;le.dinh.18e@szlgbp.hu;kofaroxujuci
+Lévai Lili;levailili;18e;11.E;diak;levai.lili.18e@szlgbp.hu;rimohucaxaci
+Magashegyi Boglárka;magashegyiboglarka;18e;11.E;diak;magashegyi.boglarka.18e@szlgbp.hu;pumeleruvomu
+Makay Bátor Csaba;makaybatorcsaba;18e;11.E;diak;makay.bator.18e@szlgbp.hu;bapohasobetu
+Nakos Dimitrios Alexandros;nakosdimitriosalexandros;18e;11.E;diak;nakos.dimitrios.18e@szlgbp.hu;lanarihasibi
+Németh Ábel;nemethabel;18e;11.E;diak;nemeth.abel.18e@szlgbp.hu;mejeciguruhu
+Németh Patrícia Anna;nemethpatriciaanna;18e;11.E;diak;nemeth.patricia.18e@szlgbp.hu;nugadobusuce
+Pap János Zoltán;papjanoszoltan;18e;11.E;diak;pap.janos.18e@szlgbp.hu;jijejumolalu
+Radvan Lilla;radvanlilla;18e;11.E;diak;radvan.lilla.18e@szlgbp.hu;licaxapubexe
+Soós Viktória Mónika;soosviktoriamonika;18e;11.E;diak;soos.viktoria.18e@szlgbp.hu;vafurihinaja
+Szabó Gréta;szabogreta;18e;11.E;diak;szabo.greta.18e@szlgbp.hu;gekusixevova
+Szenczi Bence;szenczibence;18e;11.E;diak;szenczi.bence.18e@szlgbp.hu;pojifucitune
+Szente Nikolett;szentenikolett;18e;11.E;diak;szente.nikolett.18e@szlgbp.hu;fokixikonava
+T.Kovács Adrienn;t.kovacsadrienn;18e;11.E;diak;t.kovacs.adrienn.18e@szlgbp.hu;feloxipifefu
+Torjai Tamás;torjaitamas;18e;11.E;diak;torjai.tamas.18e@szlgbp.hu;fepalijefetu
+Vámos Boglárka;vamosboglarka;18e;11.E;diak;vamos.boglarka.18e@szlgbp.hu;sasocenuximi
+Veszelovszky Dóra;veszelovszkydora;18e;11.E;diak;veszelovszky.dora.18e@szlgbp.hu;jisogadajake
+Zováth Fanni;zovathfanni;18e;11.E;diak;zovath.fanni.18e@szlgbp.hu;hipivanadamu
+Adamcsek Fanni;adamcsekfanni;18f;11.F;diak;adamcsek.fanni.18f@szlgbp.hu;ganumodapofi
+Bácskai Kristóf;bacskaikristof;18f;11.F;diak;bacskai.kristof.18f@szlgbp.hu;xivudutirolo
+Bárdos Márton;bardosmarton;18f;11.F;diak;bardos.marton.18f@szlgbp.hu;tujimaxavoha
+Barta Zoé Petra;bartazoepetra;18f;11.F;diak;barta.zoe.18f@szlgbp.hu;pulafotacefa
+Bencze Ákos Lajos;benczeakoslajos;18f;11.F;diak;bencze.akos.18f@szlgbp.hu;tararocutifo
+Czeglédi Szonja Zsófia;czeglediszonjazsofia;18f;11.F;diak;czegledi.szonja.18f@szlgbp.hu;xoxikokibaja
+Csurgó Márton;csurgomarton;18f;11.F;diak;csurgo.marton.18f@szlgbp.hu;pocucocuxase
+Fáy Nikolett;faynikolett;18f;11.F;diak;fay.nikolett.18f@szlgbp.hu;ridesajukojo
+Horváth Bence Bálint;horvathbencebalint;18f;11.F;diak;horvath.bence.18f@szlgbp.hu;kepujegicoja
+Hugert Alex;hugertalex;18f;11.F;diak;hugert.alex.18f@szlgbp.hu;lehohahigisi
+Ipacs Gergő;ipacsgergo;18f;11.F;diak;ipacs.gergo.18f@szlgbp.hu;jekijapeneko
+Jaksics Péter Csaba;jaksicspetercsaba;18f;11.F;diak;jaksics.peter.18f@szlgbp.hu;pitudiperove
+Jugl Dorottya Panna;jugldorottyapanna;18f;11.F;diak;jugl.dorottya.18f@szlgbp.hu;pecuvetojiju
+Kállai Tamara Cecília;kallaitamaracecilia;18f;11.F;diak;kallai.tamara.18f@szlgbp.hu;dakajibugonu
+Kardos Shay Hanna;kardosshayhanna;18f;11.F;diak;kardos.shay.18f@szlgbp.hu;bacabotokilu
+Keszthelyi Aba Boldizsár;keszthelyiababoldizsar;18f;11.F;diak;keszthelyi.aba.18f@szlgbp.hu;mobixirebavi
+Kiss Bálint;kissbalint;18f;11.F;diak;kiss.balint.18f@szlgbp.hu;bomafegehexa
+Kiss Gergő;kissgergo;18f;11.F;diak;kiss.gergo.18f@szlgbp.hu;haluhatajeji
+Kocsis Izabell;kocsisizabell;18f;11.F;diak;kocsis.izabell.18f@szlgbp.hu;pakipumovihi
+Kovács Péter;kovacspeter;18f;11.F;diak;kovacs.peter.18f@szlgbp.hu;firefidajala
+Kui Domonkos;kuidomonkos;18f;11.F;diak;kui.domonkos.18f@szlgbp.hu;jecedugefeda
+Lefánti Vilmos;lefantivilmos;18f;11.F;diak;lefanti.vilmos.18f@szlgbp.hu;mudinefefuru
+Mátéfy Luca Jázmin;matefylucajazmin;18f;11.F;diak;matefy.luca.18f@szlgbp.hu;fecopelitufa
+Máthé Árnika;mathearnika;18f;11.F;diak;mathe.arnika.18f@szlgbp.hu;lovepuvomubu
+Mohácsi Máté;mohacsimate;18f;11.F;diak;mohacsi.mate.18f@szlgbp.hu;nosakamulilu
+Rózsa Natália Nóra;rozsanatalianora;18f;11.F;diak;rozsa.natalia.18f@szlgbp.hu;muhepanafora
+Sólyomi Tamás Márk;solyomitamasmark;18f;11.F;diak;solyomi.tamas.18f@szlgbp.hu;nehemavebika
+Stróbli Olivér;stroblioliver;18f;11.F;diak;strobli.oliver.18f@szlgbp.hu;xapikecuvixe
+Szanka Benedek Gábor;szankabenedekgabor;18f;11.F;diak;szanka.benedek.18f@szlgbp.hu;sekopevejitu
+Szűcs Gergely;szucsgergely;18f;11.F;diak;szucs.gergely.18f@szlgbp.hu;kasucorasimu
+Takács Brendon István;takacsbrendonistvan;18f;11.F;diak;takacs.brendon.18f@szlgbp.hu;ropidifilani
+Tóth Réka;tothreka;18f;11.F;diak;toth.reka.18f@szlgbp.hu;konanarecebi
+Tóth Viktória;tothviktoria;18f;11.F;diak;toth.viktoria.18f@szlgbp.hu;pokatutecela
+Török Soma;toroksoma;18f;11.F;diak;torok.soma.18f@szlgbp.hu;modahacahibu
+Varga Dániel;vargadaniel;18f;11.F;diak;varga.daniel.18f@szlgbp.hu;jofijipadade
+Yao Yi Hao;yaoyihao;18f;11.F;diak;yao.yi.18f@szlgbp.hu;buvenihidofu
+Zelenák András;zelenakandras;18f;11.F;diak;zelenak.andras.18f@szlgbp.hu;cahigalatepa
+Zsiga Boglárka;zsigaboglarka;18f;11.F;diak;zsiga.boglarka.18f@szlgbp.hu;medumihekija
+Ács Laura Mária;acslauramaria;17a;12.A;diak;acs.laura.17a@szlgbp.hu;toharobecovi
+Balli Silvia Francesca;ballisilviafrancesca;17a;12.A;diak;balli.silvia.17a@szlgbp.hu;kapukelurani
+Bartha Kristóf;barthakristof;17a;12.A;diak;bartha.kristof.17a@szlgbp.hu;hihinodihepi
+Boldog Laura Viktória;boldoglauraviktoria;17a;12.A;diak;joo.laura.17a@szlgbp.hu;fovacohemifu
+Brázai Balázs Botond;brazaibalazsbotond;17a;12.A;diak;brazai.balazs.17a@szlgbp.hu;basikalovife
+Bukor Edina;bukoredina;17a;12.A;diak;bukor.edina.17a@szlgbp.hu;behovucavemi
+Buza Boldizsár;buzaboldizsar;17a;12.A;diak;buza.boldizsar.17a@szlgbp.hu;bokajunasipo
+Eisenkrammer Nóra;eisenkrammernora;17a;12.A;diak;eisenkrammer.nora.17a@szlgbp.hu;sujupenafopi
+Fehér Tibor;fehertibor;17a;12.A;diak;feher.tibor.17a@szlgbp.hu;jikuxominipu
+Fekete Julianna Angéla;feketejuliannaangela;17a;12.A;diak;fekete.julianna.17a@szlgbp.hu;bimajicelori
+Fekete Zsófia;feketezsofia;17a;12.A;diak;fekete.zsofia.17a@szlgbp.hu;bedikijagavi
+Fodor Júlia;fodorjulia;17a;12.A;diak;fodor.julia.17a@szlgbp.hu;gamejibasafe
+Fodor Sámuel;fodorsamuel;17a;12.A;diak;fodor.samuel.17a@szlgbp.hu;pocinisagako
+Fosztó Anna Léna;fosztoannalena;17a;12.A;diak;foszto.anna.17a@szlgbp.hu;potubofijife
+Frick Sára;fricksara;17a;12.A;diak;frick.sara.17a@szlgbp.hu;libidokonobe
+Gaál Dorottya;gaaldorottya;17a;12.A;diak;gaal.dorottya.17a@szlgbp.hu;sidilivifugi
+Hamvai Botond;hamvaibotond;17a;12.A;diak;hamvai.botond.17a@szlgbp.hu;sigokufuhana
+Hermann Ágnes;hermannagnes;17a;12.A;diak;hermann.agnes.17a@szlgbp.hu;xabipetusupo
+Huszár Olívia;huszarolivia;17a;12.A;diak;huszar.olivia.17a@szlgbp.hu;pehixuxumise
+Kékesdi Tamás Dániel;kekesditamasdaniel;17a;12.A;diak;kekesdi.tamas.17a@szlgbp.hu;fevuvoxerise
+Körmöczy Kinga;kormoczykinga;17a;12.A;diak;kormoczy.kinga.17a@szlgbp.hu;hukiboveperi
+Laczkó Bence;laczkobence;17a;12.A;diak;laczko.bence.17a@szlgbp.hu;hoticebukuji
+Limardo Chiara;limardochiara;17a;12.A;diak;limardo.chiara.17a@szlgbp.hu;hufamobojile
+Nagy Anna;nagyanna;17a;12.A;diak;nagy.anna.17a@szlgbp.hu;bemaxibihaxo
+Párkányi Ádám;parkanyiadam;17a;12.A;diak;parkanyi.adam.17a@szlgbp.hu;petigakavedi
+Purman Katalin;purmankatalin;17a;12.A;diak;purman.katalin.17a@szlgbp.hu;manojekutila
+Rigó Luca Zsófia;rigolucazsofia;17a;12.A;diak;rigo.luca.17a@szlgbp.hu;disavoxotimi
+Sipos Szabrina;siposszabrina;17a;12.A;diak;sipos.szabrina.17a@szlgbp.hu;fasoxojocasu
+Solymosi Lili;solymosilili;17a;12.A;diak;solymosi.lili.17a@szlgbp.hu;monihirereve
+Szekeres Laura;szekereslaura;17a;12.A;diak;szekeres.laura.17a@szlgbp.hu;gufogeluvoga
+Szirt Áron;szirtaron;17a;12.A;diak;szirt.aron.17a@szlgbp.hu;rohiromokale
+Tóth Csaba László;tothcsabalaszlo;17a;12.A;diak;toth.csaba.17a@szlgbp.hu;foducanopabo
+Tóth Dorina;tothdorina;17a;12.A;diak;toth.dorina.17a@szlgbp.hu;tonohukifubu
+Tóth Fanni;tothfanni;17a;12.A;diak;toth.fanni.17a@szlgbp.hu;pibuxadagaxu
+Vereszki Nóra;vereszkinora;17a;12.A;diak;vereszki.nora.17a@szlgbp.hu;fapivikajuji
+Zajácz Réka Dóra;zajaczrekadora;17a;12.A;diak;zajacz.reka.17a@szlgbp.hu;pahunigefare
+Antalovits Krisztián;antalovitskrisztian;18b;12.B;diak;antalovits.krisztian.18b@szlgbp.hu;xudacovahato
+Árva Krisztián;arvakrisztian;18b;12.B;diak;arva.krisztian.18b@szlgbp.hu;nililijebori
+Aslan Attila Bernard;aslanattilabernard;18b;12.B;diak;aslan.attila.18b@szlgbp.hu;ponafocaxega
+Assani Áron;assaniaron;18b;12.B;diak;assani.aron.18b@szlgbp.hu;cikocimepobe
+Barf Linda;barflinda;18b;12.B;diak;barf.linda.18b@szlgbp.hu;fipaluriludu
+Bereznyák Tímea Renáta;bereznyaktimearenata;18b;12.B;diak;bereznyak.timea.18b@szlgbp.hu;pabujotegibo
+Czézner Dóra;czeznerdora;18b;12.B;diak;czezner.dora.18b@szlgbp.hu;cofagopekiku
+Csopják Blanka Verona;csopjakblankaverona;18b;12.B;diak;csopjak.blanka.18b@szlgbp.hu;jurocejicera
+Debreczeni Kincső;debreczenikincso;18b;12.B;diak;debreczeni.kincso.18b@szlgbp.hu;regutivovusa
+Dékány Dorka Regina;dekanydorkaregina;18b;12.B;diak;dekany.dorka.18b@szlgbp.hu;tolosumobedi
+Divéki Botond;divekibotond;18b;12.B;diak;diveki.botond.18b@szlgbp.hu;rajubisocadu
+Farkas Róbert Alexander;farkasrobertalexander;18b;12.B;diak;farkas.robert.18b@szlgbp.hu;fupetigacuka
+Gál Botond Albert;galbotondalbert;18b;12.B;diak;gal.botond.18b@szlgbp.hu;cepevigisojo
+Gál Eszter;galeszter;18b;12.B;diak;gal.eszter.18b@szlgbp.hu;lepisujegagu
+Gárdos Blanka;gardosblanka;18b;12.B;diak;gardos.blanka.18b@szlgbp.hu;mibehixeridu
+Haraszti Angéla Erika;harasztiangelaerika;18b;12.B;diak;haraszti.angela.18b@szlgbp.hu;xabugumofegu
+Hegedüs Dávid Marcell;hegedusdavidmarcell;18b;12.B;diak;hegedus.david.18b@szlgbp.hu;domidafobeba
+Holod Kristóf;holodkristof;18b;12.B;diak;holod.kristof.18b@szlgbp.hu;nebuhafaxido
+Hortobágyi Dávid;hortobagyidavid;18b;12.B;diak;hortobagyi.david.18b@szlgbp.hu;gunupupahuru
+Karvasz Sándor;karvaszsandor;18b;12.B;diak;karvasz.sandor.18b@szlgbp.hu;lutecuboraxe
+Kovács Anna;kovacsanna;18b;12.B;diak;kovacs.anna.18b@szlgbp.hu;pinufafuxajo
+Kucsera Dániel;kucseradaniel;18b;12.B;diak;kucsera.daniel.18b@szlgbp.hu;tumuhirunico
+Lengyel Balázs;lengyelbalazs;18b;12.B;diak;lengyel.balazs.18b@szlgbp.hu;rekahijabuge
+Lovas Laura;lovaslaura;18b;12.B;diak;lovas.laura.18b@szlgbp.hu;belegusasigu
+Molnár Szonja Szilvia;molnarszonjaszilvia;18b;12.B;diak;molnar.szonja.18b@szlgbp.hu;ripekanosopi
+Nagy Dávid;nagydavid;18b;12.B;diak;nagy.david.18b@szlgbp.hu;vavasapakacu
+Nagy Emese Réka;nagyemesereka;18b;12.B;diak;nagy.emese.18b@szlgbp.hu;jojeholomedo
+Nemes Márton Dénes;nemesmartondenes;18b;12.B;diak;nemes.marton.17b@szlgbp.hu;lamuhijugihi
+Ocztos Virág;ocztosvirag;18b;12.B;diak;ocztos.virag.18b@szlgbp.hu;tabupasehiki
+Pataki Anna Liza;patakiannaliza;18b;12.B;diak;pataki.anna.18b@szlgbp.hu;rapiduxapabo
+Pilák Bálint;pilakbalint;18b;12.B;diak;pilak.balint.18b@szlgbp.hu;rirolevelaxi
+Puha Dániel;puhadaniel;18b;12.B;diak;puha.daniel.18b@szlgbp.hu;kexaxoduxesa
+Szécsényi Tamás Zsolt;szecsenyitamaszsolt;18b;12.B;diak;szecsenyi.tamas.18b@szlgbp.hu;vapafavalafi
+Tóth Emma Laura;tothemmalaura;18b;12.B;diak;toth.emma.18b@szlgbp.hu;xocutojukovu
+Valastyán Richárd Dániel;valastyanricharddaniel;18b;12.B;diak;valastyan.richard.18b@szlgbp.hu;piboxixabevo
+Vasas Mátyás;vasasmatyas;18b;12.B;diak;vasas.matyas.18b@szlgbp.hu;jutapulofoba
+Vaskó Samu;vaskosamu;18b;12.B;diak;vasko.samu.18b@szlgbp.hu;jemukaronume
+Vér Krisztina Katalin;verkrisztinakatalin;18b;12.B;diak;ver.krisztina.18b@szlgbp.hu;tinicolagaco
+Versitz Ákos András;versitzakosandras;18b;12.B;diak;versitz.akos.18b@szlgbp.hu;pudicojebome
+Vincze Attila Gergely;vinczeattilagergely;18b;12.B;diak;vincze.attila.18b@szlgbp.hu;cekogugagalu
+Zvereva Sofia Alekszandrovna;zverevasofiaalekszandrovna;18b;12.B;diak;zvereva.sofia.18b@szlgbp.hu;fakexatucaco
+Ambrus Tamás;ambrustamas;18d;12.D;diak;ambrus.tamas.18d@szlgbp.hu;luboraloponu
+Balázs Panni;balazspanni;18d;12.D;diak;balazs.panni.18d@szlgbp.hu;jufenipejete
+Barta Liza Violetta;bartalizavioletta;18d;12.D;diak;barta.liza.18d@szlgbp.hu;doxemidujovi
+Csach Gergely Máté;csachgergelymate;18d;12.D;diak;csach.gergely.18d@szlgbp.hu;gunimukanumu
+Cseh Dorka;csehdorka;18d;12.D;diak;cseh.dorka.18d@szlgbp.hu;merodapirori
+Csépán Karina;csepankarina;18d;12.D;diak;csepan.karina.18d@szlgbp.hu;hebacebesitu
+Cserkuti Petra;cserkutipetra;18d;12.D;diak;cserkuti.petra.18d@szlgbp.hu;xadebeboteta
+Diviki-Nagy Emese;diviki-nagyemese;18d;12.D;diak;diviki-nagy.emese.18d@szlgbp.hu;hipajadelece
+Dombi Dóra;dombidora;18d;12.D;diak;dombi.dora.18d@szlgbp.hu;cojumuvetigo
+Erdős Noémi;erdosnoemi;18d;12.D;diak;erdos.noemi.18d@szlgbp.hu;cahataminara
+Fülöp Kornél Olivér;fulopkorneloliver;18d;12.D;diak;fulop.kornel.18d@szlgbp.hu;tacuvaxagidi
+György Virág;gyorgyvirag;18d;12.D;diak;gyorgy.virag.18d@szlgbp.hu;xavafolidige
+Hajdu Péter Márton;hajdupetermarton;18d;12.D;diak;hajdu.peter.18d@szlgbp.hu;jenidipohisi
+Hegedűs Lili Eszter;hegeduslilieszter;18d;12.D;diak;hegedus.lili.18d@szlgbp.hu;lorajudahole
+Hoksza Panna Mia;hokszapannamia;18d;12.D;diak;hoksza.panna.18d@szlgbp.hu;jalesetuxecu
+Jakab Anna;jakabanna;18d;12.D;diak;jakab.anna.18d@szlgbp.hu;venogohuhase
+Kling Marcell;klingmarcell;18d;12.D;diak;kling.marcell.18d@szlgbp.hu;vapiredecabu
+Kondér Dóra;konderdora;18d;12.D;diak;konder.dora.18d@szlgbp.hu;gigibesakixu
+Kovács Márta Réka;kovacsmartareka;18d;12.D;diak;kovacs.marta.18d@szlgbp.hu;naxilipamiri
+Kovács Milán;kovacsmilan;18d;12.D;diak;kovacs.milan.18d@szlgbp.hu;rugokalenasu
+Körömi Jázmin Adrienne;koromijazminadrienne;18d;12.D;diak;koromi.jazmin.17d@szlgbp.hu;dibaxusovata
+Köves Auróra;kovesaurora;18d;12.D;diak;koves.aurora.18d@szlgbp.hu;pefakogapuku
+Kristóf Kármen;kristofkarmen;18d;12.D;diak;kristof.karmen.18d@szlgbp.hu;lupocasofela
+Kupár Hanna Viktória;kuparhannaviktoria;18d;12.D;diak;kupar.hanna.18d@szlgbp.hu;xofetexasele
+Lakatos Valter Kornél;lakatosvalterkornel;18d;12.D;diak;lakatos.valter.18d@szlgbp.hu;mevukecerebe
+Lendvai Petra;lendvaipetra;18d;12.D;diak;lendvai.petra.18d@szlgbp.hu;himudajihamu
+Majorszki Edina;majorszkiedina;18d;12.D;diak;majorszki.edina.18d@szlgbp.hu;sucofihemodo
+Mátyás Eszter Martina;matyasesztermartina;18d;12.D;diak;matyas.eszter.18d@szlgbp.hu;ritunuponemu
+Miskey Alfréd Márk;miskeyalfredmark;18d;12.D;diak;miskey.alfred.18d@szlgbp.hu;hijixexakefa
+Molnár Elizabet;molnarelizabet;18d;12.D;diak;molnar.elizabet.18d@szlgbp.hu;xodovilifigi
+Nagy Levente Zoltán;nagyleventezoltan;18d;12.D;diak;nagy.levente.18d@szlgbp.hu;pamanovohabi
+Pálfi Lilla;palfililla;18d;12.D;diak;palfi.lilla.18d@szlgbp.hu;kobeximifoha
+Stellek Adrienn Bettina;stellekadriennbettina;18d;12.D;diak;stellek.adrienn.18d@szlgbp.hu;xitejinarere
+Sütő Alexandra Melinda;sutoalexandramelinda;18d;12.D;diak;suto.alexandra.18d@szlgbp.hu;pikebicijoxa
+Szabó Ákos;szaboakos;18d;12.D;diak;szabo.akos.18d@szlgbp.hu;dekedisiloga
+Tóth Márk;tothmark;18d;12.D;diak;toth.mark.18d@szlgbp.hu;buleruludame
+Trepák Evelin;trepakevelin;18d;12.D;diak;trepak.evelin.18d@szlgbp.hu;jirifefoperu
+Turányik-Klúber Gréta Angéla;turanyik-klubergretaangela;18d;12.D;diak;turanyik-kluber.greta.18d@szlgbp.hu;fufadiroxobe
+Viski Márk Zoltán;viskimarkzoltan;18d;12.D;diak;viski.mark.18d@szlgbp.hu;silorijilako
+Zathureczky Kitti;zathureczkykitti;18d;12.D;diak;zathureczky.kitti.18d@szlgbp.hu;canafafumamo
+Agárdi Balázs;agardibalazs;17e;12.E;diak;agardi.balazs.17e@szlgbp.hu;dihihenorele
+Balogh-Bodor Janka;balogh-bodorjanka;17e;12.E;diak;balogh-bodor.janka.17e@szlgbp.hu;medanokekecu
+Bojtor Bánk András;bojtorbankandras;17e;12.E;diak;bojtor.bank.17e@szlgbp.hu;fubedaropusi
+Boone Alexander Sebastian;boonealexandersebastian;17e;12.E;diak;boone.alexander.17e@szlgbp.hu;bipesorotepo
+Bőr Bence;borbence;17e;12.E;diak;bor.bence.17e@szlgbp.hu;ramicunasalu
+Czeitler Jázmin;czeitlerjazmin;17e;12.E;diak;czeitler.jazmin.17e@szlgbp.hu;lobaveximavi
+Czinege Réka;czinegereka;17e;12.E;diak;czinege.reka.17e@szlgbp.hu;movojerepuda
+Deák Bence;deakbence;17e;12.E;diak;deak.bence.17e@szlgbp.hu;lupesatebiro
+Dicső Zoltán;dicsozoltan;17e;12.E;diak;dicso.zoltan.17e@szlgbp.hu;binogetobinu
+Drahos Gabriella Ildikó;drahosgabriellaildiko;17e;12.E;diak;drahos.gabriella.17e@szlgbp.hu;nufejadireti
+Fazekas-Szücs Ágnes;fazekas-szucsagnes;17e;12.E;diak;fazekas-szucs.agnes.17e@szlgbp.hu;verejamihiju
+Fekete Rebeka Jázmin;feketerebekajazmin;17e;12.E;diak;fekete.rebeka.17e@szlgbp.hu;socatepojila
+Fekete Richárd Bendegúz;feketerichardbendeguz;17e;12.E;diak;fekete.richard.17e@szlgbp.hu;garupasefoto
+Hantosi Dorottya;hantosidorottya;17e;12.E;diak;hantosi.dorottya.17e@szlgbp.hu;mipukedadufo
+Helyes András;helyesandras;17e;12.E;diak;helyes.andras.17e@szlgbp.hu;sapusibekogo
+Horváth Korina Bernadett;horvathkorinabernadett;17e;12.E;diak;horvath.korina.17e@szlgbp.hu;sifecuhosebe
+Jakab Luca Katalin;jakablucakatalin;17e;12.E;diak;jakab.luca.17e@szlgbp.hu;gatorumedexe
+Kecső Fruzsina;kecsofruzsina;17e;12.E;diak;kecso.fruzsina.17e@szlgbp.hu;doxafajonaxi
+Kovács Dániel;kovacsdaniel;17e;12.E;diak;kovacs.daniel.17e@szlgbp.hu;jejodirumugu
+Lőrincz Márton;lorinczmarton;17e;12.E;diak;lorincz.marton.17e@szlgbp.hu;pacodicusore
+Madarász Csilla;madaraszcsilla;17e;12.E;diak;madarasz.csilla.17e@szlgbp.hu;nicerepahali
+Máté Rita;materita;17e;12.E;diak;mate.rita.17e@szlgbp.hu;dojarokodudu
+Muskotál Odett;muskotalodett;17e;12.E;diak;muskotal.odett.17e@szlgbp.hu;rofibepivibo
+Sipos Simon Bendegúz;sipossimonbendeguz;17e;12.E;diak;sipos.simon.17e@szlgbp.hu;mosihikisimo
+Szabó Anett Zsuzsanna;szaboanettzsuzsanna;17e;12.E;diak;szabo.anett.17e@szlgbp.hu;sehiciluhipi
+Szabó Szonja;szaboszonja;17e;12.E;diak;szabo.szonja.17e@szlgbp.hu;cigujogitimi
+Szetei Erika Petra;szeteierikapetra;17e;12.E;diak;szetei.erika.17e@szlgbp.hu;saritijusixi
+Szőts Botond Ákos;szotsbotondakos;17e;12.E;diak;szots.botond.17e@szlgbp.hu;lepurobusexi
+Szűcs Réka;szucsreka;17e;12.E;diak;szucs.reka.17e@szlgbp.hu;tumafurolaxu
+Tagscherer Csenge Kata;tagscherercsengekata;17e;12.E;diak;tagscherer.csenge.17e@szlgbp.hu;xanutisanuma
+Tajti Petra;tajtipetra;17e;12.E;diak;tajti.petra.17e@szlgbp.hu;pitihejuxato
+Tóth László Krisztián;tothlaszlokrisztian;17e;12.E;diak;toth.laszlo.17e@szlgbp.hu;kipaxajafose
+Tóth László Levente;tothlaszlolevente;17e;12.E;diak;toth.levente.17e@szlgbp.hu;durorejotidu
+Tran Kim Rita;trankimrita;17e;12.E;diak;tran.kim.17e@szlgbp.hu;falafokedosi
+Tűz Csenge;tuzcsenge;17e;12.E;diak;tuz.csenge.17e@szlgbp.hu;xemakonopega
+Zágráb Nikolett;zagrabnikolett;17e;12.E;diak;zagrab.nikolett.17e@szlgbp.hu;gicilusukice
+Barnóczki Sára;barnoczkisara;17f;12.F;diak;barnoczki.sara.17f@szlgbp.hu;jexopovahaxe
+Bodnár Olivér;bodnaroliver;17f;12.F;diak;bodnar.oliver.17f@szlgbp.hu;sikoboxiteju
+Boros Fanni;borosfanni;17f;12.F;diak;boros.fanni.17f@szlgbp.hu;movifemeceba
+Bökfi Zsombor;bokfizsombor;17f;12.F;diak;bokfi.zsombor.17f@szlgbp.hu;cepavorocuga
+Büki Kálmán;bukikalman;17f;12.F;diak;buki.kalman.17f@szlgbp.hu;xomevukusafu
+Dán Imre;danimre;17f;12.F;diak;dan.imre.17f@szlgbp.hu;roladudapame
+Dolmány Fanni;dolmanyfanni;17f;12.F;diak;gulacsy.fanni.17f@szlgbp.hu;sakegehukuja
+Fehér Ádám Bence;feheradambence;17f;12.F;diak;feher.adam.17f@szlgbp.hu;cuhifuguhivi
+Franca Dávid;francadavid;17f;12.F;diak;franca.david.17f@szlgbp.hu;nocemopafesi
+Gayer Alíz;gayeraliz;17f;12.F;diak;gayer.aliz.17f@szlgbp.hu;bakimuhikafe
+Hargitai Bence;hargitaibence;17f;12.F;diak;hargitai.bence.17f@szlgbp.hu;rixitokipepe
+Hennel Flórián;hennelflorian;17f;12.F;diak;hennel.florian.17f@szlgbp.hu;tadivesoseku
+Holndonner Botond;holndonnerbotond;17f;12.F;diak;holndonner.botond.17f@szlgbp.hu;paxecuxujoxa
+Horváth Lili;horvathlili;17f;12.F;diak;horvath.lili.17f@szlgbp.hu;cofutohegila
+Hóvári Dénes Gyula;hovaridenesgyula;17f;12.F;diak;hovari.denes.17f@szlgbp.hu;mububejaboju
+Kántor Alma;kantoralma;17f;12.F;diak;kantor.alma.17f@szlgbp.hu;hedirafibako
+Kiss Dominika;kissdominika;17f;12.F;diak;kiss.dominika.17f@szlgbp.hu;xopumedudelu
+Krisztián Karina Liza;krisztiankarinaliza;17f;12.F;diak;krisztian.karina.17f@szlgbp.hu;bopomejegave
+Kussa Richárd;kussarichard;17f;12.F;diak;kussa.richard.17f@szlgbp.hu;luhivudimoco
+Mahut Luca Nóra;mahutlucanora;17f;12.F;diak;mahut.luca.17f@szlgbp.hu;jebakecohava
+Mészáros Zoltán Gábor;meszaroszoltangabor;17f;12.F;diak;meszaros.zoltan.17f@szlgbp.hu;felahutajenu
+Milán Erika Tímea;milanerikatimea;17f;12.F;diak;milan.erika.17f@szlgbp.hu;gilugusocofa
+Móczár Dániel László;moczardaniellaszlo;17f;12.F;diak;moczar.daniel.17f@szlgbp.hu;vosofupeciso
+Molnár Réka Kamilla;molnarrekakamilla;17f;12.F;diak;molnar.reka.17f@szlgbp.hu;jecetoriruhu
+Pantó Alex;pantoalex;17f;12.F;diak;panto.alex.17f@szlgbp.hu;pumeculelipu
+Pelle Zoltán;pellezoltan;17f;12.F;diak;pelle.zoltan.17f@szlgbp.hu;lekuhisunihi
+Pribék Barnabás Zoltán;pribekbarnabaszoltan;17f;12.F;diak;pribek.barnabas.17f@szlgbp.hu;cedukogovabo
+Soós Roland Levente;soosrolandlevente;17f;12.F;diak;soos.roland.17f@szlgbp.hu;funibopakoda
+Szabó Jutta Dorottya;szabojuttadorottya;17f;12.F;diak;szabo.dorottya.17f@szlgbp.hu;hecagukacisu
+Szabó Kristóf Tamás;szabokristoftamas;17f;12.F;diak;szabo.kristof.17f@szlgbp.hu;lirabikaturi
+Vámos Ádám;vamosadam;17f;12.F;diak;vamos.adam.17f@szlgbp.hu;panamuranumu
+Várkonyi Bence Ferenc;varkonyibenceferenc;17f;12.F;diak;varkonyi.bence.17f@szlgbp.hu;pujalufelege
+Veréb Eliza;verebeliza;17f;12.F;diak;vereb.eliza.17f@szlgbp.hu;tulofigupegi
+Zambelly Soma;zambellysoma;17f;12.F;diak;zambelly.soma.17f@szlgbp.hu;danotihakase
+Andorkó Renáta;andorkorenata;20a;9.A;diak;andorko.renata.20a@szlgbp.hu;botujodojela
+Arancutean Maria Nicoleta;arancuteanmarianicoleta;20a;9.A;diak;arancutean.maria.19a@szlgbp.hu;xujabafiroki
+Arras Giada;arrasgiada;20a;9.A;diak;arras.giada.20a@szlgbp.hu;xepahitelate
+Azurák Zsófia;azurakzsofia;20a;9.A;diak;azurak.zsofia.20a@szlgbp.hu;pevejigonufa
+Babinszki Zsófia Rita;babinszkizsofiarita;20a;9.A;diak;babinszki.zsofia.20a@szlgbp.hu;dapesuhelati
+Barta Emma;bartaemma;20a;9.A;diak;barta.emma.20a@szlgbp.hu;hejojutocopi
+Bartalis Zsófia;bartaliszsofia;20a;9.A;diak;bartalis.zsofia.20a@szlgbp.hu;nelufotolaju
+Burger Zsombor Benedek;burgerzsomborbenedek;20a;9.A;diak;burger.zsombor.20a@szlgbp.hu;vegavakajigu
+Deák Hanna;deakhanna;20a;9.A;diak;deak.hanna.20a@szlgbp.hu;vulifodofije
+Fekete Fruzsina;feketefruzsina;20a;9.A;diak;fekete.fruzsina.20a@szlgbp.hu;tutixucunaxo
+Grandpierre Orsolya;grandpierreorsolya;20a;9.A;diak;grandpierre.orsolya.20a@szlgbp.hu;cuvapagajagi
+Huszár Alexandra;huszaralexandra;20a;9.A;diak;huszar.alexandra.20a@szlgbp.hu;cefilotufapi
+Kaminek Noémi Kitti;kamineknoemikitti;20a;9.A;diak;kaminek.noemi.20a@szlgbp.hu;nefuhexofepa
+Kis Karolina Hanna;kiskarolinahanna;20a;9.A;diak;kis.karolina.20a@szlgbp.hu;xusiravibigu
+Kispál Dániel;kispaldaniel;20a;9.A;diak;kispal.daniel.20a@szlgbp.hu;duritobakevi
+Koroknai Lilla Dorka;koroknaililladorka;20a;9.A;diak;koroknai.lilla.20a@szlgbp.hu;romefarogiti
+Kovács Flóra;kovacsflora;20a;9.A;diak;kovacs.flora.20a@szlgbp.hu;rofekelijiru
+Maróti Gergő;marotigergo;20a;9.A;diak;maroti.gergo.20a@szlgbp.hu;tepihocedagu
+Marton Hanna;martonhanna;20a;9.A;diak;marton.hanna.20a@szlgbp.hu;sobahijabehe
+Mártonffy Jakab;martonffyjakab;20a;9.A;diak;martonffy.jakab.20a@szlgbp.hu;cabodugecavo
+Mészáros Jázmin;meszarosjazmin;20a;9.A;diak;meszaros.jazmin.20a@szlgbp.hu;doterogutaga
+Mészáros-Kottán Ida;meszaros-kottanida;20a;9.A;diak;meszaros-kottan.ida.20a@szlgbp.hu;kehapenasode
+Nagy Eszter Katalin;nagyeszterkatalin;20a;9.A;diak;nagy.eszter.20a@szlgbp.hu;ramidivukave
+Prehoda Júlia;prehodajulia;20a;9.A;diak;prehoda.julia.20a@szlgbp.hu;kebofosidoco
+Prekánszki Rita;prekanszkirita;20a;9.A;diak;prekanszki.rita.20a@szlgbp.hu;bibejoxisaha
+Rábai Dávid Krisztián;rabaidavidkrisztian;20a;9.A;diak;rabai.david.20a@szlgbp.hu;fifusotokavi
+Simon Benedek;simonbenedek;20a;9.A;diak;simon.benedek.20a@szlgbp.hu;kihanecejaje
+Simon Viktória;simonviktoria;20a;9.A;diak;simon.viktoria.20a@szlgbp.hu;cepererocige
+Stedron Ágnes;stedronagnes;20a;9.A;diak;stedron.agnes.20a@szlgbp.hu;lepogexicaho
+Szabó Luca Blanka;szabolucablanka;20a;9.A;diak;szabo.luca.20a@szlgbp.hu;bimuvemakiku
+Szauter Virág;szautervirag;20a;9.A;diak;szauter.virag.20a@szlgbp.hu;kacodariciha
+Tábi Ákos;tabiakos;20a;9.A;diak;tabi.akos.20a@szlgbp.hu;cuxodusuviro
+Tiszay Villő;tiszayvillo;20a;9.A;diak;tiszay.villo.20a@szlgbp.hu;futovefogoku
+Török Anna;torokanna;20a;9.A;diak;torok.anna.20a@szlgbp.hu;xemidaxucugi
+Török Szófia;torokszofia;20a;9.A;diak;torok.szofia.20a@szlgbp.hu;nuxurirusona
+Varga Márk;vargamark;20a;9.A;diak;varga.mark.20a@szlgbp.hu;dohikexihola
+Vikár Csilla Napsugár;vikarcsillanapsugar;20a;9.A;diak;vikar.csilla.20a@szlgbp.hu;xafitubilepe
+Wootsch Gábor Tamás;wootschgabortamas;20a;9.A;diak;wootsch.gabor.20a@szlgbp.hu;mofavuhedadu
+Bakonyi Eszter;bakonyieszter;21b;9.B;diak;bakonyi.eszter.21b@szlgbp.hu;joraxinifexe
+Bencze Zsófia;benczezsofia;21b;9.B;diak;bencze.zsofia.21b@szlgbp.hu;tuxojabifise
+Borovics-Kocsis Bence;borovics-kocsisbence;21b;9.B;diak;borovics-kocsis.bence.21b@szlgbp.hu;nomovuporuna
+Brunn Vencel Bálint;brunnvencelbalint;21b;9.B;diak;brunn.vencel.21b@szlgbp.hu;tigexijuneso
+Csákányi Emma;csakanyiemma;21b;9.B;diak;csakanyi.emma.21b@szlgbp.hu;gotefetakuta
+Csarankó Márk Róbert;csarankomarkrobert;21b;9.B;diak;csaranko.mark.21b@szlgbp.hu;coxexadifega
+Csető Csilla;csetocsilla;21b;9.B;diak;cseto.csilla.21b@szlgbp.hu;cufapegolide
+Csuhai Dorina;csuhaidorina;21b;9.B;diak;csuhai.dorina.21b@szlgbp.hu;jovokaxigoxu
+Dam Nikolett;damnikolett;21b;9.B;diak;dam.nikolett.21b@szlgbp.hu;kogoxococase
+Dimeth Nikolett Szonja;dimethnikolettszonja;21b;9.B;diak;dimeth.nikolett.21b@szlgbp.hu;gekoxamohipe
+Erdőssy Dorottya Márta;erdossydorottyamarta;21b;9.B;diak;erdossy.dorottya.21b@szlgbp.hu;ribekusukuku
+Fülöp Anna Csillag;fulopannacsillag;21b;9.B;diak;fulop.anna.21b@szlgbp.hu;fideficofasi
+Gagyi Eszter;gagyieszter;21b;9.B;diak;gagyi.eszter.21b@szlgbp.hu;rarunosehijo
+Horváth Alíz Katalin;horvathalizkatalin;21b;9.B;diak;horvath.aliz.21b@szlgbp.hu;ricorodamipe
+Horváth Flóra Rita;horvathflorarita;21b;9.B;diak;horvath.flora.21b@szlgbp.hu;nalikimisave
+Jancsár Botond;jancsarbotond;21b;9.B;diak;jancsar.botond.21b@szlgbp.hu;jilekifobixe
+Káldi Panna;kaldipanna;21b;9.B;diak;kaldi.panna.21b@szlgbp.hu;kadobevilupe
+Kelemen Panna;kelemenpanna;21b;9.B;diak;kelemen.panna.21b@szlgbp.hu;kifigavabova
+Kovács Róza Rebeka;kovacsrozarebeka;21b;9.B;diak;kovacs.roza.21b@szlgbp.hu;nujaxugurudi
+Kováts Olívia;kovatsolivia;21b;9.B;diak;kovats.olivia.21b@szlgbp.hu;tomobipikoso
+Majsai Dávid;majsaidavid;21b;9.B;diak;majsai.david.21b@szlgbp.hu;netiricixavu
+Majsai Kristóf János;majsaikristofjanos;21b;9.B;diak;majsai.kristof.21b@szlgbp.hu;terepukedufa
+Mándli Fanni;mandlifanni;21b;9.B;diak;mandli.fanni.21b@szlgbp.hu;keruxahunugo
+Nagy Patrik;nagypatrik;21b;9.B;diak;nagy.patrik.21b@szlgbp.hu;mececudesosi
+Pálszabó Gergő;palszabogergo;21b;9.B;diak;palszabo.gergo.21b@szlgbp.hu;denabutibena
+Pintér Abigél;pinterabigel;21b;9.B;diak;pinter.abigel.21b@szlgbp.hu;hunifevohepo
+Schmiedt Bálint;schmiedtbalint;21b;9.B;diak;schmiedt.balint.21b@szlgbp.hu;jepecisadolu
+Shan Wenxin Esther;shanwenxinesther;21b;9.B;diak;shan.wenxin.21b@szlgbp.hu;rofonumemolo
+Somogyi Dorka;somogyidorka;21b;9.B;diak;somogyi.dorka.21b@szlgbp.hu;pihagicerexo
+T. Kovács Ágnes;t.kovacsagnes;21b;9.B;diak;t.kovacs.agnes.21b@szlgbp.hu;konaxukorega
+Telkes Zoltán Dániel;telkeszoltandaniel;21b;9.B;diak;telkes.zoltan.21b@szlgbp.hu;citikigemuka
+Torda Sára;tordasara;21b;9.B;diak;torda.sara.21b@szlgbp.hu;notoxusebexo
+Tóth Artúr;tothartur;21b;9.B;diak;toth.artur.21b@szlgbp.hu;tasafalebolu
+Varga Noémi;varganoemi;21b;9.B;diak;varga.noemi.21b@szlgbp.hu;dipogurusubi
+Zwick Tamara Veronika;zwicktamaraveronika;21b;9.B;diak;zwick.tamara.21b@szlgbp.hu;dogonotifaso
+Bánóczi Eszter;banoczieszter;21c;9.C;diak;banoczi.eszter.21c@szlgbp.hu;kahibolinahu
+Beke Viktória Dóra;bekeviktoriadora;21c;9.C;diak;beke.viktoria.21c@szlgbp.hu;taxopumohavi
+Brunner Éva Beáta;brunnerevabeata;21c;9.C;diak;brunner.eva.21c@szlgbp.hu;mexurorebuge
+Csillag Panna Dóra;csillagpannadora;21c;9.C;diak;csillag.panna.21c@szlgbp.hu;cotoxutabaro
+Dobos-Kovács Anna;dobos-kovacsanna;21c;9.C;diak;dobos-kovacs.anna.21c@szlgbp.hu;xulafodexihu
+Ézsiás Réka;ezsiasreka;21c;9.C;diak;ezsias.reka.21c@szlgbp.hu;ferutifutexu
+Fábián Péter;fabianpeter;21c;9.C;diak;fabian.peter.21c@szlgbp.hu;hulosetahaja
+Fodor Zsófia Bernadett;fodorzsofiabernadett;21c;9.C;diak;fodor.zsofia.21c@szlgbp.hu;gexabakafedo
+Garabics Dániel;garabicsdaniel;21c;9.C;diak;garabics.daniel.21c@szlgbp.hu;nivimononedo
+Hallgas Benedek;hallgasbenedek;21c;9.C;diak;hallgas.benedek.21c@szlgbp.hu;dixiledemuka
+Horváth Botond;horvathbotond;21c;9.C;diak;horvath.botond.21c@szlgbp.hu;koselapagepo
+Iván Márton;ivanmarton;21c;9.C;diak;ivan.marton.21c@szlgbp.hu;fomudakefuke
+Jakubovics Petra;jakubovicspetra;21c;9.C;diak;jakubovics.petra.21c@szlgbp.hu;veporabudece
+Jámbor Botond;jamborbotond;21c;9.C;diak;jambor.botond.21c@szlgbp.hu;foluletecexu
+Kató Alexandra;katoalexandra;21c;9.C;diak;kato.alexandra.21c@szlgbp.hu;pagodupokiha
+Klimaj Virág;klimajvirag;21c;9.C;diak;klimaj.virag.21c@szlgbp.hu;lusuciromexu
+Kollár Anna;kollaranna;21c;9.C;diak;kollar.anna.21c@szlgbp.hu;volefulebami
+Kulcsár Laura Mária;kulcsarlauramaria;21c;9.C;diak;kulcsar.laura.21c@szlgbp.hu;jofibijixulu
+Laczó András;laczoandras;21c;9.C;diak;laczo.andras.21c@szlgbp.hu;suporetarena
+Lukovics Tamás;lukovicstamas;21c;9.C;diak;lukovics.tamas.21c@szlgbp.hu;cahivojofumu
+Maigut Zita Klára;maigutzitaklara;21c;9.C;diak;maigut.zita.21c@szlgbp.hu;fifanosipana
+Mészáros Rebeka;meszarosrebeka;21c;9.C;diak;meszaros.rebeka.21c@szlgbp.hu;kakanupojevo
+Molnár-Jéri Melinda;molnar-jerimelinda;21c;9.C;diak;molnar-jeri.melinda.21c@szlgbp.hu;rokeginivaha
+Molnár-Sefcsik Léna;molnar-sefcsiklena;21c;9.C;diak;molnar-sefcsik.lena.21c@szlgbp.hu;tuvadadahuxu
+Nguyen Nhat Duy;nguyennhatduy;21c;9.C;diak;nguyen.nhat.21c@szlgbp.hu;hufelidakoji
+Radvánszki Réka Viktória;radvanszkirekaviktoria;21c;9.C;diak;radvanszki.reka.21c@szlgbp.hu;pahitenurato
+Reinhardt Laura;reinhardtlaura;21c;9.C;diak;reinhardt.laura.21c@szlgbp.hu;kikadokotufi
+Szabó Tünde;szabotunde;21c;9.C;diak;szabo.tunde.21c@szlgbp.hu;fucekokopelu
+Szilasi Benjámin Imre;szilasibenjaminimre;21c;9.C;diak;szilasi.benjamin.21c@szlgbp.hu;kofalolujexi
+Sztanó Adrienn;sztanoadrienn;21c;9.C;diak;sztano.adrienn.21c@szlgbp.hu;katisusasete
+Tóth-Vatai Tamás;toth-vataitamas;21c;9.C;diak;toth-vatai.tamas.21c@szlgbp.hu;kenilimaluno
+Uramovszky Eszter;uramovszkyeszter;21c;9.C;diak;uramovszky.eszter.21c@szlgbp.hu;jaferemetuvu
+Varga Kristóf;vargakristof;21c;9.C;diak;varga.kristof.21c@szlgbp.hu;gihalenamufa
+Vigh Kíra Amarillisz;vighkiraamarillisz;21c;9.C;diak;vigh.kira.21c@szlgbp.hu;biludojucuba
+Wolf Ákos;wolfakos;21c;9.C;diak;wolf.akos.21c@szlgbp.hu;bacanafojusi
+Zack-Williams Balázs Olushola;zack-williamsbalazsolushola;21c;9.C;diak;zack-williams.balazs.21c@szlgbp.hu;verokululuvo
+Albrikowski Lilla;albrikowskililla;21d;9.D;diak;albrikowski.lilla.21d@szlgbp.hu;huhufipamuxa
+Arany Tímea;aranytimea;21d;9.D;diak;arany.timea.21d@szlgbp.hu;deritakenufe
+Becző Boglárka;beczoboglarka;21d;9.D;diak;beczo.boglarka.21d@szlgbp.hu;laxedexaxavu
+Benkó Nelli;benkonelli;21d;9.D;diak;benko.nelli.21d@szlgbp.hu;belojomejeru
+Ella Fruzsina;ellafruzsina;21d;9.D;diak;ella.fruzsina.21d@szlgbp.hu;tufenuruvivi
+Fata Bíbor;fatabibor;21d;9.D;diak;fata.bibor.21d@szlgbp.hu;bimohodakemi
+Gaáli Anna Bernadett;gaaliannabernadett;21d;9.D;diak;gaali.anna.21d@szlgbp.hu;xaxajavixaki
+Gálfi Hanna;galfihanna;21d;9.D;diak;galfi.hanna.21d@szlgbp.hu;cotihudifufe
+Jakab Vivien Ditta;jakabvivienditta;21d;9.D;diak;jakab.vivien.21d@szlgbp.hu;vihepuduxijo
+Jászai Léna Lili;jaszailenalili;21d;9.D;diak;jaszai.lena.21d@szlgbp.hu;capelixafigi
+Juhász Péter;juhaszpeter;21d;9.D;diak;juhasz.peter.21d@szlgbp.hu;bixonelesavo
+Kiss Zsófia Petra;kisszsofiapetra;21d;9.D;diak;kiss.zsofia.21d@szlgbp.hu;hovurukudobi
+Kovács Janka Éva;kovacsjankaeva;21d;9.D;diak;kovacs.janka.21d@szlgbp.hu;lamofojelofa
+Krivarics Hanna;krivaricshanna;21d;9.D;diak;krivarics.hanna.21d@szlgbp.hu;duvorupitasu
+Lakatos Lili;lakatoslili;21d;9.D;diak;lakatos.lili.21d@szlgbp.hu;fatasikicudo
+Lázár Zalán;lazarzalan;21d;9.D;diak;lazar.zalan.21d@szlgbp.hu;lonavifuvisa
+Mérai Gergő;meraigergo;21d;9.D;diak;merai.gergo.21d@szlgbp.hu;tonenepikamu
+Mészáros Kinga Andrea;meszaroskingaandrea;21d;9.D;diak;meszaros.kinga.21d@szlgbp.hu;cexagefepohi
+Nemesmagasi Gréta;nemesmagasigreta;21d;9.D;diak;nemesmagasi.greta.21d@szlgbp.hu;tirunedabofu
+Németh Zoé;nemethzoe;21d;9.D;diak;nemeth.zoe.21d@szlgbp.hu;melobubutesi
+Onodi Blanka;onodiblanka;21d;9.D;diak;onodi.blanka.21d@szlgbp.hu;curigesuliho
+Ormos Katica Lilla;ormoskaticalilla;21d;9.D;diak;ormos.katica.21d@szlgbp.hu;gimenuvosira
+Pelbárt Patrik;pelbartpatrik;21d;9.D;diak;pelbart.patrik.21d@szlgbp.hu;hamupodimece
+Rejtényi Regina;rejtenyiregina;21d;9.D;diak;rejtenyi.regina.21d@szlgbp.hu;beditenucepe
+Seres-Tukarcs Darinka Lola;seres-tukarcsdarinkalola;21d;9.D;diak;seres-tukarcs.darinka.21d@szlgbp.hu;xececifumami
+Stark Petra;starkpetra;21d;9.D;diak;stark.petra.21d@szlgbp.hu;licetobabili
+Subecz Viktória Hanna;subeczviktoriahanna;21d;9.D;diak;subecz.viktoria.21d@szlgbp.hu;sixitumipaku
+Szabó Dorina Kalliszta;szabodorinakalliszta;21d;9.D;diak;szabo.dorina.21d@szlgbp.hu;runukudupuxa
+Szabó Fruzsina Dorka;szabofruzsinadorka;21d;9.D;diak;szabo.fruzsina.21d@szlgbp.hu;comavamadepo
+Szántai Anna Katalin;szantaiannakatalin;21d;9.D;diak;szantai.anna.21d@szlgbp.hu;volebiloforo
+Szél Vivien;szelvivien;21d;9.D;diak;szel.vivien.21d@szlgbp.hu;xuxoluxuxeba
+Tarbály Alexa;tarbalyalexa;21d;9.D;diak;tarbaly.alexa.21d@szlgbp.hu;tepigikicopi
+Zhou Simona;zhousimona;21d;9.D;diak;zhou.simona.21d@szlgbp.hu;podenixivave
+Aparicio Márton;apariciomarton;20e;9.E;diak;aparicio.marton.20e@szlgbp.hu;kitapepemido
+Babinyecz Luca;babinyeczluca;20e;9.E;diak;babinyecz.luca.20e@szlgbp.hu;bixesahupupo
+Barczi Ádám;barcziadam;20e;9.E;diak;barczi.adam.20e@szlgbp.hu;hokojanadaga
+Bertalan Panna;bertalanpanna;20e;9.E;diak;bertalan.panna.20e@szlgbp.hu;jirojeleseto
+Bezzeg Kinga Edina;bezzegkingaedina;20e;9.E;diak;bezzeg.kinga.20e@szlgbp.hu;jegapisujano
+Boda Júlia Anna;bodajuliaanna;20e;9.E;diak;boda.julia.20e@szlgbp.hu;huxecavilido
+Budaházy Bernát;budahazybernat;20e;9.E;diak;budahazy.bernat.20e@szlgbp.hu;gilopivexece
+Csomai Fruzsina Dóra;csomaifruzsinadora;20e;9.E;diak;csomai.fruzsina.20e@szlgbp.hu;rirejupefaha
+Dorogi Jenő;dorogijeno;20e;9.E;diak;dorogi.jeno.20e@szlgbp.hu;tomusajocopa
+El Miri Martin Dominik;elmirimartindominik;20e;9.E;diak;el_miri.martin.20e@szlgbp.hu;loregajenota
+Elek Ádám;elekadam;20e;9.E;diak;elek.adam.20e@szlgbp.hu;vikirakaxige
+Fazekas Anna;fazekasanna;20e;9.E;diak;fazekas.anna.20e@szlgbp.hu;penamohikoga
+Fényes Emese;fenyesemese;20e;9.E;diak;fenyes.emese.20e@szlgbp.hu;lepicagovuge
+Guzsaly Mirjam;guzsalymirjam;20e;9.E;diak;guzsaly.mirjam.20e@szlgbp.hu;reladamunofo
+Huszár Anna;huszaranna;20e;9.E;diak;huszar.anna.20e@szlgbp.hu;gahulonocado
+Kerekes Dóra Csenge;kerekesdoracsenge;20e;9.E;diak;kerekes.dora.20e@szlgbp.hu;resofibonana
+Kertész Gáspár;kerteszgaspar;20e;9.E;diak;kertesz.gaspar.20e@szlgbp.hu;lananegelexu
+Konnerth Péter;konnerthpeter;20e;9.E;diak;konnerth.peter.20e@szlgbp.hu;lupegidetome
+Kovács Kristóf;kovacskristof;20e;9.E;diak;kovacs.kristof.20e@szlgbp.hu;rapavijujuxi
+László Júlia;laszlojulia;20e;9.E;diak;laszlo.julia.20e@szlgbp.hu;joninudepasu
+Lemli Levente Dániel;lemlileventedaniel;20e;9.E;diak;lemli.levente.20e@szlgbp.hu;velusenogago
+Lepres Ádám András;lepresadamandras;20e;9.E;diak;lepres.adam.20e@szlgbp.hu;cimogujejedi
+Libor Angelika Zsuzsanna;liborangelikazsuzsanna;20e;9.E;diak;libor.angelika.20e@szlgbp.hu;selebexunogi
+Lővei Lilla Virág;loveilillavirag;20e;9.E;diak;lovei.lilla.20e@szlgbp.hu;fohepatinetu
+Maár Lara Petra;maarlarapetra;20e;9.E;diak;maar.lara.20e@szlgbp.hu;vixoxomagexe
+Mertlik Nóra;mertliknora;20e;9.E;diak;mertlik.nora.20e@szlgbp.hu;jurabobemane
+Orbán Patrik Olivér;orbanpatrikoliver;20e;9.E;diak;orban.patrik.20e@szlgbp.hu;vefonuditape
+Pap Vince Zsigmond;papvincezsigmond;20e;9.E;diak;pap.vince.20e@szlgbp.hu;docenuhexedo
+Pásztor Anna Klára;pasztorannaklara;20e;9.E;diak;pasztor.anna.20e@szlgbp.hu;pabesigasape
+Porhanda Réka;porhandareka;20e;9.E;diak;porhanda.reka.20e@szlgbp.hu;gadubusemohi
+Sándor Ádám Benedek;sandoradambenedek;20e;9.E;diak;sandor.adam.20e@szlgbp.hu;tibatorogopo
+Szabó Barna Levente;szabobarnalevente;20e;9.E;diak;szabo.barna.20e@szlgbp.hu;metahujigoca
+Szőke Máté Adrián;szokemateadrian;20e;9.E;diak;szoke.mate.20e@szlgbp.hu;saladonigoju
+Takács Pálma;takacspalma;20e;9.E;diak;takacs.palma.20e@szlgbp.hu;cuxekulaseca
+Várkonyi Péter Bátor;varkonyipeterbator;20e;9.E;diak;varkonyi.peter.20e@szlgbp.hu;linojenacife
+Zongor Enikő Réka;zongorenikoreka;20e;9.E;diak;zongor.eniko.20e@szlgbp.hu;pemunavucanu
+Zsilinszki Máté;zsilinszkimate;20e;9.E;diak;zsilinszki.mate.20e@szlgbp.hu;melojisegepe
+Balázs Barna;balazsbarna;20f;9.F;diak;balazs.barna.20f@szlgbp.hu;nihalicefevu
+Bartha Bence László;barthabencelaszlo;20f;9.F;diak;bartha.bence.20f@szlgbp.hu;joneroforedu
+Bognár Bence;bognarbence;20f;9.F;diak;bognar.bence.20f@szlgbp.hu;pigoxojabaju
+Csengődi Zsófia Eszter;csengodizsofiaeszter;20f;9.F;diak;csengodi.zsofia.20f@szlgbp.hu;tivihogixoha
+Falcz Zsófia;falczzsofia;20f;9.F;diak;falcz.zsofia.20f@szlgbp.hu;tutocexejobu
+Fazekas Milán;fazekasmilan;20f;9.F;diak;fazekas.milan.20f@szlgbp.hu;nedatomeloja
+Gazdag Dávid Benedek;gazdagdavidbenedek;20f;9.F;diak;gazdag.david.20f@szlgbp.hu;fuvisafebepo
+Gosztola-Schenker Bendegúz Ábel;gosztola-schenkerbendeguzabel;20f;9.F;diak;gosztola-schenker.bendeguz.20f@szlgbp.hu;setepipogevu
+Gulácsy Gergő;gulacsygergo;20f;9.F;diak;gulacsy.gergo.20f@szlgbp.hu;dagadesovutu
+Hajdara Máté;hajdaramate;20f;9.F;diak;hajdara.mate.20f@szlgbp.hu;vetupisalilu
+Horváth Ágnes Zsófia;horvathagneszsofia;20f;9.F;diak;horvath.agnes.20f@szlgbp.hu;ropacihufice
+Kardos Ruven Smuel;kardosruvensmuel;20f;9.F;diak;kardos.ruven.20f@szlgbp.hu;rafohalajeko
+Keresztényi Jázmin;keresztenyijazmin;20f;9.F;diak;keresztenyi.jazmin.20f@szlgbp.hu;vuximejipaju
+Kerülő Ákos;keruloakos;20f;9.F;diak;kerulo.akos.20f@szlgbp.hu;riluregobuxe
+Keviczky-Tóth Boldizsár;keviczky-tothboldizsar;20f;9.F;diak;keviczky-toth.boldizsar.20f@szlgbp.hu;bevupibohesi
+Kocsis Benedek;kocsisbenedek;20f;9.F;diak;kocsis.benedek.20f@szlgbp.hu;rohuhupejube
+Kovács Renáta;kovacsrenata;20f;9.F;diak;kovacs.renata.20f@szlgbp.hu;taropicimapu
+Lengyel Zsombor;lengyelzsombor;20f;9.F;diak;lengyel.zsombor.20f@szlgbp.hu;halohahoxagu
+Major Vince Bálint;majorvincebalint;20f;9.F;diak;major.vince.20f@szlgbp.hu;lepesibakube
+Makai Tamás;makaitamas;20f;9.F;diak;makai.tamas.20f@szlgbp.hu;femodojacano
+Mélykuti Ádám Soma;melykutiadamsoma;20f;9.F;diak;melykuti.adam.20f@szlgbp.hu;gubokanokavi
+Miklós Emese Zsuzsanna;miklosemesezsuzsanna;20f;9.F;diak;miklos.emese.20f@szlgbp.hu;salatacufodi
+Müller Dávid Szilárd;mullerdavidszilard;20f;9.F;diak;muller.david.20f@szlgbp.hu;lukevekanefo
+Orsolya-Székely Ábel;orsolya-szekelyabel;20f;9.F;diak;orsolya-szekely.abel.20f@szlgbp.hu;ragacekejice
+Paless Domonkos;palessdomonkos;20f;9.F;diak;paless.domonkos.20f@szlgbp.hu;roxajanafeja
+Polyik Dániel;polyikdaniel;20f;9.F;diak;polyik.daniel.20f@szlgbp.hu;vimedenivega
+Pünkösti Anna Viktória;punkostiannaviktoria;20f;9.F;diak;punkosti.anna.20f@szlgbp.hu;fupucereledu
+Rácz Erik;raczerik;20f;9.F;diak;racz.erik.20f@szlgbp.hu;nukejigupefa
+Rudolf Petra;rudolfpetra;20f;9.F;diak;rudolf.petra.20f@szlgbp.hu;cofudelejemo
+Szabó Máté;szabomate;20f;9.F;diak;szabo.mate.20f@szlgbp.hu;relasagupohi
+Vánky Laura;vankylaura;20f;9.F;diak;vanky.laura.20f@szlgbp.hu;vedugovaceju
+Varga Benedek;vargabenedek;20f;9.F;diak;varga.benedek.20f@szlgbp.hu;rugegucikane
+Varga Dalma;vargadalma;20f;9.F;diak;varga.dalma.20f@szlgbp.hu;bumavemubiji
+Walter Krisztián Ádám;walterkrisztianadam;20f;9.F;diak;walter.krisztian.20f@szlgbp.hu;dajajumuxaru
+Zelenák Vivien Anna;zelenakvivienanna;20f;9.F;diak;zelenak.vivien.20f@szlgbp.hu;xeledococira
+Artner Noémi;artnernoemi;21a;KNYA;diak;artner.noemi.21a@szlgbp.hu;fovacicubela
+Badó Csenge;badocsenge;21a;KNYA;diak;bado.csenge.21a@szlgbp.hu;fulosogifono
+Baran Bertalan;baranbertalan;21a;KNYA;diak;baran.bertalan.21a@szlgbp.hu;xilogunotolu
+Bartucz Boglárka;bartuczboglarka;21a;KNYA;diak;bartucz.boglarka.21a@szlgbp.hu;xamuhuvodake
+Bata Orsolya;bataorsolya;21a;KNYA;diak;bata.orsolya.21a@szlgbp.hu;pokotukibupi
+Bordás Péter;bordaspeter;21a;KNYA;diak;bordas.peter.21a@szlgbp.hu;mohominocimi
+Czakó Anna Mária;czakoannamaria;21a;KNYA;diak;czako.anna.21a@szlgbp.hu;rukunurodeso
+Delea Márton;deleamarton;21a;KNYA;diak;delea.marton.21a@szlgbp.hu;vekadekijeha
+Eisemann Zita Klaudia;eisemannzitaklaudia;21a;KNYA;diak;eisemann.zita.21a@szlgbp.hu;dibihitabopi
+Farkas Emma;farkasemma;21a;KNYA;diak;farkas.emma.21a@szlgbp.hu;bohekasinuku
+Ferbert Flóra;ferbertflora;21a;KNYA;diak;ferbert.flora.21a@szlgbp.hu;ruboxobevata
+Gavalovics Míra;gavalovicsmira;21a;KNYA;diak;gavalovics.mira.21a@szlgbp.hu;racohonikame
+Görömbei Blanka;gorombeiblanka;21a;KNYA;diak;gorombei.blanka.21a@szlgbp.hu;korotovibexa
+Horváth Bálint Péter;horvathbalintpeter;21a;KNYA;diak;horvath.balint.21a@szlgbp.hu;gabevacegeti
+Howle George Elliot;howlegeorgeelliot;21a;KNYA;diak;howle.george.21a@szlgbp.hu;pulisarapixa
+Kovácsi Sára Kata;kovacsisarakata;21a;KNYA;diak;kovacsi.sara.21a@szlgbp.hu;nixipunofemo
+Máté-Steff Szíra;mate-steffszira;21a;KNYA;diak;mate-steff.szira.21a@szlgbp.hu;ginixujekuro
+Molnár Sophie Csilla;molnarsophiecsilla;21a;KNYA;diak;molnar.sophie.21a@szlgbp.hu;pipalahijile
+Nagy Lilla Zsuzsanna;nagylillazsuzsanna;21a;KNYA;diak;nagy.lilla.21a@szlgbp.hu;mesopimarifa
+Pedone Giulia;pedonegiulia;21a;KNYA;diak;pedone.giulia.21a@szlgbp.hu;soveremupixu
+Péger Dóra;pegerdora;21a;KNYA;diak;peger.dora.21a@szlgbp.hu;jihimalavoho
+Raffay Kirstóf;raffaykirstof;21a;KNYA;diak;raffay.kristof.21a@szlgbp.hu;micahepefahu
+Rigó Emese Csilla;rigoemesecsilla;21a;KNYA;diak;rigo.emese.21a@szlgbp.hu;sepacisefego
+Rónaháty Boglárka;ronahatyboglarka;21a;KNYA;diak;ronahaty.boglarka.21a@szlgbp.hu;burotejicojo
+Schmidtka Borbála;schmidtkaborbala;21a;KNYA;diak;schmidtka.borbala.21a@szlgbp.hu;datuhivovuki
+Stróbli Benjámin;stroblibenjamin;21a;KNYA;diak;strobli.benjamin.21a@szlgbp.hu;nudixifehoxi
+Szabó Laura;szabolaura;21a;KNYA;diak;szabo.laura.21a@szlgbp.hu;jadaverofivo
+Szabó Marcell Dénes;szabomarcelldenes;21a;KNYA;diak;szabo.marcell.21a@szlgbp.hu;fuxotihiguba
+Szalay Tamás;szalaytamas;21a;KNYA;diak;szalay.tamas.21a@szlgbp.hu;rikojujihive
+Tóbiás Levente Richárd;tobiasleventerichard;21a;KNYA;diak;tobias.levente.21a@szlgbp.hu;sohoderitise
+Tóth Boglárka Panna;tothboglarkapanna;21a;KNYA;diak;toth.boglarka.21a@szlgbp.hu;tohenikuvero
+Velenczei Júlia;velenczeijulia;21a;KNYA;diak;velenczei.julia.21a@szlgbp.hu;suvamadudasa
+Víg Csenge;vigcsenge;21a;KNYA;diak;vig.csenge.21a@szlgbp.hu;sixuxunufotu
+Zabó Lilla;zabolilla;21a;KNYA;diak;zabo.lilla.21a@szlgbp.hu;kurevasegufo
+Bagi Emese;bagiemese;21e;NYE;diak;bagi.emese.21e@szlgbp.hu;tadihajufake
+Balogh Orsolya;baloghorsolya;21e;NYE;diak;balogh.orsolya.21e@szlgbp.hu;durugihovepi
+Berczelly Márton;berczellymarton;21e;NYE;diak;berczelly.marton.21e@szlgbp.hu;negelibihifa
+Bori Boglárka;boriboglarka;21e;NYE;diak;bori.boglarka.21e@szlgbp.hu;tivijojoneve
+Csipán Luca Gizella;csipanlucagizella;21e;NYE;diak;csipan.luca.21e@szlgbp.hu;kusahikevuga
+Fain László Bence;fainlaszlobence;21e;NYE;diak;fain.laszlo.21e@szlgbp.hu;mohabuhiboka
+Farkas Nóra;farkasnora;21e;NYE;diak;farkas.nora.21e@szlgbp.hu;hehipedakilu
+Gálfi Benedek;galfibenedek;21e;NYE;diak;galfi.benedek.21e@szlgbp.hu;hudonifiriju
+Geicsnek Ádám;geicsnekadam;21e;NYE;diak;geicsnek.adam.21e@szlgbp.hu;vicidedosihe
+Kalmár Zsanett;kalmarzsanett;21e;NYE;diak;kalmar.zsanett.21e@szlgbp.hu;vopuxihisosi
+Kele Áron;kelearon;21e;NYE;diak;kele.aron.21e@szlgbp.hu;gumiratedugo
+Kiss Vanda;kissvanda;21e;NYE;diak;kiss.vanda.21e@szlgbp.hu;defokovarige
+Kovács Bence;kovacsbence;21e;NYE;diak;kovacs.bence.21e@szlgbp.hu;curitipuremu
+Loyal Emma Lili;loyalemmalili;21e;NYE;diak;loyal.emma.21e@szlgbp.hu;larirabixisa
+Mack Boldizsár;mackboldizsar;21e;NYE;diak;mack.boldizsar.21e@szlgbp.hu;lixisesomuca
+Molnár Gergely;molnargergely;21e;NYE;diak;molnar.gergely.21e@szlgbp.hu;kodeburikalo
+Nagy Janka;nagyjanka;21e;NYE;diak;nagy.janka.21e@szlgbp.hu;lojifimonofu
+Németh Bianka;nemethbianka;21e;NYE;diak;nemeth.bianka.21e@szlgbp.hu;tijalevusabo
+Nesztinger Nóra;nesztingernora;21e;NYE;diak;nesztinger.nora.21e@szlgbp.hu;supelopekure
+Nguyen Hoang Lan;nguyenhoanglan;21e;NYE;diak;nguyen.hoang.21e@szlgbp.hu;kubopigehoha
+Ordas Elza;ordaselza;21e;NYE;diak;ordas.elza.21e@szlgbp.hu;pisutosacodo
+Pákozdi Dorina Patrícia;pakozdidorinapatricia;21e;NYE;diak;pakozdi.dorina.21e@szlgbp.hu;jabexugoviko
+Pesti Márton;pestimarton;21e;NYE;diak;pesti.marton.21e@szlgbp.hu;bamegidahoju
+Pethő Dorottya;pethodorottya;21e;NYE;diak;petho.dorottya.21e@szlgbp.hu;cokerugoroha
+Polgár Luca;polgarluca;21e;NYE;diak;polgar.luca.21e@szlgbp.hu;relahosugodu
+Rédei János;redeijanos;21e;NYE;diak;redei.janos.21e@szlgbp.hu;xugixeperiri
+Réti Dániel;retidaniel;21e;NYE;diak;reti.daniel.21e@szlgbp.hu;lirapulobebo
+Reznák-Iskander Botond;reznak-iskanderbotond;21e;NYE;diak;reznak-iskander.botond.21e@szlgbp.hu;fakohugubolo
+Sas Gréta;sasgreta;21e;NYE;diak;sas.greta.21e@szlgbp.hu;digijugupuxo
+Szabó Fruzsina;szabofruzsina;21e;NYE;diak;szabo.fruzsina.21e@szlgbp.hu;mukapicufeka
+Szilaski Ádám;szilaskiadam;21e;NYE;diak;szilaski.adam.21e@szlgbp.hu;pefakaledixi
+Szladek Dóra Mariann;szladekdoramariann;21e;NYE;diak;szladek.dora.21e@szlgbp.hu;jebocerafuva
+Szopkó Áron;szopkoaron;21e;NYE;diak;szopko.aron.21e@szlgbp.hu;gepadahuvavu
+Szőlősi Abigél;szolosiabigel;21e;NYE;diak;szolosi.abigel.21e@szlgbp.hu;vafifaxisuvo
+Wirth Márton;wirthmarton;21e;NYE;diak;wirth.marton.21e@szlgbp.hu;godogotanive
+Ye Daniel;yedaniel;21e;NYE;diak;ye.daniel.21e@szlgbp.hu;basopulujufa
+Zvara Karola Blanka;zvarakarolablanka;21e;NYE;diak;zvara.karola.21e@szlgbp.hu;metikipufomu
+Ács Péter Levente;acspeterlevente;21f;NYF;diak;acs.peter.21f@szlgbp.hu;pibesafutase
+Balogh Márton;baloghmarton;21f;NYF;diak;balogh.marton.21f@szlgbp.hu;butexovareje
+Billing Julianna;billingjulianna;21f;NYF;diak;billing.julianna.21f@szlgbp.hu;vabogirepami
+Bogár Panna Karola;bogarpannakarola;21f;NYF;diak;bogar.panna.21f@szlgbp.hu;laxuropavoji
+Dankó Csenge Dalma;dankocsengedalma;21f;NYF;diak;danko.csenge.21f@szlgbp.hu;xofalonelegu
+Dittrich Hanna;dittrichhanna;21f;NYF;diak;dittrich.hanna.21f@szlgbp.hu;rodexobuxehe
+Ekker Máté;ekkermate;21f;NYF;diak;ekker.mate.21f@szlgbp.hu;holivekipuce
+Farkas Péter;farkaspeter;21f;NYF;diak;farkas.peter.21f@szlgbp.hu;dekedajifasi
+Fodor Péter;fodorpeter;21f;NYF;diak;fodor.peter.21f@szlgbp.hu;kuhevatidifo
+Gaál Csaba;gaalcsaba;21f;NYF;diak;gaal.csaba.21f@szlgbp.hu;mejonelereku
+Gál Nikolasz;galnikolasz;21f;NYF;diak;gal.nikolasz.21f@szlgbp.hu;mabapurufutu
+Hacsek Anikó Eszter;hacsekanikoeszter;21f;NYF;diak;hacsek.aniko.21f@szlgbp.hu;texobilucoha
+Hlatki Boglárka Kincső;hlatkiboglarkakincso;21f;NYF;diak;hlatki.boglarka.21f@szlgbp.hu;tujeherevuxu
+Jakab Zalán;jakabzalan;21f;NYF;diak;jakab.zalan.21f@szlgbp.hu;cogahudupapi
+Kállai László Mátyás;kallailaszlomatyas;21f;NYF;diak;kallai.laszlo.21f@szlgbp.hu;tilaxofuxale
+Kardos Áron Tóbiás;kardosarontobias;21f;NYF;diak;kardos.aron.21f@szlgbp.hu;tonasitipeji
+Katona Bianka;katonabianka;21f;NYF;diak;katona.bianka.21f@szlgbp.hu;milolahepoma
+Koncz Máté;konczmate;21f;NYF;diak;koncz.mate.21f@szlgbp.hu;pogapipecuxu
+Konnerth Anna;konnerthanna;21f;NYF;diak;konnerth.anna.21f@szlgbp.hu;mamametugixe
+Lakos Dorka Hanna;lakosdorkahanna;21f;NYF;diak;lakos.dorka.21f@szlgbp.hu;siselexitaji
+Lelkes Tünde;lelkestunde;21f;NYF;diak;lelkes.tunde.21f@szlgbp.hu;catixosoconi
+Lénárt Olívia Laura;lenartolivialaura;21f;NYF;diak;lenart.olivia.21f@szlgbp.hu;madotinagovo
+Mamira Máté Márk;mamiramatemark;21f;NYF;diak;mamira.mate.21f@szlgbp.hu;nifudabiseta
+Nagy Gergely;nagygergely;21f;NYF;diak;nagy.gergely.21f@szlgbp.hu;lihovigurejo
+Novák Simon;novaksimon;21f;NYF;diak;novak.simon.21f@szlgbp.hu;gicolivimubi
+Pálinkás Petra;palinkaspetra;21f;NYF;diak;palinkas.petra.21f@szlgbp.hu;cuhugibemale
+Rusznyák Orsolya;rusznyakorsolya;21f;NYF;diak;rusznyak.orsolya.21f@szlgbp.hu;jalicopusuna
+Sárközi Róbert Fülöp;sarkozirobertfulop;21f;NYF;diak;sarkozi.robert.21f@szlgbp.hu;tunilufovohe
+Stefán Boldizsár;stefanboldizsar;21f;NYF;diak;stefan.boldizsar.21f@szlgbp.hu;narihogesela
+Szabó Kinga;szabokinga;21f;NYF;diak;szabo.kinga.21f@szlgbp.hu;rihunadubugo
+Szatmári Gréta;szatmarigreta;21f;NYF;diak;szatmari.greta.21f@szlgbp.hu;hefikinofave
+Széplaki Zsófia;szeplakizsofia;21f;NYF;diak;szeplaki.zsofia.21f@szlgbp.hu;resepafilami
+Szőke Nikolett;szokenikolett;21f;NYF;diak;szoke.nikolett.21f@szlgbp.hu;vebunoledeno
+Tóth Dóra;tothdora;21f;NYF;diak;toth.dora.21f@szlgbp.hu;bakahuganoha
+Török Barnabás;torokbarnabas;21f;NYF;diak;torok.barnabas.21f@szlgbp.hu;lasukekeruba
+Török Emese;torokemese;21f;NYF;diak;torok.emese.21f@szlgbp.hu;higekikuhohu
+Ugrai Kata;ugraikata;21f;NYF;diak;ugrai.kata.21f@szlgbp.hu;corobamatelo
+Viniczei Viktor;viniczeiviktor;21f;NYF;diak;viniczei.viktor.21f@szlgbp.hu;hijivehujufe
+Szendrei Péter;szendreipeter;igh;Igazgatóhelyettes;adminisztrator,testnevelotanar;szendrei.peter@szlgbp.hu;calefuvecohu
+Deák Ferenc;deakferenc;tan;Tanár;testnevelotanar;deak.ferenc@szlgbp.hu;sopetunebipa
+Nagy Szilvia Viktória;nagyszilviaviktoria;tan;Tanár;testnevelotanar;nagy.szilvia@szlgbp.hu;rohelixijiba
+Nagyné Vas Erika;nagynevaserika;tan;Tanár;testnevelotanar;nagyne.erika@szlgbp.hu;licedalaheca
+Ladányi Edina;ladanyiedina;tan;Tanár;testnevelotanar;ladanyi.edina@szlgbp.hu;tivicavihafu
+Boronyai Zoltán;boronyaizoltan;tan;Tanár;testnevelotanar;boronyai.zoltan@szlgbp.hu;gunicicufelu
+Furiák Gergő;furiakgergo;of;Osztályfőnök;testnevelotanar;furiak.gergo@szlgbp.hu;lupikavosera
+Bardóczky Anna Fruzsina;bardoczkyannafruzsina;tan;Tanár;testnevelotanar;bardoczky.anna@szlgbp.hu;nosepufakina
+Tanár;tanar;tan;Tanár;testnevelotanar;molnar.attila@szlgbp.hu;tanarvagyok

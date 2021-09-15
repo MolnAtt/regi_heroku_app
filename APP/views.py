@@ -10,7 +10,6 @@ def urlap(request):
     return redirect('https://forms.gle/m83fFTCivQLD4KZR6')
 
 def foindex(request):
-    print(request.get_host())
     return redirect(f'http://{request.get_host()}/tesi/')
 
 @login_required
@@ -24,7 +23,6 @@ def valasztas(request):
     if request.method=="POST":
 
         poszt = request.POST
-        print(poszt)
         valasztott_foglalkozas = Foglalkozas.objects.get(id=poszt['melyiket'])
         
         if poszt['mitcsinal']=='lejelentkezes':
@@ -67,5 +65,5 @@ def nevsor(request):
 
 @login_required
 def nemjelentkeztek(request):
-    return render(request, "nevsor.html", {'nevsor': Felhasznalo.akik_nem_jelentkeztek(), 'cim': 'nem jelentkeztek'})
+    return render(request, "nevsor.html", {'felhasznalok': Felhasznalo.akik_nem_jelentkeztek(), 'cim': 'nem jelentkeztek'})
 

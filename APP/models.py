@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User, Group
 from django.db.models.base import Model
 from django.db.models.deletion import SET_NULL
+from django.db.models.fields import IntegerField
 from django.db.models.query import QuerySet
 from django.http.request import QueryDict
 
@@ -21,6 +22,7 @@ class Vezerlo(models.Model):
 class Osztaly(models.Model):
     nev = models.CharField(max_length=50, default="-")
     kod = models.CharField(max_length=50)
+    sorszam = models.SmallIntegerField(default=0)
     
     class Meta:
         verbose_name = 'Osztály'
@@ -56,16 +58,12 @@ class Felhasznalo(models.Model):
         return self.jelentkezese().foglalkozas
 
     def akik_nem_jelentkeztek()->list:
+        diakok_csoportja = Group.objects.get(name='diak')
+        potencialis_jelentkezok = filter(lambda x: diakok_csoportja in x.user.groups.all(), Felhasznalo.objects.filter(kulsos=False, gyogy=False, felmentett=False))
+        felhasznalok = filter(lambda a_felhasznalo : Jelentkezes.objects.filter(felhasznalo=a_felhasznalo).count()==0, potencialis_jelentkezok)
+        return sorted(felhasznalok, key=lambda x : (x.osztaly.sorszam, x.nev))
 
-        potencialis_jelentkezok = list(filter(lambda x: 'diak' in x.user.groups.all(), Felhasznalo.objects.filter(kulsos=False, felmentett=False)))
-        print(f'ennyi felhasználó van, aki nem külsős, nem felmentett és nem tanár: {len(potencialis_jelentkezok)}')
-        nevsor = []
 
-        for a_felhasznalo in potencialis_jelentkezok:
-            if Jelentkezes.objects.filter(felhasznalo=a_felhasznalo).count()==0:# and :
-                nevsor.append(a_felhasznalo.nev)
-        nevsor.sort()
-        return nevsor
 
 tipusnevek = (
     ('DSE','DSE'),
@@ -118,8 +116,8 @@ class Foglalkozas(models.Model):
         return Jelentkezes.objects.filter(foglalkozas = self)
 
     def felhasznaloi(self) -> list: # -> list[Felhasznalo]:
-        nevsor = map(lambda x: x.felhasznalo, Jelentkezes.objects.filter(foglalkozas = self))
-        return sorted(nevsor, key = lambda fh : fh.nev)
+        felhasznalok = map(lambda x: x.felhasznalo, Jelentkezes.objects.filter(foglalkozas = self))
+        return sorted(felhasznalok, key = lambda fh : (fh.osztaly.sorszam, fh.nev))
     
 
     def aktletszam(self) -> int:

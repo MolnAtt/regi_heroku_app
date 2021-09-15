@@ -16,63 +16,31 @@ admin.site.register(Osztaly)
 # metódusok, amelyekre szükség van: 
 # - Felhasználók beolvasása
 
-
+### Beépített user-modellre épített két-modelles userszerkezet feltöltése és csoporthozzárendelése ###
 def userek_beolvasasa(modeladmin, request, queryset) -> None:
     for vezerlo in queryset:
-        #try:
-        fajlnev = f"txt/userek/{vezerlo.kod}_userinput.csv"
-
+        fajlnev = f"txt/userek/{vezerlo.kod}_userinput.csv" # a [...]_userinput.csv feltétlen tartalmazza az (ékezetmentes stb.?) mezőneveket!
         with open(fajlnev, 'r', encoding="utf-8") as f:
+            mezonevek = f.readline().strip().split(';')
             for sor in f:
-                sortomb = sor.split(';')
-                
-                # Ugrai Kata;ugraikata;21f;NYF;diak;ugrai.kata.21f@szlgbp.hu;bnmhjkuio
-                # Szendrei Péter;szendreipeter;igh;Igazgatóhelyettes;adminisztrator,testnevelotanar;szendrei.peter@szlgbp.hu;bnmhjkuio
-                # Tehát
-                # [0]: Szendrei Péter
-                # [1]: szendreipeter
-                # [2]: igh
-                # [3]: Igazgatóhelyettes
-                # [4]: adminisztrator,testnevelotanar
-                # [5]: szendrei.peter@szlgbp.hu
-                # [6]: bnmhjkuio
+                sorszotar = dict(zip(mezonevek, sor.strip().split(';')))
 
-                # Tehát
-                # [0]: Ugrai Kata
-                # [1]: ugraikata
-                # [2]: 21f
-                # [3]: NYF
-                # [4]: diak
-                # [5]: ugrai.kata.21f@szlgbp.hu
-                # [6]: bnmhjkuio
+                az_osztaly = Osztaly.objects.get_or_create(kod=sorszotar['osztalykod'], nev=sorszotar['osztalynev'])[0]
                 
-                
+                try:
+                    a_user = User.objects.get(username=sorszotar['email'])
+                except User.DoesNotExist:
+                    a_user = User.objects.create_user(username=sorszotar['email'], email=sorszotar['email'], password=sorszotar['password'])
 
-                a_csoportok = []
-                csoportnevek = sortomb[4].split(',')
-                for csoportnev in csoportnevek:
-                    a_csoportok.append(Group.objects.get_or_create(name=csoportnev)[0])  # mert (Group, bool) alakban ad vissza a get_or_create!
-                
-                az_osztaly = Osztaly.objects.get_or_create(kod=sortomb[2], nev=sortomb[3])[0]
-                
-                a_user = User.objects.create_user(
-                    username=sortomb[5], # a felhasználónév és az email egyezzen meg!
-                    email=sortomb[5],
-                    )
+                Felhasznalo.objects.get_or_create(nev=sorszotar['nev'], user=a_user, osztaly=az_osztaly)[0]
 
-                Felhasznalo.objects.create(
-                    nev=sortomb[0],
-                    user=a_user,
-                    osztaly=az_osztaly,
-                    )
-
-                for a_csoport in a_csoportok:
+                for a_csoport in map(lambda csoportnev: Group.objects.get_or_create(name=csoportnev)[0], sorszotar['groups'].split(',')):
                     a_user.groups.add(a_csoport)
                 
         print(f'{vezerlo.nev} vezérlő usereinek a beolvasása sikeres')
-        #except:
-        #    print(f'{vezerlo.nev} vezérlő usereinek a beolvasása sikertelen: beolvasáskor vagy a csoport lekérdezésekor valami félrement')
-userek_beolvasasa.short_description = "felhasználók feltöltése [vezerlo.kod]_userinput.csv-ből"
+userek_beolvasasa.short_description = "USEREK feltöltése [vezerlo.kod]_userinput.csv-ből"
+
+
 
 def foglalkozasok_beolvasasa(modeladmin, request, queryset) -> None:
     for vezerlo in queryset:
@@ -134,13 +102,65 @@ def foglalkozasok_beolvasasa(modeladmin, request, queryset) -> None:
         print(f'{vezerlo.nev} vezérlő foglalkozásainak a beolvasása sikeres')
         #except:
         #    print(f'{vezerlo.nev} vezérlő usereinek a beolvasása sikertelen: beolvasáskor vagy a csoport lekérdezésekor valami félrement')
-foglalkozasok_beolvasasa.short_description = "foglalkozások feltöltése [vezerlo.kod]_foglalkozasinput.csv-ből"
+foglalkozasok_beolvasasa.short_description = "FOGLALKOZÁSOK feltöltése [vezerlo.kod]_foglalkozasinput.csv-ből"
+
+def user_update(modeladmin, request, queryset) -> None:
+    for vezerlo in queryset:
+        fajlnev = f"txt/emailek/{vezerlo.kod}.txt"
+
+        
+        if vezerlo.kod=='kulsos':
+            for fh in Felhasznalo.objects.all():
+                fh.kulsos = False
+        elif vezerlo.kod=='gyogy':
+            for fh in Felhasznalo.objects.all():
+                fh.gyogy = False
+        elif vezerlo.kod=='felmentett':
+            for fh in Felhasznalo.objects.all():
+                fh.felmentett = False
+
+
+        with open(fajlnev, 'r', encoding="utf-8") as f:
+            for sor_veggel in f:
+                sor = sor_veggel.strip()
+
+                kiakadt = False
+
+                try:
+                    a_user = User.objects.get(username=sor)
+                except User.DoesNotExist:
+                    print(f'--- !!! {sor} emaillel rendelkező user nincs a felhasználók között')
+                    kiakadt = True
+
+                try:
+                    a_felhasznalo = Felhasznalo.objects.get(user=a_user)
+                except Felhasznalo.DoesNotExist:
+                    print(f'--- !!! {a_user}-hez nem tartozik felhasználó!')
+                    kiakadt = True
+                except UnboundLocalError:
+                    kiakadt = True
+
+
+                if not kiakadt:
+                    if vezerlo.kod=='kulsos':
+                        a_felhasznalo.kulsos = True
+                    elif vezerlo.kod=='gyogy':
+                        a_felhasznalo.gyogy = True
+                    elif vezerlo.kod=='felmentett':
+                        a_felhasznalo.felmentett = True
+                    a_felhasznalo.save()
+            # end of for f
+        # end of with open
+        print(f'{vezerlo.nev} vezérlő emailcímeivel sikerült frissíteni a felhasználói adatbázist')
+    # end for queryset
+user_update.short_description = f"UPDATE a külsős/gyógy-/felmentett tesisek [...].txt-ből"
 
 
 class VezerloAdmin(admin.ModelAdmin):
     actions = [
             userek_beolvasasa,
             foglalkozasok_beolvasasa,
+            user_update,
         ]
 
 admin.site.register(Vezerlo, VezerloAdmin)
