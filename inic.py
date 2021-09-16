@@ -48,6 +48,8 @@ print("--- inic.py: felmentett_update.txt-t beolvasó Vezérlő elkészült")
 Vezerlo.objects.get_or_create(kod="jelentkezesvezerlo", nev="0")
 print("--- inic.py: jelentkezésvezértlő elkészült")
 
+Vezerlo.objects.get_or_create(kod="email_target", nev="molnar.attila@szlgbp.hu")
+print("--- inic.py: emailküldő (default-target: molnar.attila@szlgbp.hu) elkészült")
 
 
 for a_kod in osztalykodok:

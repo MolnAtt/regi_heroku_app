@@ -1,0 +1,12 @@
+{{ cim }}
+
+<table>
+{% for felhasznalo in felhasznalok %}
+<tr>
+    <td>{{ forloop.counter }}.</td>
+    <td>{{ felhasznalo.nev }}</td>
+    <td>{{ felhasznalo.osztaly.nev }}</td>
+    <td>{{ felhasznalo.user.email }}</td>
+</tr>
+{% endfor %}
+</table>

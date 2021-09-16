@@ -3,7 +3,8 @@ main{
     justify-content: center;
 }
 
-main > div.nevsor{
+
+main > .nevsor{
     background-color: var(--nevsor-bg-color);
     color: var(--nevsor-fg-color);
     margin-top: 10px;
@@ -14,3 +15,4 @@ main > div.nevsor{
     border:solid 2px black;
     padding:5px;
 }
+

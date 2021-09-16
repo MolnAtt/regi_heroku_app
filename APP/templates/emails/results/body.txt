@@ -1,0 +1,6 @@
+
+{{ cim }}
+
+{% for felhasznalo in felhasznalok %}
+{{ forloop.counter }}   {{ felhasznalo.nev }}   {{ felhasznalo.osztaly.nev }}   {{ felhasznalo.user.email }}
+{% endfor %}

@@ -3,6 +3,9 @@ from django.contrib.auth.models import User, Group
 from .models import Jelentkezes, Felhasznalo, Osztaly, Foglalkozas, Vezerlo
 from datetime import datetime, timedelta
 from django.contrib.auth.hashers import make_password
+from levelkuldes import levelkuldes_dir
+from django.template import Context, Template
+from re import sub
 
 
 admin.site.register(Jelentkezes)
@@ -166,6 +169,8 @@ def stop_jelentkezes(modeladmin, request, queryset) -> None:
     # end for queryset
 stop_jelentkezes.short_description = f"STOP LOGIN"
 
+
+
 def start_jelentkezes(modeladmin, request, queryset) -> None:
     for vezerlo in queryset:
         diakok_csoportja = Group.objects.get(name='diak')
@@ -176,6 +181,13 @@ def start_jelentkezes(modeladmin, request, queryset) -> None:
     # end for queryset
 start_jelentkezes.short_description = f"START LOGIN"
 
+def jelentkezesek_elkuldese(modeladmin, request, queryset) -> None:
+    for vezerlo in queryset:
+        for a_foglalkozas in Foglalkozas.objects.all():
+            print(levelkuldes_dir('molnar.attila@szlgbp.hu', [vezerlo.nev], 'emails/results', {'felhasznalok': a_foglalkozas.felhasznaloi(), 'cim': a_foglalkozas.nev},'debugszoveg:'))
+    # end for queryset
+jelentkezesek_elkuldese.short_description = f"EMAIL jelentkezések elküldése"
+
 class VezerloAdmin(admin.ModelAdmin):
     actions = [
             userek_beolvasasa,
@@ -183,6 +195,7 @@ class VezerloAdmin(admin.ModelAdmin):
             user_update,
             stop_jelentkezes,
             start_jelentkezes,
+            jelentkezesek_elkuldese
         ]
 
 admin.site.register(Vezerlo, VezerloAdmin)
