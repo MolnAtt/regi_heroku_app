@@ -74,6 +74,7 @@ def valasztas(request):
         'szurestipus': szurestipus, 
         'korabban_valasztott_foglalkozas_id':korabban_valasztott_foglalkozas_id,
         'uzemmod': uzemmod,
+        'megtelt_e': uzemmod,
         })
 
 @login_required

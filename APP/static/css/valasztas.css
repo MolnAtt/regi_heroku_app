@@ -110,3 +110,8 @@ main{
     color:var(--button-hovered-fg-color);
 }
 
+
+
+.kartya form.megtelt, .kartya div.megtelt, .kartya a.megtelt{
+    background-color: rgb(83, 83, 83);
+}

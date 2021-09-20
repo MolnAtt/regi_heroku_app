@@ -46,12 +46,12 @@
             {% for foglalkozas in foglalkozasok %}
                 
             <div class="kartya {{ foglalkozas.tipus_kod }}">
-                <div class="tipus">
+                <div class="tipus{% if foglalkozas.aktletszam >= foglalkozas.maxletszam %} megtelt{% endif %}">
                     <span>
                         {{ foglalkozas.tipus_nev }}
                     </span>
                 </div>
-                <form method="POST">
+                <form method="POST" class="{% if foglalkozas.aktletszam >= foglalkozas.maxletszam %}megtelt{% endif %}">
                     {% csrf_token %}
                     <h2>{{ foglalkozas.nev }}</h2>
                     <div class="nap"> {{ foglalkozas.egyik_nap }}{% if foglalkozas.bomlik %} és {{ foglalkozas.masik_nap }}{% endif %}</div>
@@ -72,7 +72,7 @@
 
                     <input type="hidden" name="melyiket" value="{{ foglalkozas.id }}">
                     <input type="hidden" name="mitcsinal" value="meg_semmit">
-                    <a class="letszam kattinthato" href="http://{{ request.get_host }}/tesi/nevsor/{{ foglalkozas.kod }}/" >{{ foglalkozas.aktletszam }}/{{ foglalkozas.maxletszam }}</a>
+                    <a class="letszam kattinthato{% if foglalkozas.aktletszam >= foglalkozas.maxletszam %} megtelt{% endif %}" href="http://{{ request.get_host }}/tesi/nevsor/{{ foglalkozas.kod }}/" >{{ foglalkozas.aktletszam }}/{{ foglalkozas.maxletszam }}</a>
                 </form>
             </div>
 
