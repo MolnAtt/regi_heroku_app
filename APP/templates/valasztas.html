@@ -58,16 +58,16 @@
                     <div class="intervallum">{{ foglalkozas.egyik_mettol }} - {{ foglalkozas.egyik_meddig }}{% if foglalkozas.bomlik %} és {{ foglalkozas.masik_mettol }} - {{ foglalkozas.masik_meddig }}{% endif %}</div>
                     <div class="tanar">{{ foglalkozas.egyik_tanar }}{% if foglalkozas.bomlik and foglalkozas.egyik_tanar != foglalkozas.masik_tanar %} és {{ foglalkozas.masik_tanar }}{% endif %}</div>
 
-                    {% if not request.user|has_group:"diak" or not lehet_jelentkezni %} 
+                    {% if not request.user|has_group:"diak" %} 
                         <div></div>
                     {% elif foglalkozas.id == korabban_valasztott_foglalkozas_id %}
-                        <div class="gomb kattinthato lejelentkezes">Lejelentkezem</div>
+                        {% if uzemmod.le %} <div class="gomb kattinthato lejelentkezes">Lejelentkezem</div> {% else %} <div></div> {% endif %}
                     {% elif foglalkozas.aktletszam >= foglalkozas.maxletszam %}
                         <div class="nemgomb">(Megtelt)</div>
                     {% elif korabban_valasztott_foglalkozas_id != 'nincs'%}
-                        <div class="gomb kattinthato atjelentkezes">Átjelentkezem</div>
+                        {% if uzemmod.at %} <div class="gomb kattinthato atjelentkezes">Átjelentkezem</div> {% else %} <div></div> {% endif %}
                     {% else %}
-                        <div class="gomb kattinthato jelentkezes">Jelentkezem</div>
+                        {% if uzemmod.fel %} <div class="gomb kattinthato jelentkezes">Jelentkezem</div> {% else %} <div></div> {% endif %}
                     {% endif %}
 
                     <input type="hidden" name="melyiket" value="{{ foglalkozas.id }}">

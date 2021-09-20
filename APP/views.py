@@ -20,29 +20,47 @@ def valasztas(request):
 
     a_felhasznalo = Felhasznalo.getuser(request)
 
-    if request.method=="POST" and Vezerlo.objects.get(kod='jelentkezesvezerlo').nev=='1':
+    uzemmodstr = Vezerlo.objects.get(kod='jelentkezesvezerlo').nev
+    uzemmod = {
+        'fel': uzemmodstr[0]=='1', 
+        'le':  uzemmodstr[1]=='1', 
+        'at':  uzemmodstr[2]=='1'}
+    
+    # üzemmód: 000-111, a három opció: fel-, le-, átjelentkezés
+    if request.method=="POST" and uzemmodstr!="000":
 
         poszt = request.POST
         valasztott_foglalkozas = Foglalkozas.objects.get(id=poszt['melyiket'])
         
         if poszt['mitcsinal']=='lejelentkezes':
-            a_felhasznalo.jelentkezese().delete()
-            alertlista.append("A foglalkozásról sikeresen lejelentkeztél.")
-            korabban_valasztott_foglalkozas_id = "nincs"
+            if uzemmod['le']:
+                a_felhasznalo.jelentkezese().delete()
+                alertlista.append("A foglalkozásról sikeresen lejelentkeztél.")
+                korabban_valasztott_foglalkozas_id = "nincs"
+            else: 
+                alertlista.append("Jelenleg nem lehet lejelentkezni.")
+                korabban_valasztott_foglalkozas_id = valasztott_foglalkozas
+
         elif poszt['mitcsinal'] in ['jelentkezes', 'atjelentkezes']:
             if valasztott_foglalkozas.aktletszam() >= valasztott_foglalkozas.letszam:
                 korabban_valasztott_foglalkozas_id = "mindegysajnos"
                 alertlista.append("Sajnos ez a foglalkozás közben betelt. Valaki(k) már rákattintott(ak) erre azóta, hogy betöltötted az oldalt.")
             else:
                 try:
-                    j = a_felhasznalo.jelentkezese()
-                    j.foglalkozas = valasztott_foglalkozas
-                    j.save()
-                    alertlista.append("A foglalkozásra való átjelentkezés sikeres volt.")
-
+                    if uzemmod['at'] or uzemmod['fel']:
+                        j = a_felhasznalo.jelentkezese()
+                        if uzemmod['at']:
+                            j.foglalkozas = valasztott_foglalkozas
+                            j.save()
+                            alertlista.append("A foglalkozásra való átjelentkezés sikeres volt.")
+                        else:
+                            alertlista.append("Jelenleg nem lehet átjelentkezni.")
                 except Jelentkezes.DoesNotExist:
-                    Jelentkezes.objects.create(felhasznalo = a_felhasznalo, foglalkozas = valasztott_foglalkozas)
-                    alertlista.append("A foglalkozásra való jelentkezés sikeres volt.")
+                    if uzemmod['fel']:
+                        Jelentkezes.objects.create(felhasznalo = a_felhasznalo, foglalkozas = valasztott_foglalkozas)
+                        alertlista.append("A foglalkozásra való jelentkezés sikeres volt.")
+                    else:
+                        alertlista.append("Jelenleg nem lehet jelentkezni.")
 
                 korabban_valasztott_foglalkozas_id = valasztott_foglalkozas.id
     else: # request.method=="GET":
@@ -55,7 +73,7 @@ def valasztas(request):
         'backend_uzenetek': alertlista, 
         'szurestipus': szurestipus, 
         'korabban_valasztott_foglalkozas_id':korabban_valasztott_foglalkozas_id,
-        'lehet_jelentkezni': Vezerlo.objects.get(kod='jelentkezesvezerlo').nev=='1',
+        'uzemmod': uzemmod,
         })
 
 @login_required
