@@ -27,6 +27,14 @@
     {# Egyéb #}
     <title>tesi</title>
 
+    
+        
+    <script>
+        {% for uzi in  backend_uzenetek %}
+            alert("{{ uzi }}");
+        {% endfor %}        
+    </script>
+
 </head>
 <body>
     {% include "header.html" %}

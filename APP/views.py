@@ -4,7 +4,13 @@ from .models import Foglalkozas, Jelentkezes, Felhasznalo, Vezerlo
 
 
 def index(request):
-    return render(request, "index.html", {})
+    alertlista = [] 
+    karbantartas_ideje = Vezerlo.objects.get(kod='karbantartasjelzes').nev
+    if karbantartas_ideje != '0':
+        alertlista.append(f"Az oldalon jelenleg karbantartás zajlik, így átmenetileg nem lehet bejelentkezni. Nézz vissza {karbantartas_ideje} perc múlva.")
+    return render(request, "index.html", {
+        'backend_uzenetek': alertlista, 
+        })
 
 def urlap(request):
     return redirect('https://forms.gle/m83fFTCivQLD4KZR6')

@@ -51,6 +51,10 @@ print("--- inic.py: jelentkezésvezértlő elkészült")
 Vezerlo.objects.get_or_create(kod="email_target", nev="molnar.attila@szlgbp.hu")
 print("--- inic.py: emailküldő (default-target: molnar.attila@szlgbp.hu) elkészült")
 
+Vezerlo.objects.get_or_create(kod="karbantartasjelzes", nev="0")
+print("--- inic.py: karbantartásjelző elkészült")
+
+
 
 for a_kod in osztalykodok:
     Vezerlo.objects.get_or_create(kod=a_kod, nev=f"{a_kod}: 2021 őszi jelentkezés")
