@@ -25,6 +25,7 @@ devenyi.barnabas.20c@szlgbp.hu
 giumars.omed.20c@szlgbp.hu
 gyori.ferenc.20c@szlgbp.hu
 kalina.mate.20c@szlgbp.hu
+kariko.brigitta.20c@szlgbp.hu
 kokai.kornel.20c@szlgbp.hu
 pazmandi.levente.20c@szlgbp.hu
 reinhardt.panna.20c@szlgbp.hu
@@ -78,6 +79,7 @@ hetesi.zsofia.18a@szlgbp.hu
 horvath.tamara.18a@szlgbp.hu
 janko.borbala.18a@szlgbp.hu
 jarabek.balazs.18a@szlgbp.hu
+klenovszki.daniel.18a@szlgbp.hu
 mihaly.mercedesz.18a@szlgbp.hu
 nagy.martin.18a@szlgbp.hu
 nemes.greta.18a@szlgbp.hu
@@ -125,6 +127,7 @@ szabo.gergo.19d@szlgbp.hu
 szucs.gilda.19d@szlgbp.hu
 bauer.lena.18e@szlgbp.hu
 bezzeg.eniko.18e@szlgbp.hu
+biro.boldizsar.18e@szlgbp.hu
 bross.tamas.18e@szlgbp.hu
 foltin.szofia.18e@szlgbp.hu
 hopoczky.csenge.18e@szlgbp.hu
@@ -134,6 +137,7 @@ lanczy.zoltan.18e@szlgbp.hu
 soos.viktoria.18e@szlgbp.hu
 szabo.greta.18e@szlgbp.hu
 t.kovacs.adrienn.18e@szlgbp.hu
+torjai.tamas.18e@szlgbp.hu
 vamos.boglarka.18e@szlgbp.hu
 veszelovszky.dora.18e@szlgbp.hu
 zovath.fanni.18e@szlgbp.hu
@@ -152,6 +156,7 @@ kiss.balint.18f@szlgbp.hu
 kocsis.izabell.18f@szlgbp.hu
 lefanti.vilmos.18f@szlgbp.hu
 matefy.luca.18f@szlgbp.hu
+mathe.arnika.18f@szlgbp.hu
 mohacsi.mate.18f@szlgbp.hu
 rozsa.natalia.18f@szlgbp.hu
 solyomi.tamas.18f@szlgbp.hu
@@ -161,6 +166,7 @@ toth.viktoria.18f@szlgbp.hu
 torok.soma.18f@szlgbp.hu
 varga.daniel.18f@szlgbp.hu
 joo.laura.17a@szlgbp.hu
+brazai.balazs.17a@szlgbp.hu
 feher.tibor.17a@szlgbp.hu
 fodor.samuel.17a@szlgbp.hu
 limardo.chiara.17a@szlgbp.hu
