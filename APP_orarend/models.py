@@ -152,7 +152,7 @@ class MTK(models.Model):
 
 class Csoport(models.Model):
 
-    kreta = models.CharField(max_length=50)
+    kreta = models.CharField(max_length=100)
 
     class Meta:
         verbose_name = 'Csoport'
