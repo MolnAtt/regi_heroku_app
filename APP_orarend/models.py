@@ -19,7 +19,7 @@ class Tantargy(models.Model):
 
     sorszam = models.IntegerField()
     kreta = models.CharField(max_length=50)
-    hosszu = models.CharField(max_length=20)
+    hosszu = models.CharField(max_length=50)
     rovid = models.CharField(max_length=20)
 
     class Meta:
