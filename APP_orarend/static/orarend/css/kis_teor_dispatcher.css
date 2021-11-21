@@ -1,0 +1,19 @@
+main section{
+    grid-template-columns: repeat(6,150px);
+    grid-auto-rows: 60px;
+    grid-auto-flow: column;
+}
+
+main section a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ 
+.emelet_-1{ grid-column: 1;}
+.emelet_0{ grid-column: 2;}
+.emelet_1{ grid-column: 3;}
+.emelet_2{ grid-column: 4;}
+.emelet_3{ grid-column: 5;}
+.emelet_4{ grid-column: 6;}

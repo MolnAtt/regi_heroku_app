@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    {% include "orarend/structure/prehead.html" %}
+    <link rel="stylesheet" href="{% static 'orarend/css/linkek.css' %}">
+    {% for extracss in extracssek %}
+        <link rel="stylesheet" href="{% static extracss %}">    
+    {% endfor %}
+    <title> {% include "orarend/structure/title.html" %}</title> 
+</head>
+<body>
+    {% include "orarend/structure/header.html" %}
+    <main>    
+        <section>
+        {% for link in linkek %}
+            <a class="{{ link.classname }}" href="{{ link.urlkod }}/">{{ link.nev }}</a>
+        {% endfor %}
+        </section>
+    </main>
+    {% include "orarend/structure/footer.html" %}
+</body>
+</html>

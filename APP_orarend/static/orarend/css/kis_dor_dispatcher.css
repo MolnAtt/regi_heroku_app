@@ -1,0 +1,24 @@
+main section{
+    grid-template-columns: repeat(6,60px);
+    grid-template-rows: repeat(5,60px);
+}
+
+main section a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ 
+.onye, .onyf, .onya{ grid-row: 1;}
+.o9a, .o9b, .o9c, .o9d, .o9e, .o9f{ grid-row: 2;}
+.o10a, .o10b, .o10c, .o10d, .o10e, .o10f{ grid-row: 3;}
+.o11a, .o11b, .o11c, .o11d, .o11e, .o11f{ grid-row: 4;}
+.o12a, .o12b, .o12c, .o12d, .o12e, .o12f{ grid-row: 5;}
+
+.onya, .o9a, .o10a, .o11a, .o12a{ grid-column: 1; }
+.o9b, .o10b, .o11b, .o12b{ grid-column: 2; }
+.o9c, .o10c, .o11c, .o12c{ grid-column: 3; }
+.o9d, .o10d, .o11d, .o12d{ grid-column: 4; }
+.onye, .o9e, .o10e, .o11e, .o12e{ grid-column: 5; }
+.onyf, .o9f, .o10f, .o11f, .o12f{ grid-column: 6; }

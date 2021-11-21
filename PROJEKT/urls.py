@@ -11,5 +11,5 @@ urlpatterns = [
     re_path(r'tesi/urlap/.*', urlap),
     re_path(r'tesi/nevsor/.*', nevsor),
     path('tesi/nemjelentkeztek/', nemjelentkeztek),
-
+    path('orarend/', include('APP_orarend.urls')),
 ]

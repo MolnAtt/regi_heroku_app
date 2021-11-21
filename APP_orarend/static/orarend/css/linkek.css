@@ -1,0 +1,23 @@
+/*----------- section ---------------*/
+
+main section{
+    display:grid;
+    grid-template-columns: 200px;
+    background-color: var(--main-bg-color);
+    color: var(--main-main-fg-color);
+    border: solid var(--line-width) var(--line-color);
+    gap: 5px;
+    padding:5px;
+}
+
+main section a{
+    background-color: var(--gomblink-bg-color);
+    color: var(--gomblink-fg-color);
+    text-decoration: none;
+    padding:5px;
+    text-align: center;
+    border: solid 1px var(--line-color);
+}
+/*----------- section vége ---------------*/
+
+

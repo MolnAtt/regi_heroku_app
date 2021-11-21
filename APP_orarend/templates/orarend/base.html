@@ -1,0 +1,19 @@
+{# A lényeg a 2 input: (cssek) és (a_html) #}
+{% load static %}
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    {% include "orarend/structure/prehead.html" %}
+    {% for css in cssek %}
+        <link rel="stylesheet" href="{% static css %}">
+    {% endfor %}
+    <title>{% include "orarend/structure/title.html" %}</title>
+</head>
+<body>
+
+    
+    {% include "orarend/structure/header.html" %}
+    <main>{% include a_html %}</main>
+    {% include "orarend/structure/footer.html" %}
+</body>
+</html>

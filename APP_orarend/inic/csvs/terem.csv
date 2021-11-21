@@ -1,0 +1,58 @@
+sorszam,kreta,hosszu,rovid,szarny,emelet
+1,német terem,Német terem,N.,Ónodi,-1
+2,ének terem,Ének terem,É.,Ónodi,-1
+3,földszint 08,Földszint 8.,F.8,Ónodi,0
+4,földszint 09,Földszint 9.,F.9,Ónodi,0
+5,földszint 10,Földszint 10.,F.10,Ónodi,0
+6,földszint 11,Földszint 11.,F.11,Ónodi,0
+7,földszint 12,Földszint 12.,F.12,Ónodi,0
+8,földszint 16,Földszint 16.,F.16,Kőrösi,0
+9,földszint 17,Földszint 17.,F.17,Kőrösi,0
+10,földszint 18,Földszint 18.,F.18,Kőrösi,0
+11,angol 1.,Angol 1.,A.1,Kőrösi,0
+12,angol 2.,Angol 2.,A.2,Kőrösi,0
+13,angol 3.,Angol 3.,A.3,Kőrösi,0
+14,latin terem,Latin terem,L.,Kőrösi,1
+15,olasz 1 II. em.,Olasz 1.,Ol.1,Kőrösi,2
+16,olasz 2 I. em.,Olasz 2.,Ol.2,Kőrösi,1
+17,francia terem,Francia terem,Fr.,Ónodi,1
+18,spanyol terem,Spanyol terem,sp.,Ónodi,1
+19,I. emelet 26 kisnyelvi terem,Spanyol-francia tanári,I.26,Ónodi,1
+20,DÖK szoba,DÖK-szoba,DÖK,Ónodi,1
+21,I. emelet 30,I. emelet 30.,I.30,Ónodi,1
+22,I. emelet 31,I. emelet 31.,I.31,Ónodi,1
+23,I. emelet 32,I. emelet 32.,I.32,Ónodi,1
+24,I. emelet 33,I. emelet 33.,I.33,Ónodi,1
+25,I. emelet 34,I. emelet 34.,I.34,Ónodi,1
+26,matematika terem,Matematika terem,M.,Kőrösi,1
+27,I. emelet 39,I. emelet 39.,I.39,Kőrösi,1
+28,díszterem,Díszterem,D.,Közép,1
+29,orosz terem II.em.,Orosz terem,II.40,Ónodi,2
+29,II. emelet 41,II. emelet 41.,II.41,Ónodi,2
+30,II. emelet 42,II. emelet 42.,II.42,Ónodi,2
+31,II. emelet 43,II. emelet 43.,II.43,Ónodi,2
+32,II. emelet 44,II. emelet 44.,II.44,Ónodi,2
+33,II. emelet 48,II. emelet 48.,II.48,Kőrösi,2
+34,történelem szertár,Történelem szertár,II.49,Kőrösi,2
+35,II. emelet 50,II. emelet 50.,II.50,Kőrösi,2
+36,II. emelet 51,II. emelet 51.,II.51,Kőrösi,2
+37,rajz terem II. em.,Rajz terem,R.,Kőrösi,2
+38,fizika terem III. em.,Fizika előadó,Fiz.,Ónodi,3
+39,Öveges labor 1,Öveges labor 1,L.1,Ónodi,3
+40,tömkomm terem III. em.,Tömegkommunikáció terem,Tk.,Ónodi,3
+41,könyvtár,Könyvtár,Kt.,Közép,3
+42,kémia előadó III. em.,Kémia előadó,K.ea,Kőrösi,3
+43,kémia gyakorló III. em.,Kémia gyakorló,K.gy,Kőrösi,3
+44,biológia előadó III. em.,Biológia előadó,B.ea,Kőrösi,3
+45,biológia gyakorló tetőtér,Biológia gyakorló,B.gy,Kőrösi,4
+46,számítástechnika 1 tetőtér,Számítástechnika 1.,Szt.1,Kőrösi,4
+47,számítástechnika 2 tetőtér,Számítástechnika 2.,Szt.2,Kőrösi,4
+48,számítástechnika 3 tetőtér,Számítástechnika 3.,Szt.3,Kőrösi,4
+49,nyelvi terem tetőtér,Tetőtér 2.,T.2,Kőrösi,4
+50,tetőtéri stúdió,Tetőtéri Stúdió,padlás,Ónodi,4
+51,Tesi 1,Testnevelésterem 1,Tt.,Tornaterem,0
+52,Tesi 2,Testnevelésterem 2,Tt.,Tornaterem,0
+53,Tesi 3,Testnevelésterem 3,Tt.,Tornaterem,0
+54,Tesi 4,Testnevelésterem 4,Tt.,Tornaterem,0
+55,Tesi 5,Testnevelésterem 5,Tt.,Tornaterem,0
+56,Tesi 6,Testnevelésterem 6,Tt.,Tornaterem,0

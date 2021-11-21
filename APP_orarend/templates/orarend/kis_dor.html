@@ -1,0 +1,31 @@
+{% load orarendfilterek %}
+<div id="container">
+    <div></div>
+    <div class="orarendcim">{{ az_osztaly.kreta }}</div>
+    <div></div>
+
+    <div></div>
+    {% for a_nap in napok %}
+        <div class="oszlopcim">{{ a_nap.hosszu }}</div>
+    {% endfor %}
+    <div></div>
+
+
+    {% for a_hanyadik in hanyadikok %}
+    <div class="sorcim">{{ a_hanyadik }}.</div>
+        {% for a_nap in napok %}
+        {% orak_dor osztaly=az_osztaly nap=a_nap ora=a_hanyadik as orak_itt %}
+        <div class="rublika osztaly_{{az_osztaly}} nap_{{a_nap.sorszam}} ora_{{a_hanyadik}}">
+            {% for ora in orak_itt %}
+            <div class="ora">
+                <div class="tantargy {{ ora.tantargy.rovid }}">{{ ora.tantargy.rovid }}</div>
+                <a class="terem dobozhoverable" href="{{ domain }}/orarend/kis/terem/{{ ora.terem.urlkod }}/">{{ ora.terem.rovid }}</a>
+                <a class="tanar dobozhoverable" href="{{ domain }}/orarend/kis/tanar/{{ ora.tanar.urlkod }}/" >{{ ora.tanar.rovid }}</a>
+                <div class="csoport">{{ ora.csoport }}</div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    <div class="sorcim">{{ a_hanyadik }}.</div>
+    {% endfor %}    
+</div>

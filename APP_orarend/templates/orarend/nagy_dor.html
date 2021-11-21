@@ -1,0 +1,36 @@
+{% load orarendfilterek %}
+<div id="container">
+    
+    {% for a_nap in napok %}
+    <div class="elvalaszto_oszlopcim">Osztály</div>
+    <div class="napnev">{{ a_nap.hosszu }}</div>
+    {% endfor %}
+    <div class="elvalaszto_oszlopcim">Osztály</div>
+
+    {% for a_nap in napok %}
+        {% for a_hanyadik in hanyadikok %}
+        <div class="oszlopcim">{{ a_hanyadik }}</div>
+        {% endfor %}
+    {% endfor %}
+
+
+    {% for az_osztaly in osztalyok %}
+        {% for a_nap in napok %}
+        <a class="sorcim dobozhoverable" href="{{ domain }}/orarend/kis/diak/{{ az_osztaly.urlkod }}/">{{ az_osztaly.kreta }}</a>
+            {% for a_hanyadik in hanyadikok %}
+            {% orak_dor osztaly=az_osztaly nap=a_nap ora=a_hanyadik as orak_itt %}
+            <div class="rublika osztaly_{{az_osztaly.sorszam}} nap_{{a_nap.sorszam}} ora_{{a_hanyadik}}">
+                {% for ora in orak_itt %}
+                <div class="ora">
+                    <div class="tantargy {{ ora.tantargy.rovid }}">{{ ora.tantargy.rovid }}</div>
+                    <a class="terem dobozhoverable" href="{{ domain }}/orarend/kis/terem/{{ ora.terem.urlkod }}/">{{ ora.terem.rovid }}</a>
+                    <a class="tanar texthoverable" href="{{ domain }}/orarend/kis/tanar/{{ ora.tanar.urlkod }}/">{{ ora.tanar.rovid }}</a>
+                    <div class="csoport">{{ ora.csoport }}</div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        {% endfor %}
+    <a class="sorcim" href="{{ domain }}/orarend/kis/diak/{{ az_osztaly.urlkod }}/">{{ az_osztaly.kreta }}</a>
+    {% endfor %}
+</div>

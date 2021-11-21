@@ -1,0 +1,31 @@
+main{
+    display:flex;
+    justify-content: center;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height) - 10px - 2*var(--line-width)); /*10px a header összpaddingje*/
+    align-items: center;
+}
+
+
+.dobozhoverable:hover, .texthoverable:hover, section a:hover{
+    transition: 0.5s;
+    background-color: black;
+    color:white;
+}
+
+.texthoverable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding:5px 10px;
+}
+
+.texthoverable:hover{
+    padding:5px 10px;
+    justify-self: center;
+}
+
+.sorcim, .oszlopcim, .orarendcim {
+    color:black;
+    background-color: white;
+}

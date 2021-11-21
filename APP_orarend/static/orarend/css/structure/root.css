@@ -1,0 +1,44 @@
+:root{
+    --body-bg-color: black;
+    --body-fg-color: white;
+
+    --header-bg-color:black;
+    --header-fg-color: white;
+    --header-height:60px;
+
+    --main-bg-color: black;
+    --main-fg-color: white;
+
+    --gomblink-bg-color: white;
+    --gomblink-fg-color: black;
+
+    --line-color: black;
+    --line-width: 2px;
+
+    --footer-bg-color: black;
+    --footer-fg-color: white;
+    --footer-height:40px;
+
+    --button-bg-color: white;
+    --button-fg-color: black;
+
+    --rublika-bg-color: rgb(218, 210, 201);
+    --rublika-fg-color: black;
+
+    --ora-bg-color: white;
+    --ora-fg-color: black;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:var(--body-bg-color);
+    color:var(--body-fg-color);
+    font-family: 'Roboto Slab', serif;
+    margin-bottom:5em;
+}
+

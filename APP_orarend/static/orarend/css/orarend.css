@@ -1,0 +1,68 @@
+.oszlopcim, .napnev, .elvalaszto_oszlopcim, .orarendcim{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid var(--line-color);
+    font-size: large;
+    font-weight: bold;
+    position:sticky;
+    background-color: white;
+    color:black;
+}
+
+.oszlopcim{
+    top:30px;
+}
+.elvalaszto_oszlopcim{
+    top:0px;
+    grid-row-end: span 2;
+}
+
+.napnev{
+    top:0px;
+    grid-column-end: span 10;
+    border:2px solid var(--line-color);
+}
+
+
+.orarendcim{
+    top:0px;
+    grid-column-end: span 5;
+    border:2px solid var(--line-color);
+}
+
+
+#container .rublika .ora .tantargy{
+    grid-area: tantargy;
+}
+
+
+#container .rublika .ora .csoport{
+    grid-area: csoport;
+    font-size: x-small;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ora_0, .ora_7, .ora_8, .ora_9{
+    background-color: gray!important;
+}
+
+.sorcim{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    border:2px solid var(--line-color);
+    font-size: large;
+    font-weight: bold;
+}
+
+
+.ora a{    
+    
+    text-decoration: none;
+    color:black;
+}
+
