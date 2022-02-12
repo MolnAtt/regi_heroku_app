@@ -166,7 +166,7 @@ class Jelentkezes(models.Model):
         """Unicode representation of Jelentkezes."""
         return f"{self.felhasznalo.nev} -> {self.foglalkozas.nev} "
 
-    def ek_attekintese(rendezes:list[str]) -> list[dict]:
+    def ek_attekintese(rendezes):
         #return [ j.attekintesbe() for j in Jelentkezes.objects.all()]
         if len(rendezes) == 1:
             return sorted([ j.attekintesbe() for j in Jelentkezes.objects.all()], key=lambda x: x[rendezes[0]])
