@@ -12,17 +12,17 @@ def index(request):
         'backend_uzenetek': alertlista, 
         })
 
-def urlap(request):
+def urlap(request, melyik):
     return redirect('https://forms.gle/m83fFTCivQLD4KZR6')
 
 def foindex(request):
     return redirect(f'http://{request.get_host()}/tesi/')
 
 @login_required
-def valasztas(request):
+def valasztas(request, szurestipus=""):
     alertlista = []
-    utolso_az_urlben = request.path.split('/')[-2]
-    szurestipus = utolso_az_urlben if utolso_az_urlben!='valasztas' else ''
+    # utolso_az_urlben = request.path.split('/')[-2]
+    # szurestipus = utolso_az_urlben if utolso_az_urlben!='valasztas' else ''
 
     a_felhasznalo = Felhasznalo.getuser(request)
 
@@ -84,12 +84,10 @@ def valasztas(request):
         })
 
 @login_required
-def nevsor(request):
-    utolso_az_urlben = request.path.split('/')[-2]
-    a_foglalkozas = Foglalkozas.objects.get(kod = utolso_az_urlben)
+def nevsor(request, a_kod):
+    a_foglalkozas = Foglalkozas.objects.get(kod = a_kod)
     return render(request, "nevsor.html", {'felhasznalok': a_foglalkozas.felhasznaloi(), 'cim': a_foglalkozas.nev})
 
 @login_required
 def nemjelentkeztek(request):
     return render(request, "nevsor.html", {'felhasznalok': Felhasznalo.akik_nem_jelentkeztek(), 'cim': 'nem jelentkeztek'})
-

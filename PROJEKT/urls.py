@@ -7,9 +7,10 @@ urlpatterns = [
     path('tesi/', index),
     path('accounts/', include('django.contrib.auth.urls')),
     path('admin/', admin.site.urls),
-    re_path(r'tesi/valasztas/.*', valasztas),
-    re_path(r'tesi/urlap/.*', urlap),
-    re_path(r'tesi/nevsor/.*', nevsor),
+    path('tesi/valasztas/<str:szurestipus>/', valasztas),
+    path('tesi/valasztas/', valasztas),
+    path('tesi/urlap/<str:melyik>/', urlap),
+    path('tesi/nevsor/<str:a_kod>/', nevsor),
     path('tesi/nemjelentkeztek/', nemjelentkeztek),
     path('orarend/', include('APP_orarend.urls')),
 ]
