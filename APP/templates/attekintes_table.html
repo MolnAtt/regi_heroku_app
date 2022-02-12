@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    {# META #}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {# google font import -- roboto slab #}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    {# favicon.ico #}
+    <link rel="shortcut icon" type="image/png" href="{% static 'pic/favicon.ico' %}"/>
+
+    {# CSS-fájlok #}
+    <link rel="stylesheet" href="{% static 'css/root.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/attekintes.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+
+    {# Egyéb #}
+    <title>tesi</title>
+
+</head>
+<body>
+    <header>
+        <h1><a href="{{domain}}/tesi/">tesi</a> : összes jelentkezés áttekintése </h1>
+        <a class="logout" href="{{ domain }}/accounts/logout/">kijelentkezés</a>
+    </header>
+    <main>
+        <table>
+        {% for jelentkezes in jelentkezesek %}
+        <tr>
+            
+            <td>{{ forloop.counter }}.</td>
+            <td>{{ jelentkezes.nev }}</td>
+            <td>{{ jelentkezes.osztaly }}</td>
+            <td>{{ jelentkezes.email }}</td>
+            <td>{{ jelentkezes.foglalkozas }}</td>
+            <td>{{ jelentkezes.tanarai }}</td>
+            <td>{{ jelentkezes.idopont }}</td>
+        </tr>
+        {% endfor %}
+        </table>
+    </main>
+
+    {# FOOTER #}
+
+    {% include "footer.html" %}
+</body>
+</html>

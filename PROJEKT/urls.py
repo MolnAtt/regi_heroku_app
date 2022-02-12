@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path, re_path, include
-from APP.views import foindex, index,valasztas, urlap, nevsor, nemjelentkeztek
+from APP.views import foindex, index,valasztas, urlap, nevsor, nemjelentkeztek, attekintes
 
 urlpatterns = [
     path('', foindex),
@@ -11,6 +11,8 @@ urlpatterns = [
     path('tesi/valasztas/', valasztas),
     path('tesi/urlap/<str:melyik>/', urlap),
     path('tesi/nevsor/<str:a_kod>/', nevsor),
+    path('tesi/attekintes/<str:template>/<str:rendezes>/', attekintes),
+    path('tesi/attekintes/<str:template>/', attekintes),
     path('tesi/nemjelentkeztek/', nemjelentkeztek),
     path('orarend/', include('APP_orarend.urls')),
 ]

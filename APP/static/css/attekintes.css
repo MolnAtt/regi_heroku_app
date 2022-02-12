@@ -1,0 +1,28 @@
+main{
+    display: grid;
+    justify-content: center;
+}
+
+
+main > .nevsor{
+    background-color: var(--nevsor-bg-color);
+    color: var(--nevsor-fg-color);
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-auto-columns: auto;
+    gap: 5px;
+    border:solid 2px black;
+    padding:5px;
+}
+
+table tr td {
+    background-color: var(--nevsor-bg-color);
+    color: var(--nevsor-fg-color);
+    padding: 5px;
+}
+
+table {
+    margin-top: 3em;
+    background-color: black;
+}

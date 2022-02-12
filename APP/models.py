@@ -65,6 +65,7 @@ class Felhasznalo(models.Model):
 
 
 
+
 tipusnevek = (
     ('DSE','DSE'),
     ('nem DSE', 'nem DSE'),
@@ -106,11 +107,15 @@ class Foglalkozas(models.Model):
         verbose_name_plural = 'Foglalkozások'
 
     def __str__(self) -> str:
-        if self.bomlik:
-            return f"{self.nev}: ({self.egyik_tanar} és {self.masik_tanar}, {self.tipus_nev}), {self.egyik_nap}: {self.egyik_mettol} - { self.egyik_meddig } és {self.masik_nap}: {self.masik_mettol} - { self.masik_meddig }, {self.aktletszam()}/{self.letszam}"
-        else:
-            return f"{self.nev}: ({self.egyik_tanar}, {self.tipus_nev}), {self.egyik_nap}: {self.egyik_mettol} - { self.egyik_meddig }, {self.aktletszam()}/{self.letszam}"
+            return f"{self.nev}: ({self.tanarai}, {self.tipus_nev}), {self.idopontjai}, {self.aktletszam()}/{self.letszam}"
 
+    @property
+    def tanarai(self) -> str:
+        return f'{self.egyik_tanar} és {self.masik_tanar}' if self.bomlik else self.egyik_tanar
+
+    @property
+    def idopontjai(self) -> str:
+        return f'{self.egyik_nap}: {self.egyik_mettol} - { self.egyik_meddig } és {self.masik_nap}: {self.masik_mettol} - { self.masik_meddig }' if self.bomlik else f'{self.egyik_nap}: {self.egyik_mettol} - { self.egyik_meddig }'
 
     def jelentkezesei(self) -> QuerySet:
         return Jelentkezes.objects.filter(foglalkozas = self)
@@ -161,7 +166,35 @@ class Jelentkezes(models.Model):
         """Unicode representation of Jelentkezes."""
         return f"{self.felhasznalo.nev} -> {self.foglalkozas.nev} "
 
+    def ek_attekintese(rendezes:list[str]) -> list[dict]:
+        #return [ j.attekintesbe() for j in Jelentkezes.objects.all()]
+        if len(rendezes) == 1:
+            return sorted([ j.attekintesbe() for j in Jelentkezes.objects.all()], key=lambda x: x[rendezes[0]])
+        elif len(rendezes) == 2:
+            return sorted([ j.attekintesbe() for j in Jelentkezes.objects.all()], key=lambda x: (x[rendezes[0]], x[rendezes[1]] ))
+        elif len(rendezes) == 3:
+            return sorted([ j.attekintesbe() for j in Jelentkezes.objects.all()], key=lambda x: (x[rendezes[0]], x[rendezes[1]], x[rendezes[2]] ))
 
+        """
+        if rendezes=="osztaly_nev":
+            rendezve = sorted(felhasznalok, key=lambda x : (x.osztaly.sorszam, x.nev))
+        if rendezes=="nev":
+            rendezve = sorted(felhasznalok, key=lambda x : x.nev)
+        if rendezes=="foglalkozas_osztaly_nev":
+            rendezve = sorted(felhasznalok, key=lambda x : (x.osztaly.sorszam, x.nev))
+        if rendezes=="foglalkozas_nev":
+            rendezve = sorted(felhasznalok, key=lambda x : (x.osztaly.sorszam, x.nev))
+        """
+        
+    def attekintesbe(a_jelentkezes) -> dict:
+        return {
+            'nev': a_jelentkezes.felhasznalo.nev,
+            'osztaly': a_jelentkezes.felhasznalo.osztaly.nev,
+            'email': a_jelentkezes.felhasznalo.user.email,
+            'foglalkozas': a_jelentkezes.foglalkozas.nev,
+            'tanarai': a_jelentkezes.foglalkozas.tanarai,
+            'idopont': a_jelentkezes.foglalkozas.idopontjai,
+        }
 
 def timedelta2str(td):
     return f'{str(td.seconds//3600).zfill(2)}:{str(td.seconds//60%60).zfill(2)}' if td != None else None

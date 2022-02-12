@@ -52,6 +52,9 @@
             <a href="{{ domain }}/tesi/urlap/felmentes/" class="navgomb">Felmentés</a>
             {% if request.user|has_group:"testnevelotanar" %} 
             <a href="{{ domain }}/tesi/nemjelentkeztek/" class="navgomb">Nem jelentkeztek</a>
+            <a href="{{ domain }}/tesi/attekintes/table/foglalkozas_osztaly_nev/" class="navgomb">összes jelentkezés (foglalkozások szerint)</a>
+            <a href="{{ domain }}/tesi/attekintes/table/osztaly_nev/" class="navgomb">összes jelentkezés (osztály szerint)</a>
+            <a href="{{ domain }}/tesi/attekintes/table/nev/" class="navgomb">összes jelentkezés (név szerint)</a>
             {% endif %}
             {% if request.user|has_group:"adminisztrator" %} 
             <a href="{{ domain }}/admin/" class="navgomb">Adminisztráció</a>

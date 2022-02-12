@@ -1,6 +1,7 @@
+from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from .models import Foglalkozas, Jelentkezes, Felhasznalo, Vezerlo
+from .models import Foglalkozas, Jelentkezes, Felhasznalo, Vezerlo, Osztaly
 
 
 def index(request):
@@ -91,3 +92,9 @@ def nevsor(request, a_kod):
 @login_required
 def nemjelentkeztek(request):
     return render(request, "nevsor.html", {'felhasznalok': Felhasznalo.akik_nem_jelentkeztek(), 'cim': 'nem jelentkeztek'})
+
+@login_required
+def attekintes(request:HttpRequest, template, rendezes="nev") -> HttpResponse:
+    return render(request, f"attekintes_{template}.html", {
+        'jelentkezesek': Jelentkezes.ek_attekintese(rendezes.split('_')), 
+        })
