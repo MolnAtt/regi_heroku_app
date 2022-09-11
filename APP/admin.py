@@ -201,5 +201,23 @@ class VezerloAdmin(admin.ModelAdmin):
 admin.site.register(Vezerlo, VezerloAdmin)
 
 
+
+def jelentkezes_engedelyezese(modeladmin, request, queryset) -> None:
+    for felhasznalo in queryset:
+        felhasznalo.jogosultsag = Group.objects.get(name='diak')
+        for user in filter(lambda u : diakok_csoportja in u.groups.all() and u.email!='molnar.attila@szlgbp.hu', User.objects.all()):
+            user.is_active = False
+            user.save()
+    # end for queryset
+stop_jelentkezes.short_description = f"STOP LOGIN"
+
+
+class FelhasznaloAdmin(admin.ModelAdmin):
+    actions = [
+        jelentkezes_engedelyezese,
+        ]
+
+admin.site.register(Vezerlo, VezerloAdmin)
+
 # - Foglalkozások beolvasása?
 # - Osztály léptetése

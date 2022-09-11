@@ -39,7 +39,9 @@ class Felhasznalo(models.Model):
     kulsos = models.BooleanField(default=False)
     gyogy = models.BooleanField(default=False)
     felmentett = models.BooleanField(default=False)
-    jogosultsagok = models.CharField(max_length=3, default="000") # pl.: 101 = fel, nem le, de át
+    jelentkezhet = models.BooleanField(default=False)
+    lejelentkezhet = models.BooleanField(default=False)
+    atjelentkezhet = models.BooleanField(default=False)
 
 
     class Meta:
