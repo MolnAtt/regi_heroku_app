@@ -9,7 +9,6 @@ from re import sub
 
 
 admin.site.register(Jelentkezes)
-admin.site.register(Felhasznalo)
 admin.site.register(Foglalkozas)
 admin.site.register(Osztaly)
 
