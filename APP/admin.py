@@ -202,22 +202,55 @@ admin.site.register(Vezerlo, VezerloAdmin)
 
 
 
-def jelentkezes_engedelyezese(modeladmin, request, queryset) -> None:
+def feljelentkezes_engedelyezese(modeladmin, request, queryset) -> None:
     for felhasznalo in queryset:
-        felhasznalo.jogosultsag = Group.objects.get(name='diak')
-        for user in filter(lambda u : diakok_csoportja in u.groups.all() and u.email!='molnar.attila@szlgbp.hu', User.objects.all()):
-            user.is_active = False
-            user.save()
+        felhasznalo.feljelentkezhet = True
     # end for queryset
-stop_jelentkezes.short_description = f"STOP LOGIN"
+feljelentkezes_engedelyezese.short_description = f"feljelentkezés ON"
+
+def feljelentkezes_tiltasa(modeladmin, request, queryset) -> None:
+    for felhasznalo in queryset:
+        felhasznalo.feljelentkezhet = False
+    # end for queryset
+feljelentkezes_tiltasa.short_description = f"feljelentkezés OFF"
+
+def lejelentkezes_engedelyezese(modeladmin, request, queryset) -> None:
+    for felhasznalo in queryset:
+        felhasznalo.lejelentkezhet = True
+    # end for queryset
+lejelentkezes_engedelyezese.short_description = f"lejelentkezés ON"
+
+def lejelentkezes_tiltasa(modeladmin, request, queryset) -> None:
+    for felhasznalo in queryset:
+        felhasznalo.lejelentkezhet = False
+    # end for queryset
+lejelentkezes_tiltasa.short_description = f"lejelentkezés OFF"
+
+def atjelentkezes_engedelyezese(modeladmin, request, queryset) -> None:
+    for felhasznalo in queryset:
+        felhasznalo.atjelentkezhet = True
+    # end for queryset
+atjelentkezes_engedelyezese.short_description = f"atjelentkezés ON"
+
+def atjelentkezes_tiltasa(modeladmin, request, queryset) -> None:
+    for felhasznalo in queryset:
+        felhasznalo.atjelentkezhet = False
+    # end for queryset
+atjelentkezes_tiltasa.short_description = f"atjelentkezés OFF"
+
 
 
 class FelhasznaloAdmin(admin.ModelAdmin):
     actions = [
-        jelentkezes_engedelyezese,
+        feljelentkezes_engedelyezese,
+        lejelentkezes_engedelyezese,
+        atjelentkezes_engedelyezese,
+        feljelentkezes_tiltasa,
+        lejelentkezes_tiltasa,
+        atjelentkezes_tiltasa,
         ]
 
-admin.site.register(Vezerlo, VezerloAdmin)
+admin.site.register(Felhasznalo, FelhasznaloAdmin)
 
 # - Foglalkozások beolvasása?
 # - Osztály léptetése

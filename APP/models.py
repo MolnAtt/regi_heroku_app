@@ -39,7 +39,7 @@ class Felhasznalo(models.Model):
     kulsos = models.BooleanField(default=False)
     gyogy = models.BooleanField(default=False)
     felmentett = models.BooleanField(default=False)
-    jelentkezhet = models.BooleanField(default=False)
+    feljelentkezhet = models.BooleanField(default=False)
     lejelentkezhet = models.BooleanField(default=False)
     atjelentkezhet = models.BooleanField(default=False)
 
