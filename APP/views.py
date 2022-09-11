@@ -27,14 +27,15 @@ def valasztas(request, szurestipus=""):
 
     a_felhasznalo = Felhasznalo.getuser(request)
 
-    uzemmodstr = a_felhasznalo.jogosultsagok
+    
     uzemmod = {
-        'fel': uzemmodstr[0]=='1', 
-        'le':  uzemmodstr[1]=='1', 
-        'at':  uzemmodstr[2]=='1'}
+        'fel': a_felhasznalo.feljelentkezhet, 
+        'le':  a_felhasznalo.lejelentkezhet, 
+        'at':  a_felhasznalo.atjelentkezhet,
+        }
     
     # üzemmód: 000-111, a három opció: fel-, le-, átjelentkezés
-    if request.method=="POST" and uzemmodstr!="000":
+    if request.method=="POST" and (uzemmod['fel'] or uzemmod['le'] or uzemmod['at']):
 
         poszt = request.POST
         valasztott_foglalkozas = Foglalkozas.objects.get(id=poszt['melyiket'])
