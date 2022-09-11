@@ -246,6 +246,7 @@ atjelentkezes_tiltasa.short_description = f"atjelentkezés OFF"
 
 
 class FelhasznaloAdmin(admin.ModelAdmin):
+    list_per_page = 1000
     actions = [
         feljelentkezes_engedelyezese,
         lejelentkezes_engedelyezese,
@@ -334,6 +335,7 @@ def osztalyleptetes_vissza(modeladmin, request, queryset) -> None:
 osztalyleptetes_vissza.short_description = f"osztályok léptetése hátra"
 
 class OsztalyAdmin(admin.ModelAdmin):
+
     actions = [
         osztalyleptetes,
         osztalyleptetes_vissza,
