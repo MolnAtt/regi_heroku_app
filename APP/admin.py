@@ -8,7 +8,6 @@ from django.template import Context, Template
 from re import sub
 
 
-admin.site.register(Jelentkezes)
 admin.site.register(Foglalkozas)
 
 # a trükkös admin-funkciókról, függvényekről az szlgbp_ma_heroku gitrepoban vannak jó példák.
@@ -344,5 +343,10 @@ class OsztalyAdmin(admin.ModelAdmin):
 admin.site.register(Osztaly, OsztalyAdmin)
 
 
+class JelentkezesAdmin(admin.ModelAdmin):
+    list_per_page = 1000
+
+admin.site.register(Jelentkezes, JelentkezesAdmin)
+
+
 # - Foglalkozások beolvasása?
-# - Osztály léptetése
