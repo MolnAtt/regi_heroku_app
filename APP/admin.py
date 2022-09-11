@@ -10,7 +10,6 @@ from re import sub
 
 admin.site.register(Jelentkezes)
 admin.site.register(Foglalkozas)
-admin.site.register(Osztaly)
 
 # a trükkös admin-funkciókról, függvényekről az szlgbp_ma_heroku gitrepoban vannak jó példák.
 
@@ -245,6 +244,7 @@ atjelentkezes_tiltasa.short_description = f"atjelentkezés OFF"
 
 
 
+
 class FelhasznaloAdmin(admin.ModelAdmin):
     actions = [
         feljelentkezes_engedelyezese,
@@ -256,6 +256,91 @@ class FelhasznaloAdmin(admin.ModelAdmin):
         ]
 
 admin.site.register(Felhasznalo, FelhasznaloAdmin)
+
+
+leptetofuggveny = {
+    "KNYA":"9.A",
+    "NYE":"9.E",
+    "NYF":"9.F",
+    "9.A":"10.A",
+    "9.B":"10.B",
+    "9.C":"10.C",
+    "9.D":"10.D",
+    "9.E":"10.E",
+    "9.F":"10.F",
+    "10.A":"11.A",
+    "10.B":"11.B",
+    "10.C":"11.C",
+    "10.D":"11.D",
+    "10.E":"11.E",
+    "10.F":"11.F",
+    "11.A":"12.A",
+    "11.B":"12.B",
+    "11.C":"12.C",
+    "11.D":"12.D",
+    "11.E":"12.E",
+    "11.F":"12.F",
+    "12.A":"13.A",
+    "12.B":"13.B",
+    "12.C":"13.C",
+    "12.D":"13.D",
+    "12.E":"13.E",
+    "12.F":"13.F",
+}
+
+visszaleptetofuggveny = {
+    "9.A":"KNYA",
+    "9.E":"NYE",
+    "9.F":"NYF",
+    "10.A":"9.A",
+    "10.B":"9.B",
+    "10.C":"9.C",
+    "10.D":"9.D",
+    "10.E":"9.E",
+    "10.F":"9.F",
+    "11.A":"10.A",
+    "11.B":"10.B",
+    "11.C":"10.C",
+    "11.D":"10.D",
+    "11.E":"10.E",
+    "11.F":"10.F",
+    "12.A":"11.A",
+    "12.B":"11.B",
+    "12.C":"11.C",
+    "12.D":"11.D",
+    "12.E":"11.E",
+    "12.F":"11.F",
+    "13.A":"12.A",
+    "13.B":"12.B",
+    "13.C":"12.C",
+    "13.D":"12.D",
+    "13.E":"12.E",
+    "13.F":"12.F",
+}
+
+
+def osztalyleptetes(modeladmin, request, queryset) -> None:
+    for osztaly in queryset:
+        osztaly.nev = leptetofuggveny[osztaly.nev]
+        osztaly.save()
+    # end for queryset
+osztalyleptetes.short_description = f"osztályok léptetése előre"
+
+def osztalyleptetes_vissza(modeladmin, request, queryset) -> None:
+    for osztaly in queryset:
+        osztaly.nev = visszaleptetofuggveny[osztaly.nev]
+        osztaly.save()
+    # end for queryset
+osztalyleptetes_vissza.short_description = f"osztályok léptetése hátra"
+
+class OsztalyAdmin(admin.ModelAdmin):
+    actions = [
+        osztalyleptetes,
+        osztalyleptetes_vissza,
+        ]
+
+admin.site.register(Osztaly, OsztalyAdmin)
+
 
 # - Foglalkozások beolvasása?
 # - Osztály léptetése
