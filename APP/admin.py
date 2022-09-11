@@ -207,29 +207,29 @@ def feljelentkezes_engedelyezese(modeladmin, request, queryset) -> None:
     # end for queryset
 feljelentkezes_engedelyezese.short_description = f"feljelentkezés ON"
 
-def feljelentkezes_tiltasa(modeladmin, request, queryset) -> None:
-    for felhasznalo in queryset:
-        felhasznalo.feljelentkezhet = False
-    # end for queryset
-feljelentkezes_tiltasa.short_description = f"feljelentkezés OFF"
-
 def lejelentkezes_engedelyezese(modeladmin, request, queryset) -> None:
     for felhasznalo in queryset:
         felhasznalo.lejelentkezhet = True
     # end for queryset
 lejelentkezes_engedelyezese.short_description = f"lejelentkezés ON"
 
-def lejelentkezes_tiltasa(modeladmin, request, queryset) -> None:
-    for felhasznalo in queryset:
-        felhasznalo.lejelentkezhet = False
-    # end for queryset
-lejelentkezes_tiltasa.short_description = f"lejelentkezés OFF"
-
 def atjelentkezes_engedelyezese(modeladmin, request, queryset) -> None:
     for felhasznalo in queryset:
         felhasznalo.atjelentkezhet = True
     # end for queryset
 atjelentkezes_engedelyezese.short_description = f"atjelentkezés ON"
+
+def feljelentkezes_tiltasa(modeladmin, request, queryset) -> None:
+    for felhasznalo in queryset:
+        felhasznalo.feljelentkezhet = False
+    # end for queryset
+feljelentkezes_tiltasa.short_description = f"feljelentkezés OFF"
+
+def lejelentkezes_tiltasa(modeladmin, request, queryset) -> None:
+    for felhasznalo in queryset:
+        felhasznalo.lejelentkezhet = False
+    # end for queryset
+lejelentkezes_tiltasa.short_description = f"lejelentkezés OFF"
 
 def atjelentkezes_tiltasa(modeladmin, request, queryset) -> None:
     for felhasznalo in queryset:
