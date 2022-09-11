@@ -27,7 +27,7 @@ def valasztas(request, szurestipus=""):
 
     a_felhasznalo = Felhasznalo.getuser(request)
 
-    uzemmodstr = Vezerlo.objects.get(kod='jelentkezesvezerlo').nev
+    uzemmodstr = a_felhasznalo.jogosultsagok
     uzemmod = {
         'fel': uzemmodstr[0]=='1', 
         'le':  uzemmodstr[1]=='1', 
@@ -45,7 +45,7 @@ def valasztas(request, szurestipus=""):
                 alertlista.append("A foglalkozásról sikeresen lejelentkeztél.")
                 korabban_valasztott_foglalkozas_id = "nincs"
             else: 
-                alertlista.append("Jelenleg nem lehet lejelentkezni.")
+                alertlista.append("Jelenleg nem tudsz lejelentkezni.")
                 korabban_valasztott_foglalkozas_id = valasztott_foglalkozas
 
         elif poszt['mitcsinal'] in ['jelentkezes', 'atjelentkezes']:
@@ -61,13 +61,13 @@ def valasztas(request, szurestipus=""):
                             j.save()
                             alertlista.append("A foglalkozásra való átjelentkezés sikeres volt.")
                         else:
-                            alertlista.append("Jelenleg nem lehet átjelentkezni.")
+                            alertlista.append("Jelenleg nem tudsz átjelentkezni.")
                 except Jelentkezes.DoesNotExist:
                     if uzemmod['fel']:
                         Jelentkezes.objects.create(felhasznalo = a_felhasznalo, foglalkozas = valasztott_foglalkozas)
                         alertlista.append("A foglalkozásra való jelentkezés sikeres volt.")
                     else:
-                        alertlista.append("Jelenleg nem lehet jelentkezni.")
+                        alertlista.append("Jelenleg nem tudsz jelentkezni.")
 
                 korabban_valasztott_foglalkozas_id = valasztott_foglalkozas.id
     else: # request.method=="GET":
