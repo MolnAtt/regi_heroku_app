@@ -143,8 +143,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'molnar.attila@szlgbp.hu'
-EMAIL_HOST_PASSWORD = 'khxgyyqtrnubnzqp'
+EMAIL_HOST_USER = 'szt2.gp02.20g@szlgbp.hu'
+EMAIL_HOST_PASSWORD = 'Chomsky1234'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'molnar.attila@szlgbp.hu'
+DEFAULT_FROM_EMAIL = 'szt2.gp02.20g@szlgbp.hu'
